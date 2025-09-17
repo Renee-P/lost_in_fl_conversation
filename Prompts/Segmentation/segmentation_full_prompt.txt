@@ -1,0 +1,11 @@
+Below are examples illustrating correct segmentation style:
+[[EXAMPLES]]
+
+Now segment the following fully-specified instruction into atomic, non-overlapping segments.
+Remember: preserve wording, ≥[[MIN_SEGMENTS]] segments, JSON output only.
+
+Instruction:
+[[INSTRUCTION]]
+
+Return only:
+{"segments":[{"segment":"..."}, {"segment":"..."}, {"segment":"..."}]}
