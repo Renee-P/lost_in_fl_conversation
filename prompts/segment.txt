@@ -1,0 +1,31 @@
+*You are a given a fully specified instruction, and your task is to segment the instruction into a
+units of information that each reveal a single piece of information of the instruction.*
+You must output a list of segments in the following JSON format:
+[
+{"segment": "[exact excerpt from the instruction]"},
+{"segment": "[exact excerpt from the instruction]"},
+...
+]
+Rules:
+*- [Non-overlapping] The segments must be non-overlapping and cover the entire instruction. You can
+optionally leave some gaps for non-essential portions of the original instruction (delimiters,
+headers, etc.)
+- [Minimalistic] You should split the information in the segments to as small as possible. If you
+have a compound expression (X and Y), you should split it into two segments. Each segment should
+represent a unit of information.*
+Example Query:
+What are the names and locations of the stadiums that had concerts that occurred in both 2014 and
+2015?
+Output:
+{"segments": [
+{"segment": "names and locations"},
+{"segment": "stadiums"},
+{"segment": "concerts"},
+{"segment": "in both 2014"},
+{"segment": "and 2015"}
+]}
+*Now complete the task for the following fully specified instruction:*
+[[INSTRUCTION]]
+
+
+- so this is basically the general non-task specific one which we can add to/change accordingly
