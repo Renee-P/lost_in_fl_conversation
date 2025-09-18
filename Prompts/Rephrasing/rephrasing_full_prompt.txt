@@ -1,0 +1,13 @@
+Below are examples illustrating correct rephrasing of segments into conversational turns:
+
+[[EXAMPLES]]
+
+Now rephrase the following instruction segments into conversational turns.
+Each input segment must correspond to exactly one rephrased output.
+Preserve meaning, but make the tone natural and conversational.
+
+Input Segments:
+[[SEGMENTS]]
+
+Return only:
+{"rephrased_segments":[{"segment":"..."}, {"segment":"..."}, {"segment":"..."}]}
