@@ -10,19 +10,18 @@ Work in progress 🚧
 This project uses [Ollama](https://ollama.com/) to run local LLMs (7-9B parameters). You must have Ollama installed, running, and the necessary models pulled before using the code.
 
 ### 1. Install Ollama
-Download and install Ollama from: [https://ollama.com/download](https://ollama.com/download) 
-Ollama runs as a background service after installation.
+Download and install Ollama from: [https://ollama.com/download](https://ollama.com/download). Ollama runs as a background service after installation.
+(Optional) Run the following to confirm Ollama is active and responding:
+```bash
+curl http://localhost:11434/api/tags
+```
+You should see a JSON response listing installed models.
 
 ### 2. Install the Python client
 In your Python environment, install the Ollama Python package:
 ```bash
 pip install ollama
 ```
-(Optional) Run the following to confirm Ollama is active and responding:
-```bash
-curl http://localhost:11434/api/tags
-```
-You should see a JSON response listing installed models.
 
 ### 3. Pull the necessary models 
 Make sure the models are downloaded locally: *(placeholder - will change for the complete model list later)*
