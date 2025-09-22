@@ -1,0 +1,38 @@
+You are given a set of atomic instruction segments, and your task is to rephrase each segment so that it fits naturally as a conversational turn in a multi-turn dialogue. Each rephrased segment should preserve the original meaning exactly, but be phrased in a way that sounds like a user clarifying or refining their request step by step.
+
+You must output a list of rephrased segments in the following JSON format:
+{
+  "rephrased_segments": [
+    {"segment": "[rephrased version of segment 1]"},
+    {"segment": "[rephrased version of segment 2]"},
+    ...
+  ]
+}
+
+Rules:
+- [Preserve Meaning] Do not drop, add, or alter information. The rephrased segment must carry the same informational content as the original.
+- [Conversational Tone] Write each segment in a natural, user-friendly style, as if the user is revealing one piece of information in a dialogue.
+- [One-to-One Mapping] Each input segment corresponds to exactly one rephrased output.
+- [Language Consistency] Maintain the input language (Filipino, English, or code-mixed). Do not translate unless instructed.
+- [Minimal Editing] Keep changes minimal—only adjust phrasing to make it conversational, not verbose.
+
+Example Input Segments:
+{"segments": [
+  {"segment": "names and locations"},
+  {"segment": "stadiums"},
+  {"segment": "concerts"},
+  {"segment": "in both 2014"},
+  {"segment": "and 2015"}
+]}
+
+Example Output:
+{"rephrased_segments": [
+  {"segment": "Can you tell me the names and locations?"},
+  {"segment": "I want to know about the stadiums."},
+  {"segment": "Specifically the ones that hosted concerts."},
+  {"segment": "These concerts should include those in 2014."},
+  {"segment": "And also the ones in 2015."}
+]}
+
+Now complete the task for the following input segments:
+[[SEGMENTS]]
