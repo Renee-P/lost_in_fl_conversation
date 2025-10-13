@@ -8,14 +8,14 @@ lost_in_fl_conversation/
 │   │   ├── task2.json
 │   │   └── ...
 │   ├── final/                # final datasets
-│   │   ├── task1.json        #or we could merge all ex. sharded_instructions.json
+│   │   ├── task1.json        #or we could merge all after sharding phase ex. sharded_instructions.json
 │   │   ├── task2.json
 │   │   └── ...
 │
 ├── prompts/                  # all LLM prompt templates
 │   ├── task1/  
-│   │   ├── segment.txt
-│   │   ├── rephrase.txt
+│   │   ├── task1_segment.txt                   # segmentation prompt template
+│   │   ├── task1_conversational.txt            # rephrasing prompt template
 │   │   ├── simulation_full.txt                 #not sure
 │   │   ├── simulation_concat.txt               #not sure
 │   │   └── simulation_shuffle_concat.txt       #not sure
@@ -23,8 +23,8 @@ lost_in_fl_conversation/
 ├── utils/
 │   ├── io_utils.py           # load/save helpers - not sure
 │   ├── model.py              # wrapper for calling LLMs with prompts
-├── processing.py             # LLM-based segment + rephrase
-├── verification.py           # automatic checks (thresholds, concat, shuffle)
-├── pipeline.py               # pipeline class that orchestrates steps
-├── main.py                   # entry point to run experiments
+├── segment.py                # segments instructions of a specific task
+├── rephrase.py               # rephrase
+├── verification.py           # handles verification phase - not sure (need to implement also full/concat/shuffle-concat for verification step)
+├── sharding.py               # orchestrates steps for sharding
 └── config.py                 # central config (task names, file paths, counts, etc.)
