@@ -1,0 +1,49 @@
+You are given segments of a fully specified instruction, and your task is to: (1) choose one that will be the initial shard of a multi-step query, and then (2) rephrase each segment into a conversational version that are provided to the system in a follow-up turn of the conversation.
+
+Your output should be a JSON object in the following format:
+{
+    "initial_segment": "[exact excerpt from the instruction]",
+    "initial_shard": "conversational version of the initial segment",
+    "shards": [
+    {"segment": "[exact excerpt from the instruction]", "shard": "conversational version of the segment taking the rest of the instruction into account"}
+    ]
+}
+
+Example:
+
+Full Query:
+What are the names and locations of the stadiums that had concerts that occurred in both 2014 and 2015?
+
+Segments:
+[
+    {"segment": "names and locations"},
+    {"segment": "stadiums"},
+    {"segment": "concerts"},
+    {"segment": "in both 2014"},
+    {"segment": "and 2015"}
+]
+
+Output:
+{
+    "initial_segment": "stadiums",
+    "initial_shard": "popular stadiums",
+    "shards": [
+        {"segment": "concerts", "shard": "the stadiums should have concerts during a period"},
+        {"segment": "in both 2014", "shard": "the concerts should have occurred in 2014 in the stadiums"},
+        {"segment": "and 2015", "shard": "the concerts should have also occurred in 2015 in the same stadiums"},
+        {"segment": "names and locations", "shard": "for the stadiums, returned both the name and location"}
+    ]
+}
+
+Rules:
+- [Transform each segment] Make sure each segment is included either as the initial shard or in the rest of the shards. Do not forget any segments.
+- [Short initial shard] Make the initial shard short, not a full sentence, similar to how users use a search engine like Google.
+- [Order of shards] Order the shards in order of importance, from most to least important to the initial shard. You do not need to keep the order the segments that are provided in.
+
+Now complete the task for the following fully specified instruction and segments:
+
+Fully Specified Instruction:
+[[QUESTION]]
+
+Segments:
+[[SEGMENTS]]

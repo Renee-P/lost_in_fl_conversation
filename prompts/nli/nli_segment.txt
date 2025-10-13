@@ -1,0 +1,123 @@
+You are a given an fully specified natural language inference instruction where the task is to determine the relationship between two sentences, including three answer choices. Your task is to segment the instruction into units of information that each reveal a single piece of information of the instruction.
+You must output a list of segments in the following JSON format:
+[
+{"segment": "[exact excerpt from the instruction]"},
+{"segment": "[exact excerpt from the instruction]"},
+...
+]
+
+Rules:
+- [Non-overlapping] The segments must be non-overlapping and cover the entire instruction. You can optionally leave some gaps for non-essential portions of the original instruction (delimiters, headers, etc.)
+- [Minimalistic] You should split the information in the segments to as small as possible. If you have a compound expression (X and Y), you should split it into two segments. Each segment should represent a unit of information.
+- [Minimal Transformation] As much as possible, use the exact wording and language from the instance for each segment. Avoid simplifying, altering, or interpreting elements of the original instruction as much as possible.
+
+# Example 1:
+
+## Input:
+~~~
+Tukuyin kung alin sa sumusunod na pahayag ang pinakaangkop para sa SENTENCE_1 at SENTENCE_2.
+A: Kung totoo ang SENTENCE_1, dapat totoo din ang SENTENCE_2.
+B: Sumasalungat ang SENTENCE_1 sa SENTENCE_2.
+C: Kapag totoo ang SENTENCE_1, pwedeng totoo o hindi totoo ang SENTENCE_2.
+
+SENTENCE_1:
+```
+Marami akong nababasang kuwento tungkol sa inyo.
+```
+SENTENCE_2:
+```
+Madalas ko kayong basahan ng mga kuwento bago matulog.
+```
+~~~
+
+## Output:
+{"segments": [
+  {"segment": "alin ang pinakaangkop sa SENTENCE_1 at SENTENCE_2"},
+  {"segment": "A: Kung totoo ang SENTENCE_1, dapat totoo din ang SENTENCE_2"},
+  {"segment": "B: Sumasalungat ang SENTENCE_1 sa SENTENCE_2"},
+  {"segment": "C: Kapag totoo ang SENTENCE_1, pwedeng totoo o hindi totoo ang SENTENCE_2"},
+  {"segment": "SENTENCE_1: Marami akong nababasang kuwento tungkol sa inyo."},
+  {"segment": "SENTENCE_2: Madalas ko kayong basahan ng mga kuwento bago matulog."}
+]}
+
+# Example 2:
+
+## Input:
+~~~
+Tukuyin kung alin sa sumusunod na pahayag ang pinakaangkop para sa SENTENCE_1 at SENTENCE_2.
+A: Kung totoo ang SENTENCE_1, dapat totoo din ang SENTENCE_2.
+B: Sumasalungat ang SENTENCE_1 sa SENTENCE_2.
+C: Kapag totoo ang SENTENCE_1, pwedeng totoo o hindi totoo ang SENTENCE_2.
+
+SENTENCE_1:
+```
+Kailangan nila ng indibiduwal na suporta upang makadalo sa mga komperensiya, mai-present ang kanilang mga papel, mailathala ang kanilang mga akda, at patuloy na makipagtalastasan sa iba sa kanilang mga field sa ibayo ng bansa.
+```
+SENTENCE_2:
+```
+Kailangan nila ng indibiduwal na suporta upang makapag-aral.
+```
+~~~
+
+## Output:
+{"segments": [
+  {"segment": "alin ang pinakaangkop sa SENTENCE_1 at SENTENCE_2"},
+  {"segment": "A: Kung totoo ang SENTENCE_1, dapat totoo din ang SENTENCE_2"},
+  {"segment": "B: Sumasalungat ang SENTENCE_1 sa SENTENCE_2"},
+  {"segment": "C: Kapag totoo ang SENTENCE_1, pwedeng totoo o hindi totoo ang SENTENCE_2"},
+  {"segment": "SENTENCE_1: Kailangan nila ng indibiduwal na suporta upang makadalo sa mga komperensiya,"},
+  {"segment": "mai-present ang kanilang mga papel,"},
+  {"segment": "mailathala ang kanilang mga akda,"},
+  {"segment": "at patuloy na makipagtalastasan sa iba sa kanilang mga field sa ibayo ng bansa"},
+  {"segment": "SENTENCE_2: Kailangan nila ng indibiduwal na suporta upang makapag-aral"}
+]}
+
+# Example 3:
+
+## Input:
+~~~
+Tukuyin kung alin sa sumusunod na pahayag ang pinakaangkop para sa SENTENCE_1 at SENTENCE_2.
+A: Kung totoo ang SENTENCE_1, dapat totoo din ang SENTENCE_2.
+B: Sumasalungat ang SENTENCE_1 sa SENTENCE_2.
+C: Kapag totoo ang SENTENCE_1, pwedeng totoo o hindi totoo ang SENTENCE_2.
+
+SENTENCE_1:
+```
+Ang mga kabanata 13 hanggang 15 ay sumusuri sa channel sa kabuuan, mula sa perspektibong global, private-performance, at public-policy.
+```
+SENTENCE_2:
+```
+Sinusuri ng kabanata 15 ang marketshare effect.
+```
+~~~
+
+## Output:
+{"segments": [
+  {"segment": "alin ang pinakaangkop sa SENTENCE_1 at SENTENCE_2"},
+  {"segment": "A: Kung totoo ang SENTENCE_1, dapat totoo din ang SENTENCE_2"},
+  {"segment": "B: Sumasalungat ang SENTENCE_1 sa SENTENCE_2"},
+  {"segment": "C: Kapag totoo ang SENTENCE_1, pwedeng totoo o hindi totoo ang SENTENCE_2"},
+  {"segment": "SENTENCE_1: Ang mga kabanata 13 hanggang 15 ay sumusuri sa channel sa kabuuan,"},
+  {"segment": "mula sa perspektibong global,"},
+  {"segment": "private-performance,"},
+  {"segment": "at public-policy"},
+  {"segment": "SENTENCE_2: Sinusuri ng kabanata 15 ang marketshare effect"}
+]}
+
+Now complete the task for the following fully specified instruction:
+
+~~~
+Tukuyin kung alin sa sumusunod na pahayag ang pinakaangkop para sa SENTENCE_1 at SENTENCE_2.
+A: Kung totoo ang SENTENCE_1, dapat totoo din ang SENTENCE_2.
+B: Sumasalungat ang SENTENCE_1 sa SENTENCE_2.
+C: Kapag totoo ang SENTENCE_1, pwedeng totoo o hindi totoo ang SENTENCE_2.
+
+SENTENCE_1:
+```
+[[sentence1]]
+```
+SENTENCE_2:
+```
+[[sentence2]]
+```
+~~~

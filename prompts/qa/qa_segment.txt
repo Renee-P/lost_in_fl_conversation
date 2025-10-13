@@ -1,0 +1,123 @@
+You are given a question-answer instance consisting of a paragraph (talata), a question (tanong), and four answer choices. Your task is to segment the instance into minimal, non-overlapping units of information units. Each segment should represent a single, self-contained unit of information presented in the question instance.
+You must output a list of segments in the following JSON format:
+[
+{"segment": "[exact excerpt from the instance]"},
+{"segment": "[exact excerpt from the instance]"},
+...
+]
+
+Rules:
+- [Non-overlapping] The segments must be non-overlapping and cover the entire QA instance. You can optionally leave some gaps for non-essential portions of the original instruction (delimiters, headers, etc.)
+- [Minimalistic] You should split the information in the segments to as small as possible. If you have a compound expression (X at Y), you should split it into two segments. Each segment should represent a unit of information.
+- [Minimal Transformation] As much as possible, use the exact wording and language from the instance for each segment. Avoid simplifying, altering, or interpreting elements of the original instruction as much as possible.
+
+# Example 1:
+
+## Input:
+~~~
+Talata: 
+```
+Ang nayon ng HaldarsvÃ­k ay naghahandog ng mga tanawin ng kalapit na islang Eysturoy at mayroong di-pangkaraniwang simbahang oktagonal. Sa bakuran ng simbahan, mayroong mga kawili-wiling marmol na eskultura ng mga kalapati sa ibabaw ng ilang puntod. Katumbas ng kalahating oras ang pamamasyal sa makakatawag ng pansin na lugar.
+```
+Tanong: Saan matatagpuan ang mga eskultura ng kalapati?
+A: Kalahating oras mula sa nayon
+B: Sa bakuran ng simbahan
+C: Sa isla ng Eysturoy
+D: Sa loob ng simbahan
+~~~
+
+## Output:
+{"segments": [
+  {"segment": "Ang nayon ng HaldarsvÃ­k ay naghahandog ng mga tanawin ng kalapit na islang Eysturoy"},
+  {"segment": "mayroong di-pangkaraniwang simbahang oktagonal"},
+  {"segment": "Sa bakuran ng simbahan, mayroong mga kawili-wiling marmol na eskultura ng mga kalapati sa ibabaw ng ilang puntod"},
+  {"segment": "Katumbas ng kalahating oras ang pamamasyal sa makakatawag ng pansin na lugar"},
+  {"segment": "Saan matatagpuan ang mga eskultura ng kalapati?"},
+  {"segment": "A: Kalahating oras mula sa nayon"},
+  {"segment": "B: Sa bakuran ng simbahan"},
+  {"segment": "C: Sa isla ng Eysturoy"},
+  {"segment": "D: Sa loob ng simbahan"}
+]}
+
+# Example 2:
+
+## Input:
+~~~
+Talata: 
+```
+Sahel ang nasa hangganan ng rehiyon sa hilaga, at sa timog at kanluran ay ang Karagatang Atlantiko. Mga Babae: Inirerekomenda na sabihin ng sinumang mga babaeng bumibiyahe na may asawa na sila, anuman ang kanilang tunay na katayuang matrimonyal. Makakatulong na magsuot rin ng singsing (basta hindi ito mukhang masyadong mahal.) Dapat na mapagtanto ng mga babae na ang pagkakaiba-iba sa kultura ay maaaring magresulta sa kung ano ang maituturing nilang panliligalig at pangkaraniwan na ang masundan, mahawakan sa braso, atbp. Maging matibay sa pagtanggi sa mga lalaki, at huwag matakot na manindigan (may mga pagkakaiba man sa kultura o wala, hindi pa rin ito katanggap-tanggap!).
+```
+Tanong: Ayon sa sipi, alin sa mga sumusunod ang hindi isang inirerekomendang tip para sa mga kababaihan na naglalakbay sa lugar?
+A: Tumanggi sa pagtalakay sa katayuang matrimonyal
+B: Magkaroon ng kamalayan na ang mga pagkakaiba sa kultura ay maaaring mag-udyok ng mapamilit na pag-uugali mula sa mga lokal
+C: Iwasang magsuot ng kapansin-pansing alahas
+D: Manindigan kung kinakailangan
+~~~
+
+## Output:
+{"segments": [
+  {"segment": "Sahel ang nasa hangganan ng rehiyon sa hilaga"},
+  {"segment": "sa timog at kanluran ay ang Karagatang Atlantiko"},
+  {"segment": "Mga Babae: Inirerekomenda na sabihin ng sinumang mga babaeng bumibiyahe na may asawa na sila"},
+  {"segment": "anuman ang kanilang tunay na katayuang matrimonyal"},
+  {"segment": "Makakatulong na magsuot rin ng singsing"},
+  {"segment": "basta hindi ito mukhang masyadong mahal"},
+  {"segment": "Dapat na mapagtanto ng mga babae na ang pagkakaiba-iba sa kultura ay maaaring magresulta sa kung ano ang maituturing nilang panliligalig"},
+  {"segment": "pangkaraniwan na ang masundan, mahawakan sa braso, atbp"}
+  {"segment": "Maging matibay sa pagtanggi sa mga lalaki"},
+  {"segment": "huwag matakot na manindigan"},
+  {"segment": "may mga pagkakaiba man sa kultura o wala, hindi pa rin ito katanggap-tanggap!"},
+  {"segment": "Ayon sa sipi, alin sa mga sumusunod ang hindi isang inirerekomendang tip para sa mga kababaihan na naglalakbay sa lugar?"},
+  {"segment": "A: Tumanggi sa pagtalakay sa katayuang matrimonyal"},
+  {"segment": "B: Magkaroon ng kamalayan na ang mga pagkakaiba sa kultura ay maaaring mag-udyok ng mapamilit na pag-uugali mula sa mga lokal"},
+  {"segment": "C: Iwasang magsuot ng kapansin-pansing alahas"},
+  {"segment": "D: Manindigan kung kinakailangan"}
+]}
+
+# Example 3:
+
+## Input:
+~~~
+Talata: 
+```
+Ang MetroRail ay mayroong dalawang klase ng mga pampasaherong tren sa at sa palibot ng Cape Town: MetroPlus (tinatawag ring Primera Klase) at Metro (tinatawag na Ikatlong Klase). Ang MetroPlus ay mas komportable at hindi gaanong matao nguni't mas mahal nang bahagya, bagaman mas mura pa rin kaysa sa normal na mga tiket ng metro sa Europa. Bawat tren ay parehong may mga MetroPlus at Metro na tagapangasiwa; ang mga MetroPlus na tagapangasiwa ay palaging nasa huling bahagi ng tren malapit sa Bayan ng Cape.
+```
+Tanong: Ayon sa sipi, ano ang mayroon sa bawat pampaseherong tren sa Cape Town?
+A: Isang hindi gaanong masikip na karwahe ng Metro
+B: Ang parehong presyo ng tiket para sa parehong klase
+C: Tatlong magkakaibang klase
+D: Parehong Primera at Ikatlong Klase na karwahe
+~~~
+
+## Output:
+{"segments": [
+  {"segment": "Ang MetroRail ay mayroong dalawang klase ng mga pampasaherong tren sa at sa palibot ng Cape Town"},
+  {"segment": "MetroPlus (tinatawag ring Primera Klase)"},
+  {"segment": "Metro (tinatawag na Ikatlong Klase)"},
+  {"segment": "Ang MetroPlus ay mas komportable"},
+  {"segment": "Ang MetroPlus ay hindi gaanong matao"},
+  {"segment": "nguni't mas mahal nang bahagya"},
+  {"segment": "bagaman mas mura pa rin kaysa sa normal na mga tiket ng metro sa Europa"},
+  {"segment": "Bawat tren ay parehong may mga MetroPlus at Metro na tagapangasiwa"}
+  {"segment": "ang mga MetroPlus na tagapangasiwa ay palaging nasa huling bahagi ng tren"},
+  {"segment": "malapit sa Bayan ng Cape"},
+  {"segment": "Ayon sa sipi, ano ang mayroon sa bawat pampaseherong tren sa Cape Town?"},
+  {"segment": "A: Isang hindi gaanong masikip na karwahe ng Metro"},
+  {"segment": "B: Ang parehong presyo ng tiket para sa parehong klase"},
+  {"segment": "C: Tatlong magkakaibang klase"},
+  {"segment": "D: Parehong Primera at Ikatlong Klase na karwahe"}
+]}
+
+Now complete the task for the following QA instance:
+
+~~~
+Talata:
+``` 
+[[text]]
+```
+Tanong: [[question]]
+A: [[choice1]]
+B: [[choice2]]
+C: [[choice3]]
+D: [[choice4]]
+~~~

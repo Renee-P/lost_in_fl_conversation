@@ -22,7 +22,7 @@ class OllamaModel:
     def __init__(self, host="http://localhost:11434"):
         self.client = Client(host=host)
 
-    def generate(self, messages, model="sailor2:1b", max_retries=3, temperature=0.7, variables={}):
+    def generate(self, messages, model="sailor2:1b", max_retries=3, temperature=1.0, variables={}):
         N = 0
         messages = format_messages(messages, variables)
 
@@ -61,7 +61,7 @@ if __name__ == "__main__":
     # print(generate_json(messages, model="sailor2:1b"))
 
     messages = [
-      {"role": "user", "content": "Humor is a way to make people laugh. Tell me a joke about AI."},
+      {"role": "user", "content": "Humor is a way to make people laugh. Tell me a joke about school."},
       {"role": "assistant", "content": '{"joke": '}
     ]
 

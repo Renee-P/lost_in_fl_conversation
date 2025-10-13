@@ -1,0 +1,91 @@
+You are a given a fully specified toxicity detection instruction, and your task is to segment the instruction into units of information that each reveal a single piece of information of the instruction.
+You must output a list of segments in the following JSON format:
+[
+{"segment": "[exact excerpt from the instruction]"},
+{"segment": "[exact excerpt from the instruction]"},
+...
+]
+
+Rules:
+- [Non-overlapping] The segments must be non-overlapping and cover the entire instruction. You can optionally leave some gaps for non-essential portions of the original instruction (delimiters, headers, etc.)
+- [Minimalistic] You should split the information in the segments to as small as possible. If you have a compound expression (X and Y), you should split it into two segments. Each segment should represent a unit of information.
+- [Minimal Transformation] As much as possible, use the exact wording and language from the instance for each segment. Avoid simplifying, altering, or interpreting elements of the original instruction as much as possible.
+
+# Example 1:
+
+## Input:
+~~~
+Iuri ang mga sumusunod na pangungusap kung: Malinis (walang toxicity) o Mapoot (may toxicity at direktang pag-atake sa isang tao).
+
+Pangungusap:
+```
+Wag kami Grace Poe nagkabisado ka na naman, mamaya mali mali na naman ang info mo. Don't us\n\n #PiliPinasDebates2016"
+```
+~~~
+
+## Output:
+{"segments": [
+  {"segment": "Iuri ang pangungusap"},
+  {"segment": "Malinis (walang toxicity)"},
+  {"segment": "Mapoot (may toxicity at direktang pag-atake sa isang tao)"}
+  {"segment": "Wag kami Grace Poe"},
+  {"segment": "nagkabisado ka na naman"},
+  {"segment": "mamaya mali mali na naman ang info mo"},
+  {"segment": "Don't us"},
+  {"segment": "#PiliPinasDebates2016"}
+]}
+
+# Example 2:
+
+## Input:
+~~~
+Iuri ang mga sumusunod na pangungusap kung: Malinis (walang toxicity) o Mapoot (may toxicity at direktang pag-atake sa isang tao).
+
+Pangungusap:
+```
+tanggap ko na talo si Mar Roxas pero sana naman si LENI ROBREDO ay manalo. #LabanLeni
+```
+~~~
+
+## Output:
+{"segments": [
+  {"segment": "Iuri ang pangungusap"},
+  {"segment": "Malinis (walang toxicity)"},
+  {"segment": "Mapoot (may toxicity at direktang pag-atake sa isang tao)"}
+  {"segment": "tanggap ko na talo si Mar Roxas"},
+  {"segment": "pero sana naman si LENI ROBREDO ay manalo"},
+  {"segment": "#LabanLeni"}
+]}
+
+# Example 3:
+
+## Input:
+~~~
+Iuri ang mga sumusunod na pangungusap kung: Malinis (walang toxicity) o Mapoot (may toxicity at direktang pag-atake sa isang tao).
+
+Pangungusap:
+```
+Di na nakakatuwa yung mukha ni Mar Roxas sa TV. Nakakatamad manood. ??
+```
+~~~
+
+## Output:
+{"segments": [
+  {"segment": "Iuri ang pangungusap"},
+  {"segment": "Malinis (walang toxicity)"},
+  {"segment": "Mapoot (may toxicity at direktang pag-atake sa isang tao)"}
+  {"segment": "Di na nakakatuwa yung mukha ni Mar Roxas sa TV"},
+  {"segment": "Nakakatamad manood"},
+  {"segment": "??"}
+]}
+
+Now complete the task for the following fully specified instruction:
+
+~~~
+Iuri ang mga sumusunod na pangungusap kung: Malinis (walang toxicity) o Mapoot (may toxicity at direktang pag-atake sa isang tao).
+
+Pangungusap:
+```
+[[text]]
+```
+~~~

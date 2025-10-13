@@ -1,0 +1,119 @@
+You are a given an fully specified causal reasoning instruction where the task is to determine the relationship between two events. Specifically, which of the statements is the cause (sanhi) or effect (bunga) of the given premise (sitwasyon). Your task is to segment the instruction into units of information that each reveal a single piece of information of the instruction.
+You must output a list of segments in the following JSON format:
+[
+{"segment": "[exact excerpt from the instruction]"},
+{"segment": "[exact excerpt from the instruction]"},
+...
+]
+
+Rules:
+- [Non-overlapping] The segments must be non-overlapping and cover the entire instruction. You can optionally leave some gaps for non-essential portions of the original instruction (delimiters, headers, etc.)
+- [Minimalistic] You should split the information in the segments to as small as possible. If you have a compound expression (X and Y), you should split it into two segments. Each segment should represent a unit of information.
+- [Minimal Transformation] As much as possible, use the exact wording and language from the instance for each segment. Avoid simplifying, altering, or interpreting elements of the original instruction as much as possible.
+
+# Example 1:
+
+## Input:
+~~~
+Batay sa ibibigay na sitwasyon, alin sa sumusunod na pagpipilian ang mas maaari na sanhi?
+
+Sitwasyon:
+```
+Pinuno ng bata ng buhangin ang balde.
+```
+Piliin ang pinaka-angkop na sagot mula sa sumusunod na pagpipilian:
+A: Nagtatayo siya ng sand castle.
+B: Nangongolekta siya ng mga kabibi sa buhangin.
+~~~
+
+## Output:
+{"segments": [
+  {"segment": "Batay sa sitwasyon, alin ang mas maari na sanhi?"},
+  {"segment": "Sitwasyon: Pinuno ng bata ng buhangin ang balde"},
+  {"segment": "A: Nagtatayo siya ng sand castle"},
+  {"segment": "B: Nangongolekta siya ng mga kabibi sa buhangin"}
+]}
+
+# Example 2:
+
+## Input:
+~~~
+Batay sa ibibigay na sitwasyon, alin sa sumusunod na pagpipilian ang mas maaari na bunga?
+
+Sitwasyon:
+```
+Nais ng batang babae na magsuot ng hikaw.
+```
+Piliin ang pinaka-angkop na sagot mula sa sumusunod na pagpipilian:
+A: Nagpa-tattoo siya.
+B: Nagpabutas siya ng tainga.
+~~~
+
+## Output:
+{"segments": [
+  {"segment": "Batay sa sitwasyon, alin ang mas maari na bunga?"},
+  {"segment": "Sitwasyon: Nais ng batang babae na magsuot ng hikaw"},
+  {"segment": "A: Nagpa-tattoo siya"},
+  {"segment": "B: Nagpabutas siya ng tainga"}
+]}
+
+# Example 3:
+
+## Input:
+~~~
+Batay sa ibibigay na sitwasyon, alin sa sumusunod na pagpipilian ang mas maaari na bunga?
+
+Sitwasyon:
+```
+Nagutom ang skunk.
+```
+Piliin ang pinaka-angkop na sagot mula sa sumusunod na pagpipilian:
+A: Naggala ang skunk sa gubat.
+B: Naglabas ng masamang amoy ang aso.
+~~~
+
+## Output:
+{"segments": [
+  {"segment": "Batay sa sitwasyon, alin ang mas maari na bunga?"},
+  {"segment": "Sitwasyon: Nagutom ang skunk"},
+  {"segment": "A: Naggala ang skunk sa gubat"},
+  {"segment": "B: Naglabas ng masamang amoy ang aso"}
+]}
+
+# Example 4:
+
+## Input:
+~~~
+Batay sa ibibigay na sitwasyon, alin sa sumusunod na pagpipilian ang mas maaari na sanhi?
+
+Sitwasyon:
+```
+Natumba ng mga bata ang lampara.
+```
+Piliin ang pinaka-angkop na sagot mula sa sumusunod na pagpipilian:
+A: Tumalon sila sa kama.
+B: Nag-pillow fight sila.
+~~~
+
+## Output:
+{"segments": [
+  {"segment": "Batay sa sitwasyon, alin ang mas maari na sanhi?"},
+  {"segment": "Sitwasyon: Natumba ng mga bata ang lampara"},
+  {"segment": "A: Tumalon sila sa kama"},
+  {"segment": "B: Nag-pillow fight sila"}
+]}
+
+Now complete the task for the following fully specified instruction:
+
+~~~
+Batay sa ibibigay na sitwasyon, alin sa sumusunod na pagpipilian ang mas maaari na [[question_translated]]?
+
+Sitwasyon:
+```
+[[premise]]
+```
+Piliin ang pinaka-angkop na sagot mula sa sumusunod na pagpipilian:
+A: [[choice1]]
+B: [[choice2]]
+~~~
+
