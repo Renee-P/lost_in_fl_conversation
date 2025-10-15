@@ -45,12 +45,10 @@ class OllamaModel:
             raise ValueError(f"Model did not return valid JSON: {response_text}")
         return parsed
 
-
 # convenience functions
 model = OllamaModel()
 generate = model.generate
 generate_json = model.generate_json
-
 
 if __name__ == "__main__":
     # messages = [

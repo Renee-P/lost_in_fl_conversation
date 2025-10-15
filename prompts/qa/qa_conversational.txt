@@ -1,0 +1,194 @@
+You are given segments of a question-answer instance consisting of a paragraph (talata), a question (tanong), and four answer choices. Your task is to: (1) choose one that will be the initial shard of a multi-step query, and then (2) rephrase each segment into a conversational version that are provided to the system in a follow-up turn of the conversation.
+
+Your output should be a JSON object in the following format:
+{
+    "initial_segment": "[exact excerpt from the instruction]",
+    "initial_shard": "conversational version of the initial segment",
+    "shards": [
+      {"segment": "[exact excerpt from the instruction]", "shard": "conversational version of the segment taking the rest of the instruction into account"}
+    ]
+}
+
+# Example 1:
+
+## Full Instance:
+~~~
+Talata: 
+```
+Ang nayon ng HaldarsvÃ­k ay naghahandog ng mga tanawin ng kalapit na islang Eysturoy at mayroong di-pangkaraniwang simbahang oktagonal. Sa bakuran ng simbahan, mayroong mga kawili-wiling marmol na eskultura ng mga kalapati sa ibabaw ng ilang puntod. Katumbas ng kalahating oras ang pamamasyal sa makakatawag ng pansin na lugar.
+```
+Tanong: Saan matatagpuan ang mga eskultura ng kalapati?
+A: Kalahating oras mula sa nayon
+B: Sa bakuran ng simbahan
+C: Sa isla ng Eysturoy
+D: Sa loob ng simbahan
+~~~
+
+## Segments:
+{"segments": [
+  {"segment": "Ang nayon ng HaldarsvÃ­k ay naghahandog ng mga tanawin ng kalapit na islang Eysturoy"},
+  {"segment": "mayroong di-pangkaraniwang simbahang oktagonal"},
+  {"segment": "Sa bakuran ng simbahan, mayroong mga kawili-wiling marmol na eskultura ng mga kalapati sa ibabaw ng ilang puntod"},
+  {"segment": "Katumbas ng kalahating oras ang pamamasyal sa makakatawag ng pansin na lugar"},
+  {"segment": "Saan matatagpuan ang mga eskultura ng kalapati?"},
+  {"segment": "A: Kalahating oras mula sa nayon"},
+  {"segment": "B: Sa bakuran ng simbahan"},
+  {"segment": "C: Sa isla ng Eysturoy"},
+  {"segment": "D: Sa loob ng simbahan"}
+]}
+
+## Output:
+{
+  "initial_segment": "Saan matatagpuan ang mga eskultura ng kalapati?",
+  "initial_shard": "Saan makikita ang mga eskultura ng kalapati?",
+  "shards": [
+    {"segment": "Sa bakuran ng simbahan, mayroong mga kawili-wiling marmol na eskultura ng mga kalapati sa ibabaw ng ilang puntod", "shard": "Sa bakuran ng simbahan ng HaldarsvÃ­k, may mga marmol na eskultura ng mga kalapati na makikita sa ilan sa mga puntod."},
+    {"segment": "Ang nayon ng HaldarsvÃ­k ay naghahandog ng mga tanawin ng kalapit na islang Eysturoy", "shard": "Makikita sa nayon ng HaldarsvÃ­k ang magagandang tanawin ng katabing isla na Eysturoy."},
+    {"segment": "mayroong di-pangkaraniwang simbahang oktagonal", "shard": "Ang nayon ng HaldarsvÃ­k ay kilala rin sa kakaibang simbahang hugis oktagon."},
+    {"segment": "Katumbas ng kalahating oras ang pamamasyal sa makakatawag ng pansin na lugar", "shard": "Ang pamamasyal sa pook na ito ay aabutin ng mga kalahating oras."},
+    {"segment": "A: Kalahating oras mula sa nayon", "shard": "Piliin ang A kung ang lugar na kalahating oras ang layo mula sa nayon."},
+    {"segment": "B: Sa bakuran ng simbahan", "shard": "Isa sa pagpipilian ay ang B kung ang bakuran mismo ng simbahan."},
+    {"segment": "C: Sa isla ng Eysturoy", "shard": "Piliin ang opsyon C kung matatagpuan ang mga eskultura sa isla ng Eysturoy."},
+    {"segment": "D: Sa loob ng simbahan", "shard": "Piliin ang D kung nasa loob ng simbahan ang mga eskulturang ito."}
+  ]
+}
+
+# Example 2:
+
+## Full Instance:
+~~~
+Talata: 
+```
+Sahel ang nasa hangganan ng rehiyon sa hilaga, at sa timog at kanluran ay ang Karagatang Atlantiko. Mga Babae: Inirerekomenda na sabihin ng sinumang mga babaeng bumibiyahe na may asawa na sila, anuman ang kanilang tunay na katayuang matrimonyal. Makakatulong na magsuot rin ng singsing (basta hindi ito mukhang masyadong mahal.) Dapat na mapagtanto ng mga babae na ang pagkakaiba-iba sa kultura ay maaaring magresulta sa kung ano ang maituturing nilang panliligalig at pangkaraniwan na ang masundan, mahawakan sa braso, atbp. Maging matibay sa pagtanggi sa mga lalaki, at huwag matakot na manindigan (may mga pagkakaiba man sa kultura o wala, hindi pa rin ito katanggap-tanggap!).
+```
+Tanong: Ayon sa sipi, alin sa mga sumusunod ang hindi isang inirerekomendang tip para sa mga kababaihan na naglalakbay sa lugar?
+A: Tumanggi sa pagtalakay sa katayuang matrimonyal
+B: Magkaroon ng kamalayan na ang mga pagkakaiba sa kultura ay maaaring mag-udyok ng mapamilit na pag-uugali mula sa mga lokal
+C: Iwasang magsuot ng kapansin-pansing alahas
+D: Manindigan kung kinakailangan
+~~~
+
+## Segments:
+{"segments": [
+  {"segment": "Sahel ang nasa hangganan ng rehiyon sa hilaga"},
+  {"segment": "sa timog at kanluran ay ang Karagatang Atlantiko"},
+  {"segment": "Mga Babae: Inirerekomenda na sabihin ng sinumang mga babaeng bumibiyahe na may asawa na sila"},
+  {"segment": "anuman ang kanilang tunay na katayuang matrimonyal"},
+  {"segment": "Makakatulong na magsuot rin ng singsing"},
+  {"segment": "basta hindi ito mukhang masyadong mahal"},
+  {"segment": "Dapat na mapagtanto ng mga babae na ang pagkakaiba-iba sa kultura ay maaaring magresulta sa kung ano ang maituturing nilang panliligalig"},
+  {"segment": "pangkaraniwan na ang masundan, mahawakan sa braso, atbp"}
+  {"segment": "Maging matibay sa pagtanggi sa mga lalaki"},
+  {"segment": "huwag matakot na manindigan"},
+  {"segment": "may mga pagkakaiba man sa kultura o wala, hindi pa rin ito katanggap-tanggap!"},
+  {"segment": "Ayon sa sipi, alin sa mga sumusunod ang hindi isang inirerekomendang tip para sa mga kababaihan na naglalakbay sa lugar?"},
+  {"segment": "A: Tumanggi sa pagtalakay sa katayuang matrimonyal"},
+  {"segment": "B: Magkaroon ng kamalayan na ang mga pagkakaiba sa kultura ay maaaring mag-udyok ng mapamilit na pag-uugali mula sa mga lokal"},
+  {"segment": "C: Iwasang magsuot ng kapansin-pansing alahas"},
+  {"segment": "D: Manindigan kung kinakailangan"}
+]}
+
+## Output:
+{
+  "initial_segment": "Ayon sa sipi, alin sa mga sumusunod ang hindi isang inirerekomendang tip para sa mga kababaihan na naglalakbay sa lugar?",
+  "initial_shard": "Anong tip ang hindi inirerekomenda para sa mga babaeng naglalakbay sa lugar na ito ayon sa sipi?",
+  "shards": [
+    {"segment": "Mga Babae: Inirerekomenda na sabihin ng sinumang mga babaeng bumibiyahe na may asawa na sila", "shard": "Inirerekomenda sa mga babaeng bumibiyahe na sabihin na may asawa na sila."},
+    {"segment": "anuman ang kanilang tunay na katayuang matrimonyal", "shard": "Hindi mahalaga kung totoo man o hindi ang sinasabing may asawa ang mga babae."},
+    {"segment": "Makakatulong na magsuot rin ng singsing", "shard": "Makabubuting magsuot ng singsing para mas mapaniwalaang may asawa ang mga babae."},
+    {"segment": "basta hindi ito mukhang masyadong mahal", "shard": "Huwag magsuot ng singsing na mukhang mamahalin."},
+    {"segment": "Dapat na mapagtanto ng mga babae na ang pagkakaiba-iba sa kultura ay maaaring magresulta sa kung ano ang maituturing nilang panliligalig", "shard": "Mahalagang maunawaan ng mga babae na maaaring magdulot ng kakaibang kilos ang pagkakaiba ng kultura—minsan ay parang panliligalig."},
+    {"segment": "pangkaraniwan na ang masundan, mahawakan sa braso, atbp", "shard": "Normal lang daw minsan na masundan o mahawakan sa braso ng mga lokal, kahit di ka sang-ayon."},
+    {"segment": "Maging matibay sa pagtanggi sa mga lalaki", "shard": "Dapat marunong tumanggi nang matatag sa mga lalaking nang-aabala."},
+    {"segment": "huwag matakot na manindigan", "shard": "Huwag matakot na ipagtanggol ang sarili at manindigan."},
+    {"segment": "may mga pagkakaiba man sa kultura o wala, hindi pa rin ito katanggap-tanggap!", "shard": "Kahit sabihin pang may pagkakaiba sa kultura, hindi pa rin dapat tanggapin ang panghaharass."},
+    {"segment": "Sahel ang nasa hangganan ng rehiyon sa hilaga", "shard": "Ang Sahel ay nasa hangganan ng rehiyon sa hilaga"},
+    {"segment": "sa timog at kanluran ay ang Karagatang Atlantiko", "shard": "Sa timog at kanluran, makikita ang Karagatang Atlantiko."},
+    {"segment": "A: Tumanggi sa pagtalakay sa katayuang matrimonyal", "shard": "Piliin ang opsyon A kung hindi inirerekomenda na tumanggi kapag tinanong kung ano ang katayuang matrimonyal."},
+    {"segment": "B: Magkaroon ng kamalayan na ang mga pagkakaiba sa kultura ay maaaring mag-udyok ng mapamilit na pag-uugali mula sa mga lokal", "shard": "Piliin ang B kung hindi inirerekomenda na maging maingat dahil maaaring mag-iba ang kilos ng mga lokal dahil sa pagkakaiba ng kultura."},
+    {"segment": "C: Iwasang magsuot ng kapansin-pansing alahas", "shard": "Piliin ang opsyon C kung ang hindi inirerekomenda ay ang pag-iwas sa pagsusuot ng alahas na kapansin-pansin."},
+    {"segment": "D: Manindigan kung kinakailangan", "shard": "Piliin ang opsyon D kung hindi inirerekomenda na manindigan at ipaglaban ang sarili kung kinakailangan."}
+  ]
+}
+
+# Example 3:
+
+## Full Instance:
+~~~
+Talata: 
+```
+Ang MetroRail ay mayroong dalawang klase ng mga pampasaherong tren sa at sa palibot ng Cape Town: MetroPlus (tinatawag ring Primera Klase) at Metro (tinatawag na Ikatlong Klase). Ang MetroPlus ay mas komportable at hindi gaanong matao nguni't mas mahal nang bahagya, bagaman mas mura pa rin kaysa sa normal na mga tiket ng metro sa Europa. Bawat tren ay parehong may mga MetroPlus at Metro na tagapangasiwa; ang mga MetroPlus na tagapangasiwa ay palaging nasa huling bahagi ng tren malapit sa Bayan ng Cape.
+```
+Tanong: Ayon sa sipi, ano ang mayroon sa bawat pampaseherong tren sa Cape Town?
+A: Isang hindi gaanong masikip na karwahe ng Metro
+B: Ang parehong presyo ng tiket para sa parehong klase
+C: Tatlong magkakaibang klase
+D: Parehong Primera at Ikatlong Klase na karwahe
+~~~
+
+## Segments:
+{"segments": [
+  {"segment": "Ang MetroRail ay mayroong dalawang klase ng mga pampasaherong tren sa at sa palibot ng Cape Town"},
+  {"segment": "MetroPlus (tinatawag ring Primera Klase)"},
+  {"segment": "Metro (tinatawag na Ikatlong Klase)"},
+  {"segment": "Ang MetroPlus ay mas komportable"},
+  {"segment": "Ang MetroPlus ay hindi gaanong matao"},
+  {"segment": "nguni't mas mahal nang bahagya"},
+  {"segment": "bagaman mas mura pa rin kaysa sa normal na mga tiket ng metro sa Europa"},
+  {"segment": "Bawat tren ay parehong may mga MetroPlus at Metro na tagapangasiwa"}
+  {"segment": "ang mga MetroPlus na tagapangasiwa ay palaging nasa huling bahagi ng tren"},
+  {"segment": "malapit sa Bayan ng Cape"},
+  {"segment": "Ayon sa sipi, ano ang mayroon sa bawat pampaseherong tren sa Cape Town?"},
+  {"segment": "A: Isang hindi gaanong masikip na karwahe ng Metro"},
+  {"segment": "B: Ang parehong presyo ng tiket para sa parehong klase"},
+  {"segment": "C: Tatlong magkakaibang klase"},
+  {"segment": "D: Parehong Primera at Ikatlong Klase na karwahe"}
+]}
+
+## Output:
+{
+  "initial_segment": "Ayon sa sipi, ano ang mayroon sa bawat pampaseherong tren sa Cape Town?",
+  "initial_shard": "Ano ang mayroon sa bawat tren sa Cape Town?",
+  "shards": [
+    {"segment": "Bawat tren ay parehong may mga MetroPlus at Metro na tagapangasiwa", "shard": "Bawat tren sa Cape Town ay parehong may MetroPlus at Metro na tagapangasiwa."},
+    {"segment": "Ang MetroRail ay mayroong dalawang klase ng mga pampasaherong tren sa at sa palibot ng Cape Town", "shard": "May dalawang klase ng tren ang MetroRail sa Cape Town—ang MetroPlus at ang Metro."},
+    {"segment": "MetroPlus (tinatawag ring Primera Klase)", "shard": "Ang MetroPlus ay tinatawag ding Primera Klase."},
+    {"segment": "Metro (tinatawag na Ikatlong Klase)", "shard": "Ang Metro naman ay kilala bilang Ikatlong Klase."},
+    {"segment": "Ang MetroPlus ay mas komportable", "shard": "Mas komportable ang MetroPlus na tren."},
+    {"segment": "Ang MetroPlus ay hindi gaanong matao", "shard": "Hindi masyadong matao ang MetroPlus."},
+    {"segment": "nguni't mas mahal nang bahagya", "shard": "Mas mahal nang kaunti ang MetroPlus kaysa Metro."},
+    {"segment": "bagaman mas mura pa rin kaysa sa normal na mga tiket ng metro sa Europa", "shard": "Mas mura pa rin ang mga tiket ng MetroPlus kumpara sa mga normal na metro sa Europa."},
+    {"segment": "ang mga MetroPlus na tagapangasiwa ay palaging nasa huling bahagi ng tren", "shard": "Ang mga MetroPlus na tagapangasiwa ay laging nasa hulihang bahagi ng tren."},
+    {"segment": "malapit sa Bayan ng Cape", "shard": "Matatagpuan ang mga MetroPlus na tagapangasiwa malapit sa Bayan ng Cape."},
+    {"segment": "A: Isang hindi gaanong masikip na karwahe ng Metro", "shard": "Piliin ang opsyon A kung ito ay tumutukoy sa hindi gaanong masikip na karwahe ng Metro."},
+    {"segment": "B: Ang parehong presyo ng tiket para sa parehong klase", "shard": "Piliin ang opsyon B kung pareho ang presyo ng tiket para sa dalawang klase ng tren."},
+    {"segment": "C: Tatlong magkakaibang klase", "shard": "Piliin ang opsyon C kung tatlong klase ng tren ang tinutukoy."},
+    {"segment": "D: Parehong Primera at Ikatlong Klase na karwahe", "shard": "Piliin ang opsyon D kung parehong Primera at Ikatlong Klase na karwahe ang mayroon sa bawat tren."}
+  ]
+}
+
+Rules:
+- [Transform each segment] Make sure each segment is included either as the initial shard or in the rest of the shards. Do not forget any segments.
+- [Short initial shard] Make the initial shard short, not a full sentence, similar to how users use a search engine like Google.
+- [Order of shards] Order the shards in order of importance, from most to least important to the initial shard. You do not need to keep the order the segments that are provided in.
+- [Initial shard selection] Choose the intent segment from the segments to form the initial shard.
+- [Self-contained hints] Do not use pronouns (e.g., ito, siya, niya, sila, nila) to reference information in the other segments in the shards.
+- [Shard paraphrasing] Make sure that the shard conveys the same information as the segment in a casual, colloquial way (i.e., what a human would say).
+
+Now complete the task for the following fully specified instance and segments:
+
+Question-Answering Instance:
+~~~
+Talata:
+``` 
+[[text]]
+```
+Tanong: [[question]]
+A: [[choice1]]
+B: [[choice2]]
+C: [[choice3]]
+D: [[choice4]]
+~~~
+
+Segments:
+[[segments]]

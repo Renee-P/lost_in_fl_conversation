@@ -39,6 +39,9 @@ Rules:
 - [Transform each segment] Make sure each segment is included either as the initial shard or in the rest of the shards. Do not forget any segments.
 - [Short initial shard] Make the initial shard short, not a full sentence, similar to how users use a search engine like Google.
 - [Order of shards] Order the shards in order of importance, from most to least important to the initial shard. You do not need to keep the order the segments that are provided in.
+- [Initial shard selection] Choose the intent segment from the segments to form the initial shard.
+- [Self-contained hints] Do not use pronouns (e.g., ito, siya, niya, sila, nila) to reference information in the other segments in the shards.
+- [Shard paraphrasing] Make sure that the shard conveys the same information as the segment in a casual, colloquial way (i.e., what a human would say).
 
 Now complete the task for the following fully specified instruction and segments:
 
