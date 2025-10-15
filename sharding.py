@@ -16,3 +16,4 @@ if __name__ == "__main__":
     # shards = verifier.process_task(task, shards_init)
 
     #log the sharded instructions to /data/final - either in one shared for all tasks or separate files per task
+    #ensure proper error handling
