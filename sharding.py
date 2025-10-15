@@ -2,9 +2,10 @@ from config import config
 from segment import Segmentation
 # from rephrase import Rephrasing
 # from verify import Verification
+# add util that logs to output file
 
 if __name__ == "__main__":
-  for task in self.config["tasks"]:
+  for task in config.config["tasks"]:
     segmenter = Segmentation(config.config)
     segments = segmenter.process_task(task)
     
