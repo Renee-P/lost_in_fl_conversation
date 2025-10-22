@@ -1,0 +1,41 @@
+You are given pairs of (original_segment, rephrased_segment) produced by the segmentation and rephrasing steps of a fully specified instruction. For EACH pair, verify that the rephrased segment:
+  (A) PRESERVES-MEANING — it conveys exactly the same information (no additions, no deletions, no contradictions); and
+  (B) IS-ACTIONABLE — it can stand alone as a conversational turn (no missing antecedents like “that one”, no ambiguous pronouns).
+
+Return JSON ONLY in this exact format:
+{
+  "verdicts": [
+    {
+      "preserves_meaning": true/false,
+      "is_actionable": true/false,
+      "reason": "<one-sentence rationale>"
+    },
+    ...
+  ]
+}
+
+Rules:
+- [Strict Equivalence] If numbers, named entities, dates, counts, options, or constraints change, set preserves_meaning = false.
+- [Decontextualization] If the rephrased segment relies on missing context (e.g., vague pronouns, ellipsis), set is_actionable = false.
+- [No Expansion] Do not reward additions (explanations, examples) or softened/stronger wording not in the original.
+- [Language Agnostic] Judge meaning/actionability only; Filipino/English/Taglish are all acceptable.
+- [Format Only] Return ONLY the JSON blob above—no extra text, no backticks.
+
+Example Input:
+{
+  "pairs": [
+    {"original_segment": "include events in 2014", "rephrased_segment": "Please include events in 2014."},
+    {"original_segment": "concert venues only",   "rephrased_segment": "Concert venues and theaters only"}
+  ]
+}
+
+Expected Output:
+{
+  "verdicts": [
+    {"preserves_meaning": true,  "is_actionable": true,  "reason": "Same constraint; polite rewording only."},
+    {"preserves_meaning": false, "is_actionable": true,  "reason": "Adds 'theaters', which is not in the original."}
+  ]
+}
+
+Now verify the following pairs:
+[[PAIRS]]
