@@ -1,0 +1,12 @@
+          
+          
+Batay sa ibibigay na sitwasyon, alin sa sumusunod na pagpipilian ang mas maaari na [[question_translated]]?
+
+Sitwasyon:
+```
+[[premise]]
+```
+Piliin ang pinaka-angkop na sagot mula sa sumusunod na pagpipilian:
+A: [[choice1]]
+B: [[choice2]]
+Sagot: [[label]]

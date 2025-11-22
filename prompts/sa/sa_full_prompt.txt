@@ -1,0 +1,10 @@
+Ano ang sentimyento sa sumusunod na pangungusap? Sumagot gamit ng isa sa mga sumusunod na pagpipilian: positibo, negatibo, o neutral.
+
+Sumagot gamit ang sumusunod na format:
+Sagot: $OPTION
+Palitan ang $OPTION ng napiling sagot.[[fewshot_examples]]
+
+Pangungusap:
+```
+[[text]]
+```

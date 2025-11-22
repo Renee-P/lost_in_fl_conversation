@@ -1,0 +1,6 @@
+Bibigyan ka ng impormasyon tungkol sa isa o higit pang mga pangungusap. Gamit ito, tukuyin kung ano ang sentimyento ng mga pangungusap. Sumagot gamit ng isa sa mga sumusunod na pagpipilian: positibo, negatibo, o neutral.
+
+Sumagot gamit ang sumusunod na format:
+Sagot: $OPTION
+Palitan ang $OPTION ng napiling sagot.[[fewshot_examples]]
+

@@ -1,0 +1,159 @@
+[
+    {
+        "task_id": "sharded-mt/3t",
+        "label": "Dumating siya sa US na may 4 na sentimo sa kaniyang pangalan, isang libro ng mga tula, at isang sulat ng rekomendasyon mula kay Charles Batchelor (ang kaniyang tagapamahala sa dati niyang trabaho) patungo kay Thomas Edison.",
+        "text": "He arrived in the US with 4 cents to his name, a book of poetry, and a letter of recommendation from Charles Batchelor (his manager in his previous job) to Thomas Edison.",
+        "language": "Filipino",
+        "shards": [
+            {
+                "shard_id": "1",
+                "shard": "Isinasalin mo ang isang tekstong Ingles tungo sa Filipino habang ito ay ini-transcribe nang live. Ibibigay ko sa iyo ang teksto nang paunti-unti. Sa bawat turn, dapat mong ibalik ang salin ng BUONG TEKSTO (hindi lamang ang huling bahagi). Dapat mong isaalang-alang ang lahat ng bahagi kapag nagsasalin, at hindi lamang ang pinakahuli. Maaari mo ring baguhin ang mga naunang salin kung sa tingin mo ay may pagkakamali ka. Unang Bahagi: He arrived in the US with 4"
+            },
+            {
+                "shard_id": "2",
+                "shard": "Natatanggap ko na ang pinakabagong bahagi ng dokumento. Paki-salin ang buong dokumento hanggang sa puntong ito. Isa pang bahagi: cents to his name, a book of"
+            },
+            {
+                "shard_id": "3",
+                "shard": "Natatanggap ko na ang pinakabagong bahagi ng dokumento. Paki-salin ang buong dokumento hanggang sa puntong ito. Isa pang bahagi: poetry, and a letter of recommendation from"
+            },
+            {
+                "shard_id": "4",
+                "shard": "Natatanggap ko na ang pinakabagong bahagi ng dokumento. Paki-salin ang buong dokumento hanggang sa puntong ito. Isa pang bahagi: Charles Batchelor (his manager in his previous"
+            },
+            {
+                "shard_id": "5",
+                "shard": "Natatanggap ko na ang pinakabagong bahagi ng dokumento. Paki-salin ang buong dokumento hanggang sa puntong ito. Isa pang bahagi: job) to Thomas Edison."
+            }
+        ],
+        "task": "mt"
+    },
+    {
+        "task_id": "sharded-mt/5t",
+        "label": "Ang mga paglilibot ay mas mura para sa mas malalaking grupo, kaya kung ikaw ay mag-isa o may iisang kasama, iyong subukang makatagpo ng ibang tao at bumuo ng grupo ng apat hanggang anim upang makakuha ng mas mababang singil para sa bawat tao.",
+        "text": "Tours are cheaper for larger groups, so if you're by yourself or with just one friend, try to meet other people and form a group of four to six for a better per-person rate.",
+        "language": "Filipino",
+        "shards": [
+            {
+                "shard_id": "1",
+                "shard": "Isinasalin mo ang isang tekstong Ingles tungo sa Filipino habang ito ay ini-transcribe nang live. Ibibigay ko sa iyo ang teksto nang paunti-unti. Sa bawat turn, dapat mong ibalik ang salin ng BUONG TEKSTO (hindi lamang ang huling bahagi). Dapat mong isaalang-alang ang lahat ng bahagi kapag nagsasalin, at hindi lamang ang pinakahuli. Maaari mo ring baguhin ang mga naunang salin kung sa tingin mo ay may pagkakamali ka. Unang Bahagi: Tours are cheaper for larger groups, so"
+            },
+            {
+                "shard_id": "2",
+                "shard": "Natatanggap ko na ang pinakabagong bahagi ng dokumento. Paki-salin ang buong dokumento hanggang sa puntong ito. Isa pang bahagi: if you're by yourself or with just"
+            },
+            {
+                "shard_id": "3",
+                "shard": "Natatanggap ko na ang pinakabagong bahagi ng dokumento. Paki-salin ang buong dokumento hanggang sa puntong ito. Isa pang bahagi: one friend, try to meet other people"
+            },
+            {
+                "shard_id": "4",
+                "shard": "Natatanggap ko na ang pinakabagong bahagi ng dokumento. Paki-salin ang buong dokumento hanggang sa puntong ito. Isa pang bahagi: and form a group of four to"
+            },
+            {
+                "shard_id": "5",
+                "shard": "Natatanggap ko na ang pinakabagong bahagi ng dokumento. Paki-salin ang buong dokumento hanggang sa puntong ito. Isa pang bahagi: six for a better per-person rate."
+            }
+        ],
+        "task": "mt"
+    },
+    {
+        "task_id": "sharded-mt/1t",
+        "label": "Kasama dito ang Netherlands, dahil si Anna Jochemsen ay nagtapos na ikasiyam sa klaseng pambabaeng nakatayo sa Super-G kahapon, at ang Finland dahil si Katja Saarinen ay nagtapos na ikasampu sa parehong laban.",
+        "text": "They include the Netherlands, with Anna Jochemsen finishing ninth in the women's standing class in the Super-G yesterday, and Finland with Katja Saarinen finishing tenth in the same event.",
+        "language": "Filipino",
+        "shards": [
+            {
+                "shard_id": "1",
+                "shard": "Isinasalin mo ang isang tekstong Ingles tungo sa Filipino habang ito ay ini-transcribe nang live. Ibibigay ko sa iyo ang teksto nang paunti-unti. Sa bawat turn, dapat mong ibalik ang salin ng BUONG TEKSTO (hindi lamang ang huling bahagi). Dapat mong isaalang-alang ang lahat ng bahagi kapag nagsasalin, at hindi lamang ang pinakahuli. Maaari mo ring baguhin ang mga naunang salin kung sa tingin mo ay may pagkakamali ka. Unang Bahagi: They include the Netherlands, with Anna Jochemsen"
+            },
+            {
+                "shard_id": "2",
+                "shard": "Natatanggap ko na ang pinakabagong bahagi ng dokumento. Paki-salin ang buong dokumento hanggang sa puntong ito. Isa pang bahagi: finishing ninth in the women's standing class"
+            },
+            {
+                "shard_id": "3",
+                "shard": "Natatanggap ko na ang pinakabagong bahagi ng dokumento. Paki-salin ang buong dokumento hanggang sa puntong ito. Isa pang bahagi: in the Super-G yesterday, and Finland with"
+            },
+            {
+                "shard_id": "4",
+                "shard": "Natatanggap ko na ang pinakabagong bahagi ng dokumento. Paki-salin ang buong dokumento hanggang sa puntong ito. Isa pang bahagi: Katja Saarinen finishing tenth in the same"
+            },
+            {
+                "shard_id": "5",
+                "shard": "Natatanggap ko na ang pinakabagong bahagi ng dokumento. Paki-salin ang buong dokumento hanggang sa puntong ito. Isa pang bahagi: event."
+            }
+        ],
+        "task": "mt"
+    },
+    {
+        "task_id": "sharded-mt/3e",
+        "label": "He arrived in the US with 4 cents to his name, a book of poetry, and a letter of recommendation from Charles Batchelor (his manager in his previous job) to Thomas Edison.",
+        "text": "Dumating siya sa US na may 4 na sentimo sa kaniyang pangalan, isang libro ng mga tula, at isang sulat ng rekomendasyon mula kay Charles Batchelor (ang kaniyang tagapamahala sa dati niyang trabaho) patungo kay Thomas Edison.",
+        "language": "English",
+        "shards": [
+            {
+                "shard_id": "1",
+                "shard": "Isinasalin mo ang isang tekstong Filipino tungo sa Ingles habang ito ay ini-transcribe nang live. Ibibigay ko sa iyo ang teksto nang paunti-unti. Sa bawat turn, dapat mong ibalik ang salin ng BUONG TEKSTO (hindi lamang ang huling bahagi). Dapat mong isaalang-alang ang lahat ng bahagi kapag nagsasalin, at hindi lamang ang pinakahuli. Maaari mo ring baguhin ang mga naunang salin kung sa tingin mo ay may pagkakamali ka. Unang Bahagi: Dumating siya sa US na may 4"
+            },
+            {
+                "shard_id": "2",
+                "shard": "Natatanggap ko na ang pinakabagong bahagi ng dokumento. Paki-salin ang buong dokumento hanggang sa puntong ito. Isa pang bahagi: na sentimo sa kaniyang pangalan, isang libro"
+            },
+            {
+                "shard_id": "3",
+                "shard": "Natatanggap ko na ang pinakabagong bahagi ng dokumento. Paki-salin ang buong dokumento hanggang sa puntong ito. Isa pang bahagi: ng mga tula, at isang sulat ng"
+            },
+            {
+                "shard_id": "4",
+                "shard": "Natatanggap ko na ang pinakabagong bahagi ng dokumento. Paki-salin ang buong dokumento hanggang sa puntong ito. Isa pang bahagi: rekomendasyon mula kay Charles Batchelor (ang kaniyang"
+            },
+            {
+                "shard_id": "5",
+                "shard": "Natatanggap ko na ang pinakabagong bahagi ng dokumento. Paki-salin ang buong dokumento hanggang sa puntong ito. Isa pang bahagi: tagapamahala sa dati niyang trabaho) patungo kay"
+            },
+            {
+                "shard_id": "6",
+                "shard": "Natatanggap ko na ang pinakabagong bahagi ng dokumento. Paki-salin ang buong dokumento hanggang sa puntong ito. Isa pang bahagi: Thomas Edison."
+            }
+        ],
+        "task": "mt"
+    },
+    {
+        "task_id": "sharded-mt/5e",
+        "label": "Tours are cheaper for larger groups, so if you're by yourself or with just one friend, try to meet other people and form a group of four to six for a better per-person rate.",
+        "text": "Ang mga paglilibot ay mas mura para sa mas malalaking grupo, kaya kung ikaw ay mag-isa o may iisang kasama, iyong subukang makatagpo ng ibang tao at bumuo ng grupo ng apat hanggang anim upang makakuha ng mas mababang singil para sa bawat tao.",
+        "language": "English",
+        "shards": [
+            {
+                "shard_id": "1",
+                "shard": "Isinasalin mo ang isang tekstong Filipino tungo sa Ingles habang ito ay ini-transcribe nang live. Ibibigay ko sa iyo ang teksto nang paunti-unti. Sa bawat turn, dapat mong ibalik ang salin ng BUONG TEKSTO (hindi lamang ang huling bahagi). Dapat mong isaalang-alang ang lahat ng bahagi kapag nagsasalin, at hindi lamang ang pinakahuli. Maaari mo ring baguhin ang mga naunang salin kung sa tingin mo ay may pagkakamali ka. Unang Bahagi: Ang mga paglilibot ay mas mura para"
+            },
+            {
+                "shard_id": "2",
+                "shard": "Natatanggap ko na ang pinakabagong bahagi ng dokumento. Paki-salin ang buong dokumento hanggang sa puntong ito. Isa pang bahagi: sa mas malalaking grupo, kaya kung ikaw"
+            },
+            {
+                "shard_id": "3",
+                "shard": "Natatanggap ko na ang pinakabagong bahagi ng dokumento. Paki-salin ang buong dokumento hanggang sa puntong ito. Isa pang bahagi: ay mag-isa o may iisang kasama, iyong"
+            },
+            {
+                "shard_id": "4",
+                "shard": "Natatanggap ko na ang pinakabagong bahagi ng dokumento. Paki-salin ang buong dokumento hanggang sa puntong ito. Isa pang bahagi: subukang makatagpo ng ibang tao at bumuo"
+            },
+            {
+                "shard_id": "5",
+                "shard": "Natatanggap ko na ang pinakabagong bahagi ng dokumento. Paki-salin ang buong dokumento hanggang sa puntong ito. Isa pang bahagi: ng grupo ng apat hanggang anim upang"
+            },
+            {
+                "shard_id": "6",
+                "shard": "Natatanggap ko na ang pinakabagong bahagi ng dokumento. Paki-salin ang buong dokumento hanggang sa puntong ito. Isa pang bahagi: makakuha ng mas mababang singil para sa"
+            },
+            {
+                "shard_id": "7",
+                "shard": "Natatanggap ko na ang pinakabagong bahagi ng dokumento. Paki-salin ang buong dokumento hanggang sa puntong ito. Isa pang bahagi: bawat tao."
+            }
+        ],
+        "task": "mt"
+    }
+]

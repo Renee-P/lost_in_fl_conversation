@@ -1,0 +1,10 @@
+Ibuod ang sumusunod na artikulong Filipino sa isang talata na may isa o dalawang pangungusap.
+
+Sumagot gamit ang sumusunod na format:
+Buod: $SUMMARY
+Palitan ang $SUMMARY ng buod.[[fewshot_examples]]
+
+Artikulo:
+```
+[[text]]
+```

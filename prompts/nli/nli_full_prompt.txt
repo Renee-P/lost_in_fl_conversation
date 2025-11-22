@@ -1,0 +1,17 @@
+Bibigyan ka ng dalawang pangungusap, SENTENCE_1 at SENTENCE_2. Tukuyin kung alin sa sumusunod na pahayag ang pinaka-angkop para sa SENTENCE_1 at SENTENCE_2.
+A: Kung totoo ang SENTENCE_1, dapat totoo din ang SENTENCE_2.
+B: Sumasalungat ang SENTENCE_1 sa SENTENCE_2.
+C: Kapag totoo ang SENTENCE_1, pwedeng totoo o hindi totoo ang SENTENCE_2.
+
+Sumagot gamit ang sumusunod na format.
+Sagot: $OPTION
+Palitan ang $OPTION ng napiling sagot. Gumamit lang ng titik A, B, o C sa sagot mo.[[fewshot_examples]]
+
+SENTENCE_1:
+```
+[[sentence1]]
+```
+SENTENCE_2:
+```
+[[sentence2]]
+```

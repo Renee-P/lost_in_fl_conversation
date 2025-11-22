@@ -1,0 +1,164 @@
+You are given segments of a fully specified instruction for paraphrase identification, including two sentences and two answer choices. Your task is to: (1) choose one that will be the initial shard of a multi-step query, and then (2) rephrase each segment into a conversational version that are provided to the system in a follow-up turn of the conversation.
+
+Your output should be a JSON object in the following format:
+{
+    "initial_segment": "[exact excerpt from the instruction]",
+    "initial_shard": "conversational version of the initial segment",
+    "shards": [
+      {"segment": "[exact excerpt from the instruction]", "shard": "conversational version of the segment taking the rest of the instruction into account"}
+    ]
+}
+
+# Example 1:
+
+## Full Instruction:
+~~~
+Tukuyin kung paraprase ang SENTENCE_2 ng SENTENCE_1.
+
+SENTENCE_1:
+```
+Noong 1947, nahati ang West Punjab ng British India ayon sa hangganang pangrelihiyoso sa Punjab Province at East Punjab.
+```
+SENTENCE_2:
+```
+Noong 1947 nahati ang lalawigan ng Punjab sa British-India ayon sa hangganang pangrelihiyoso sa West Punjab at East Punjab.
+```
+~~~
+
+## Segments:
+{"segments": [
+  {"segment": "Tukuyin kung paraprase ang SENTENCE_2 ng SENTENCE_1"},
+  {"segment": "SENTENCE_1: Noong 1947,"},
+  {"segment": "nahati ang West Punjab ng British India"}, 
+  {"segment": "ayon sa hangganang pangrelihiyoso"},
+  {"segment": "sa Punjab Province at East Punjab"},
+  {"segment": "SENTENCE_2: Noong 1947"},
+  {"segment": "nahati ang lalawigan ng Punjab sa British-India"},
+  {"segment": "ayon sa hangganang pangrelihiyoso},
+  {"segment": "sa West Punjab at East Punjab"}
+]}
+
+## Output:
+{
+  "initial_segment": "Tukuyin kung paraprase ang SENTENCE_2 ng SENTENCE_1",
+  "initial_shard": "paraprase ba ang SENTENCE_1 ng SENTENCE_2?",
+  "shards": [
+    {"segment": "SENTENCE_1: Noong 1947", "shard": "Ayon sa SENTENCE_1 ang paghati ay nangyari noong 1947."},
+    {"segment": "nahati ang West Punjab ng British India", "shard": "Sinabi sa SENTENCE_1 na nahati ang West Punjab ng British India."},
+    {"segment": "ayon sa hangganang pangrelihiyoso", "shard": "Ayon sa SENTENCE_1, ang paghati ay ayon sa hangganang relihiyoso."},
+    {"segment": "sa Punjab Province at East Punjab", "shard": "Sa SENTENCE_1, ang hangganang relihiyoso ay sa pagitan ng Punjab Province at East Punjab."},
+    {"segment": "SENTENCE_2: Noong 1947", "shard": "Ayon sa SENTENCE_2 ang paghati ay nangyari noong 1947."},
+    {"segment": "nahati ang lalawigan ng Punjab sa British-India", "shard": "Batay sa SENTENCE_2, nahati ang lalawigan ng Punjab sa British-India."},
+    {"segment": "ayon sa hangganang pangrelihiyoso", "shard": "Ayon sa SENTENCE_2, ang paghati ay ayon sa hangganang relihiyoso."},
+    {"segment": "sa West Punjab at East Punjab", "shard": "Sa SENTENCE_2, ang hangganang relihiyoso ay sa pagitan ng West Punjab at East Punjab."}
+  ]
+}
+
+# Example 2:
+
+## Full Instruction:
+~~~
+Tukuyin kung paraprase ang SENTENCE_2 ng SENTENCE_1.
+
+SENTENCE_1:
+```
+Ang 1992 NFL season ay ang ika-73 na regular na season ng National Football League.
+```
+SENTENCE_2:
+```
+Ang National Football League season 1992 ay ang ika-73 na regular na NFL season.
+```
+~~~
+
+## Segments:
+{"segments": [
+  {"segment": "Tukuyin kung paraprase ang SENTENCE_2 ng SENTENCE_1"},
+  {"segment": "SENTENCE_1: Ang 1992 NFL season"},
+  {"segment": "ay ang ika-73 na regular na season"},
+  {"segment": "ng National Football League"},
+  {"segment": "SENTENCE_2: Ang National Football League season 1992"},
+  {"segment": "ay ang ika-73 na regular na"},
+  {"segment": "NFL season"}
+]}
+
+## Output:
+{
+  "initial_segment": "Tukuyin kung paraprase ang SENTENCE_2 ng SENTENCE_1",
+  "initial_shard": "paraprase ang SENTENCE_2 ng SENTENCE_1?",
+  "shards": [
+    {"segment": "SENTENCE_1: Ang 1992 NFL season", "shard": "Sa SENTENCE_1, binabanggit ang 1992 NFL season."},
+    {"segment": "ay ang ika-73 na regular na season", "shard": "Ayon sa SENTENCE_1, ang 1992 season ang ika-73 na regular na season."},
+    {"segment": "ng National Football League", "shard": "ika-73 na regular na season ng National Football League ang tinutukoy sa SENTENCE_1."},
+    {"segment": "SENTENCE_2: Ang National Football League season 1992", "shard": "Sa SENTENCE_2, tinutukoy ang National Football League season 1992."},
+    {"segment": "ay ang ika-73 na regular na", "shard": "Ayon sa SENTENCE_2, ang 1992 season ay ang ika-73 na regular na season."},
+    {"segment": "NFL season", "shard": "Sa SENTENCE_2, ang ika-7 na regular season ay isang NFL season."},
+  ]
+}
+
+# Example 3:
+
+## Full Instruction:
+~~~
+Tukuyin kung paraprase ang SENTENCE_2 ng SENTENCE_1.
+
+SENTENCE_1:
+```
+Isinilang si Farrer sa London, na nakababatang kapatid ng artistang si Thomas Charles Farrer.
+```
+SENTENCE_2:
+```
+Isinilang si Thomas Charles Farrer sa London, na nakababatang kapatid ng artistang si Farrer.
+```
+~~~
+
+## Segments:
+{"segments": [
+  {"segment": "Tukuyin kung paraprase ang SENTENCE_2 ng SENTENCE_1."},
+  {"segment": "SENTENCE_1: Isinilang si Farrer sa London"},
+  {"segment": "na nakababatang kapatid"},
+  {"segment": "ng artistang si Thomas Charles Farrer"},
+  {"segment": "SENTENCE_2: Isinilang si Thomas Charles Farrer sa London"},
+  {"segment": "na nakababatang kapatid"},
+  {"segment": "ng artistang si Farrer"}
+]}
+
+## Output:
+{
+  "initial_segment": "Tukuyin kung paraprase ang SENTENCE_2 ng SENTENCE_1",
+  "initial_shard": "paraprase ang SENTENCE_1 ng SENTENCE_2?",
+  "shards": [
+    {"segment": "SENTENCE_1: Isinilang si Farrer sa London", "shard": "Ayon sa SENTENCE_1, si Farrer ay isinilang sa London."},
+    {"segment": "na nakababatang kapatid", "shard": "Sa SENTENCE_1, si Farrer ay nakababatang kapatid."},
+    {"segment": "ng artistang si Thomas Charles Farrer", "shard": "Ang nakatatandang kapatid ni Farrer sa SENTENCE_1 ay ang artistang si Thomas Charles Farrer."},
+    {"segment": "SENTENCE_2: Isinilang si Thomas Charles Farrer sa London", "shard": "Ayon sa SENTENCE_2, si Thomas Charles Farrer ang isinilang sa London."},
+    {"segment": "na nakababatang kapatid", "shard": "Sa SENTENCE_2, si Thomas Charles Farrer ay nakababatang kapatid."},
+    {"segment": "ng artistang si Farrer", "shard": "Ang nakatatandang kapatid ni Thomas Charles Farrer sa SENTENCE_2 ay ang artistang si Farrer."},
+  ]
+}
+
+Rules:
+- [Transform each segment] Make sure each segment is included either as the initial shard or in the rest of the shards. Do not forget any segments.
+- [Short initial shard] Make the initial shard short, not a full sentence, similar to how users use a search engine like Google.
+- [Order of shards] Order the shards in order of importance, from most to least important to the initial shard. You do not need to keep the order the segments that are provided in.
+- [Initial shard selection] Choose the intent segment from the segments to form the initial shard.
+- [Self-contained shards] Do not use pronouns (e.g., ito, siya, niya, sila, nila) to reference information in the other segments in the shards.
+- [Shard paraphrasing] Make sure that the shard conveys the same information as the segment in a casual, colloquial way (i.e., what a human would say).
+
+Now complete the task for the following fully specified instance and segments:
+
+Fully Specified Instruction:
+~~~
+Tukuyin kung paraprase ang SENTENCE_2 ng SENTENCE_1.
+
+SENTENCE_1:
+```
+[[sentence1]]
+```
+SENTENCE_2:
+```
+[[sentence2]]
+```
+~~~
+
+Segments:
+[[segments]]

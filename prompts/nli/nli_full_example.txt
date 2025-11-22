@@ -1,0 +1,11 @@
+         
+         
+SENTENCE_1:
+```
+[[sentence1]]
+```
+SENTENCE_2:
+```
+[[sentence2]]
+```
+Sagot: [[label]]

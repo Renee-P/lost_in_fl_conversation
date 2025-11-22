@@ -1,0 +1,130 @@
+You are given segments of a fully specified toxicity detection instruction, and your task is to: (1) choose one that will be the initial shard of a multi-step query, and then (2) rephrase each segment into a conversational version that are provided to the system in a follow-up turn of the conversation.
+
+Your output should be a JSON object in the following format:
+{
+    "initial_segment": "[exact excerpt from the instruction]",
+    "initial_shard": "conversational version of the initial segment",
+    "shards": [
+      {"segment": "[exact excerpt from the instruction]", "shard": "conversational version of the segment taking the rest of the instruction into account"}
+    ]
+}
+
+# Example 1:
+
+## Full Instruction:
+~~~
+Iuri ang mga sumusunod na pangungusap kung Malinis o Mapoot.
+
+Pangungusap:
+```
+Wag kami Grace Poe nagkabisado ka na naman, mamaya mali mali na naman ang info mo. Don't us\n\n #PiliPinasDebates2016"
+```
+~~~
+
+## Segments:
+{"segments": [
+  {"segment": "Iuri ang pangungusap kung Malinis o Mapoot"},
+  {"segment": "Wag kami Grace Poe"},
+  {"segment": "nagkabisado ka na naman"},
+  {"segment": "mamaya mali mali na naman ang info mo"},
+  {"segment": "Don't us"},
+  {"segment": "#PiliPinasDebates2016"}
+]}
+
+## Output:
+{
+  "initial_segment": "Iuri ang pangungusap kung Malinis o Mapoot",
+  "initial_shard": "Malinis ba o Mapoot ang tweet?",
+  "shards": [
+    {"segment": "Wag kami Grace Poe", "shard": "Unang sinabi sa tweet, 'Wag kami Grace Poe'."},
+    {"segment": "nagkabisado ka na naman", "shard": "Ang tweet ay nag-akusa kay Grace Poe: 'nagkabisado ka na naman'."},
+    {"segment": "mamaya mali mali na naman ang info mo", "shard": "Sinabi sa tweet tungkol kay Grace Poe: 'mamaya mali mali na naman ang info mo'."},
+    {"segment": "Don't us", "shard": "Sinabi ng tweet kay Grace Poe: 'Don't us'."},
+    {"segment": "#PiliPinasDebates2016", "shard": "Nakalagay sa huli ng tweet ang hashtag na #PiliPinasDebates2016."}
+  ]
+}
+
+# Example 2:
+
+## Full Instruction:
+~~~
+Iuri ang mga sumusunod na pangungusap kung Malinis o Mapoot.
+
+Pangungusap:
+```
+tanggap ko na talo si Mar Roxas pero sana naman si LENI ROBREDO ay manalo. #LabanLeni
+```
+~~~
+
+## Segments:
+{"segments": [
+  {"segment": "Iuri ang sumusunod na pangungusap kung Malinis o Mapoot"},
+  {"segment": "tanggap ko na talo si Mar Roxas"},
+  {"segment": "pero sana naman si LENI ROBREDO ay manalo"},
+  {"segment": "#LabanLeni"}
+]}
+
+## Output:
+{
+  "initial_segment": "Iuri ang sumusunod na pangungusap kung Malinis o Mapoot",
+  "initial_shard": "Malinis o Mapoot ang tweet?",
+  "shards": [
+    {"segment": "tanggap ko na talo si Mar Roxas", "shard": "Sinabi sa tweet na 'tanggap ko na talo si Mar Roxas'."},
+    {"segment": "pero sana naman si LENI ROBREDO ay manalo", "shard": "Kahit daw matalo si Mar Roxas, 'sana naman si LENI ROBREDO ay manalo'."},
+    {"segment": "#LabanLeni", "shard": "May hashtag na #LabanLeni."},
+  ]
+}
+
+# Example 3:
+
+## Full Instruction:
+~~~
+Iuri ang mga sumusunod na pangungusap kung Malinis o Mapoot.
+
+Pangungusap:
+```
+Di na nakakatuwa yung mukha ni Mar Roxas sa TV. Nakakatamad manood. ??
+```
+~~~
+
+## Segments:
+{"segments": [
+  {"segment": "Iuri ang sumusunod na pangungusap kung Malinis o Mapoot"},
+  {"segment": "Di na nakakatuwa yung mukha ni Mar Roxas sa TV"},
+  {"segment": "Nakakatamad manood"},
+  {"segment": "??"}
+]}
+
+## Output:
+{
+  "initial_segment": "Iuri ang sumusunod na pangungusap kung Malinis o Mapoot",
+  "initial_shard": "Malinis o Mapoot ang mga sinabi?",
+  "shards": [
+    {"segment": "Di na nakakatuwa yung mukha ni Mar Roxas sa TV", "shard": "Unang sinabi ang 'Di na nakakatuwa yung mukha ni Mar Roxas sa TV'."},
+    {"segment": "Nakakatamad manood", "shard": "Isa sa sinabi ay 'Nakakatamad manood'."},
+    {"segment": "??", "shard": "Sa huli may dagdag na '??'."},
+  ]
+}
+
+Rules:
+- [Transform each segment] Make sure each segment is included either as the initial shard or in the rest of the shards. Do not forget any segments.
+- [Short initial shard] Make the initial shard short, not a full sentence, similar to how users use a search engine like Google.
+- [Order of shards] Order the shards in order of importance, from most to least important to the initial shard. You do not need to keep the order the segments that are provided in.
+- [Initial shard selection] Choose the intent segment from the segments to form the initial shard.
+- [Self-contained shards] Do not use pronouns (e.g., ito, siya, niya, sila, nila) to reference information in the other segments in the shards.
+- [Shard paraphrasing] Make sure that the shard conveys the same information as the segment in a casual, colloquial way (i.e., what a human would say).
+
+Now complete the task for the following fully specified instance and segments:
+
+Fully Specified Instruction:
+~~~
+Iuri ang mga sumusunod na pangungusap kung Malinis o Mapoot.
+
+Pangungusap:
+```
+[[text]]
+```
+~~~
+
+Segments:
+[[segments]]

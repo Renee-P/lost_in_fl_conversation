@@ -1,0 +1,5 @@
+Bibigyan ka ng isang talata, isang tanong, at apat na pagpipiliang sagot. Sumagot base sa talata sa pamamagitan ng pagpili ng isa sa mga opsiyong ibinigay.
+
+Sumagot gamit ang sumusunod na format:
+Sagot: $OPTION
+Palitan ang $OPTION ng napiling sagot. Gumamit lang ng titik A, B, C, o D sa sagot mo.[[fewshot_examples]]

@@ -1,0 +1,16 @@
+Bibigyan ka ng dalawang pangungusap, SENTENCE_1 at SENTENCE_2. Tukuyin kung alin sa sumusunod na pahayag ang pinaka-angkop para sa SENTENCE_1 at SENTENCE_2.
+A: Paraprase ang SENTENCE_2 ng SENTENCE_1.
+B: Hindi paraprase ang SENTENCE_2 ng SENTENCE_1.
+
+Sumagot gamit ang sumusunod na format.
+Sagot: $OPTION
+Palitan ang $OPTION ng napiling sagot. Gumamit lang ng titik A o B sa sagot mo.[[fewshot_examples]]
+
+SENTENCE_1:
+```
+[[sentence1]]
+```
+SENTENCE_2:
+```
+[[sentence2]]
+```

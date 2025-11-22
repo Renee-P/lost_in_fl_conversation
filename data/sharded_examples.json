@@ -1,0 +1,1292 @@
+[
+  {
+    "task_id": "sharded-qa/1",
+    "label": "B",
+    "text": "Ang nayon ng HaldarsvÃ­k ay naghahandog ng mga tanawin ng kalapit na islang Eysturoy at mayroong di-pangkaraniwang simbahang oktagonal. Sa bakuran ng simbahan, mayroong mga kawili-wiling marmol na eskultura ng mga kalapati sa ibabaw ng ilang puntod. Katumbas ng kalahating oras ang pamamasyal sa makakatawag ng pansin na lugar.",
+    "question": "Saan matatagpuan ang mga eskultura ng kalapati?",
+    "choice1": "Kalahating oras mula sa nayon",
+    "choice2": "Sa bakuran ng simbahan",
+    "choice3": "Sa isla ng Eysturoy",
+    "choice4": "Sa loob ng simbahan",
+    "shards": [
+      {
+        "shard_id": 1,
+        "shard": "Saan makikita ang mga eskultura ng kalapati?"
+      },
+      {
+        "shard_id": 2,
+        "shard": "Makikita sa nayon ng HaldarsvÃ­k ang magagandang tanawin ng katabing isla na Eysturoy."
+      },
+      {
+        "shard_id": 3,
+        "shard": "Ang nayon ng HaldarsvÃ­k ay kilala rin sa kakaibang simbahang hugis oktagon."
+      },
+      {
+        "shard_id": 4,
+        "shard": "Sa bakuran ng simbahan ng HaldarsvÃ­k, may mga marmol na eskultura ng mga kalapati na makikita sa ilan sa mga puntod."
+      },
+      {
+        "shard_id": 5,
+        "shard": "Ang pamamasyal sa pook na ito ay aabutin ng mga kalahating oras."
+      },
+      {
+        "shard_id": 6,
+        "shard": "Piliin ang A kung ang sagot ay kalahating oras mula sa nayon."
+      },
+      {
+        "shard_id": 7,
+        "shard": "Isa sa pagpipilian ay ang B kung sa bakuran mismo ng simbahan ito matatagpuan."
+      },
+      {
+        "shard_id": 8,
+        "shard": "Piliin ang titik C kung matatagpuan ang mga eskultura sa isla ng Eysturoy."
+      },
+      {
+        "shard_id": 9,
+        "shard": "Piliin ang D kung nasa loob ng simbahan ang mga eskulturang ito."
+      }
+    ],
+    "task": "qa"
+  },
+  {
+    "task_id": "sharded-qa/0",
+    "label": "A",
+    "text": "Sahel ang nasa hangganan ng rehiyon sa hilaga, at sa timog at kanluran ay ang Karagatang Atlantiko. Mga Babae: Inirerekomenda na sabihin ng sinumang mga babaeng bumibiyahe na may asawa na sila, anuman ang kanilang tunay na katayuang matrimonyal. Makakatulong na magsuot rin ng singsing (basta hindi ito mukhang masyadong mahal.) Dapat na mapagtanto ng mga babae na ang pagkakaiba-iba sa kultura ay maaaring magresulta sa kung ano ang maituturing nilang panliligalig at pangkaraniwan na ang masundan, mahawakan sa braso, atbp. Maging matibay sa pagtanggi sa mga lalaki, at huwag matakot na manindigan (may mga pagkakaiba man sa kultura o wala, hindi pa rin ito katanggap-tanggap!).",
+    "question": "Ayon sa sipi, alin sa mga sumusunod ang hindi isang inirerekomendang tip para sa mga kababaihan na naglalakbay sa lugar?",
+    "choice1": "Tumanggi sa pagtalakay sa katayuang matrimonyal",
+    "choice2": "Magkaroon ng kamalayan na ang mga pagkakaiba sa kultura ay maaaring mag-udyok ng mapamilit na pag-uugali mula sa mga lokal",
+    "choice3": "Iwasang magsuot ng kapansin-pansing alahas",
+    "choice4": "Manindigan kung kinakailangan",
+    "shards": [
+      {
+        "shard_id": 1,
+        "shard": "Anong tip ang hindi inirerekomenda para sa mga babaeng naglalakbay sa lugar na ito ayon sa sipi?"
+      },
+      {
+        "shard_id": 2,
+        "shard": "Inirerekomenda sa mga babaeng bumibiyahe na sabihin na may asawa na sila."
+      },
+      {
+        "shard_id": 3,
+        "shard": "Hindi mahalaga kung totoo man o hindi ang sinasabing may asawa ang mga babae."
+      },
+      {
+        "shard_id": 4,
+        "shard": "Makabubuting magsuot ng singsing para mas mapaniwalaang may asawa ang mga babae."
+      },
+      {
+        "shard_id": 5,
+        "shard": "Huwag magsuot ng singsing na mukhang mamahalin."
+      },
+      {
+        "shard_id": 6,
+        "shard": "Mahalagang maunawaan ng mga babae na maaaring magdulot ng kakaibang kilos ang pagkakaiba ng kultura, minsan ay parang panliligalig."
+      },
+      {
+        "shard_id": 7,
+        "shard": "Normal lang daw minsan na masundan o mahawakan sa braso ng mga lokal, kahit di ka sang-ayon."
+      },
+      {
+        "shard_id": 8,
+        "shard": "Dapat marunong tumanggi nang matatag sa mga lalaking nang-aabala."
+      },
+      {
+        "shard_id": 9,
+        "shard": "Huwag matakot na ipagtanggol ang sarili at manindigan."
+      },
+      {
+        "shard_id": 10,
+        "shard": "Kahit sabihin pang may pagkakaiba sa kultura, hindi pa rin dapat tanggapin ang panghaharass."
+      },
+      {
+        "shard_id": 11,
+        "shard": "Ang Sahel ay nasa hangganan ng rehiyon sa hilaga."
+      },
+      {
+        "shard_id": 12,
+        "shard": "Sa timog at kanluran, makikita ang Karagatang Atlantiko."
+      },
+      {
+        "shard_id": 13,
+        "shard": "Piliin ang titik A kung hindi inirerekomenda na tumanggi kapag tinanong kung ano ang katayuang matrimonyal."
+      },
+      {
+        "shard_id": 14,
+        "shard": "Piliin ang B kung hindi inirerekomenda na maging maingat dahil maaaring mag-iba ang kilos ng mga lokal dahil sa pagkakaiba ng kultura."
+      },
+      {
+        "shard_id": 15,
+        "shard": "Piliin ang titik C kung ang hindi inirerekomenda ay ang pag-iwas sa pagsusuot ng alahas na kapansin-pansin."
+      },
+      {
+        "shard_id": 16,
+        "shard": "Piliin ang titik D kung hindi inirerekomenda na manindigan at ipaglaban ang sarili kung kinakailangan."
+      }
+    ],
+    "task": "qa"
+  },
+  {
+    "task_id": "sharded-qa/2",
+    "label": "D",
+    "text": "Ang MetroRail ay mayroong dalawang klase ng mga pampasaherong tren sa at sa palibot ng Cape Town: MetroPlus (tinatawag ring Primera Klase) at Metro (tinatawag na Ikatlong Klase). Ang MetroPlus ay mas komportable at hindi gaanong matao nguni't mas mahal nang bahagya, bagaman mas mura pa rin kaysa sa normal na mga tiket ng metro sa Europa. Bawat tren ay parehong may mga MetroPlus at Metro na tagapangasiwa; ang mga MetroPlus na tagapangasiwa ay palaging nasa huling bahagi ng tren malapit sa Bayan ng Cape.",
+    "question": "Ayon sa sipi, ano ang mayroon sa bawat pampaseherong tren sa Cape Town?",
+    "choice1": "Isang hindi gaanong masikip na karwahe ng Metro",
+    "choice2": "Ang parehong presyo ng tiket para sa parehong klase",
+    "choice3": "Tatlong magkakaibang klase",
+    "choice4": "Parehong Primera at Ikatlong Klase na karwahe",
+    "shards": [
+      {
+        "shard_id": 1,
+        "shard": "Ano ang mayroon sa bawat tren sa Cape Town?"
+      },
+      {
+        "shard_id": 2,
+        "shard": "Ang MetroRail ay mayroong dalawang klaseng pampasaherong tren sa Cape Town."
+      },
+      {
+        "shard_id": 3,
+        "shard": "Ang mga pampasaherong tren ng MetroRail ay nasa palibot din ng Cape Town."
+      },
+      {
+        "shard_id": 4,
+        "shard": "Ang dalawang klaseng tren ay ang MetroPlus at ang Metro."
+      },
+      {
+        "shard_id": 5,
+        "shard": "Ang MetroPlus ay tinatawag ding Primera Klase."
+      },
+      {
+        "shard_id": 6,
+        "shard": "Ang Metro ay kilala din bilang Ikatlong Klase."
+      },
+      {
+        "shard_id": 7,
+        "shard": "Mas komportable ang MetroPlus na tren."
+      },
+      {
+        "shard_id": 8,
+        "shard": "Hindi masyadong matao ang MetroPlus."
+      },
+      {
+        "shard_id": 9,
+        "shard": "Mas mahal nang kaunti ang MetroPlus kaysa sa Metro."
+      },
+      {
+        "shard_id": 10,
+        "shard": "Bawat tren ay parehong may mga MetroPlus at Metro na tagapangasiwa."
+      },
+      {
+        "shard_id": 11,
+        "shard": "Mas mura pa rin ang mga tiket ng MetroPlus kumpara sa mga normal na metro sa Europa."
+      },
+      {
+        "shard_id": 12,
+        "shard": "Ang mga MetroPlus na tagapangasiwa ay laging nasa hulihang bahagi ng tren sa Bayan ng Cape."
+      },
+      {
+        "shard_id": 13,
+        "shard": "Piliin ang titik A kung ang sagot ay isang hindi gaanong masikip na karwahe ng Metro."
+      },
+      {
+        "shard_id": 14,
+        "shard": "Piliin ang B kung ang sagot ay ang parehong presyo ng tiket para sa parehong klase ng tren."
+      },
+      {
+        "shard_id": 15,
+        "shard": "Piliin ang C kung tatlong magkakaibang klase ng tren ang sagot."
+      },
+      {
+        "shard_id": 16,
+        "shard": "Piliin ang D kung parehong Primera at Ikatlong Klase na karwahe ang sagot."
+      }
+    ],
+    "task": "qa"
+  },
+  {
+    "task_id": "sharded-qa/3",
+    "label": "C",
+    "text": "Ang Tawiran (o Lansangan) ng Polong Timog ay isang 1600 km na daanan mula sa Istasyon ng McMurdo sa Dagat ng Ross patungo sa Polo. Ito'y niyebeng siksik na may mga siwang na pinuno at minarkahan ng mga watawat. Maaari lamang itong maraanan ng mga espesyal na traktora, na may hakot na mga sled na may gasolina at mga suplay. Ang mga ito ay hindi gaanong mabilis kaya ang paglalakbay ay nangangailangan ng mahabang pag-ikot sa Kabundukang Transantarctic para marating ang talampas.",
+    "question": "Bakit ang paglihis paikot ng Kabundukang Transantarctic ay kinakailangan upang makapunta sa talampas?",
+    "choice1": "Ang estasyon ng McMurdo ay madalas na sarado",
+    "choice2": "Mapanganib ang siksik na niyebe",
+    "choice3": "Ang mga espesyal na traktor ay hindi mabilis",
+    "choice4": "Mas madali ito kaysa sa paglalakbay sa pamamagitan ng Dagat ng Ross",
+    "shards": [
+      {
+        "shard_id": 1,
+        "shard": "Bakit kailangan lumihis paikot ng Kabundukang Transantarctic para makarating sa talampas?"
+      },
+      {
+        "shard_id": 2,
+        "shard": "Ang Tawiran ng Polong Timog ay isang 1600 km na daanan, o kalsada."
+      },
+      {
+        "shard_id": 3,
+        "shard": "Ang daanan na Tawiran ng Polong Timog ay nagmumula sa Istasyon ng McMurdo sa Dagat ng Ross at papunta sa Polo."
+      },
+      {
+        "shard_id": 4,
+        "shard": "Ang daanan ay siksik na niyebe na may mga siwang na pinuno."
+      },
+      {
+        "shard_id": 5,
+        "shard": "Ang daanan ay minarkahan ng mga watawat."
+      },
+      {
+        "shard_id": 6,
+        "shard": "Ang Tawiran ng Polong Timog ay maaari lamang daanan ng mga espesyal na traktora."
+      },
+      {
+        "shard_id": 7,
+        "shard": "Ang mga traktora ay may hakot na mga sled na may gasolina at mga suplay."
+      },
+      {
+        "shard_id": 8,
+        "shard": "Ang mga espesyal na traktora ay hindi masyadong mabilis."
+      },
+      {
+        "shard_id": 9,
+        "shard": "Para marating ang talampas, kailangan sa paglalakbay ang mahabang pag-ikot sa Kabundukang Transantarctic."
+      },
+      {
+        "shard_id": 10,
+        "shard": "Kailangan umikot sa kabundukan dahil sa kabagalan ng mga traktora."
+      },
+      {
+        "shard_id": 11,
+        "shard": "Ang isa sa mga pagpipilian (A) ay nagsasabing ang Istasyon ng McMurdo ay madalas na sarado."
+      },
+      {
+        "shard_id": 12,
+        "shard": "Ang isa sa mga opsyon (B) ay nagsasabing mapanganib ang siksik na niyebe."
+      },
+      {
+        "shard_id": 13,
+        "shard": "Ang isa sa mga sagot (C) ay nagsasabing hindi mabilis ang mga espesyal na traktor."
+      },
+      {
+        "shard_id": 14,
+        "shard": "Ang isa sa mga opsyon (D) ay nagsasabing mas madali ang paglihis kaysa sa paglalakbay sa Dagat ng Ross."
+      }
+    ],
+    "task": "qa"
+  },
+  {
+    "task_id": "sharded-qa/4",
+    "label": "A",
+    "text": "Mayroon nang mga ahensiya ng paglalakbay mula pa noong ika-19 na siglo. Ang ahente sa paglalakbay ay kadalasang magandang opsyon para sa paglalakbay na humihigit pa sa dati nang ekspiryensa ng manlalakbay sa kalikasan, kultura, wika o mahihirap na bansa. Bagaman karamihan sa mga ahensya ay handang tanggapin ang karamihan sa mga karaniwang pagpapareserba, maraming mga ahente ang espesyalista sa partikular na mga uri ng paglalakbay, laki ng badyet o destinasyon. Maaaring mas makabubuting gumamit ng ahente na madalas mag-book ng mga biyaheng katulad ng sa iyo. Tingnan kung anong mga biyahe ang isinusulong ng ahente, maging sa website man o sa eskaparate.",
+    "question": "Ayon sa sipi, aling uri ng biyahe ang hindi malamang na nangangailangan ng tulong sa pag-book mula sa isang ahente sa paglalakbay?",
+    "choice1": "Pagbibiyahe para sa isang kumperensiya sa trabaho sa isang lungsod na nabisita na ng manlalakbay",
+    "choice2": "Isang dalawang linggong paglalakbay sa isang partikular na badyet",
+    "choice3": "Isang paglalakbay na may hadlang sa wika",
+    "choice4": "Ang unang paglalakbay ng isang manlalakbay sa ibang bansa",
+    "shards": [
+      {
+        "shard_id": 1,
+        "shard": "Anong uri ng biyahe ang hindi kailangan ng tulong sa pag-book mula sa travel agent?"
+      },
+      {
+        "shard_id": 2,
+        "shard": "Nagsimula ang mga travel agency noong ika-19 na siglo."
+      },
+      {
+        "shard_id": 3,
+        "shard": "Mainam ang travel agent lalo na kung mas kumplikado ang biyahe kaysa sa nakasanayan na ng manlalakbay, tulad ng sa kalikasan, kultura, wika, o sa mahihirap na bansa."
+      },
+      {
+        "shard_id": 4,
+        "shard": "Karamihan sa mga travel agency ay tumatanggap ng mga simpleng pagpapareserba."
+      },
+      {
+        "shard_id": 5,
+        "shard": "Marami din ang mga ahente na may espesyalisasyon sa mga partikular na uri ng biyahe, badyet, o destinasyon."
+      },
+      {
+        "shard_id": 6,
+        "shard": "Maaaring mas maganda kung gagamit ng travel agent na sanay at madalas mag-book ng biyaheng pareho sa biyaheng kailangan mo."
+      },
+      {
+        "shard_id": 7,
+        "shard": "Tingnan kung anong klaseng biyahe ang inaalok o inieendorso ng ahente."
+      },
+      {
+        "shard_id": 8,
+        "shard": "Tingnan ang inaalok na biyahe sa website man o sa display nila."
+      },
+      {
+        "shard_id": 9,
+        "shard": "Piliin ang A kung ang sagot ay biyahe na para sa kumperensiya sa isang lungsod na nabisita na ng manlalakbay."
+      },
+      {
+        "shard_id": 10,
+        "shard": "Piliin ang B kung ang sagot ay biyahe na dalawang linggo na may tiyak na badyet."
+      },
+      {
+        "shard_id": 11,
+        "shard": "Piliin ang C kung ang sagot ay biyahe na may problema o hadlang sa wika."
+      },
+      {
+        "shard_id": 12,
+        "shard": "Piliin ang D kung ang sagot ay biyahe kung saan unang beses pa lamang ng manlalakbay sa ibang bansa."
+      }
+    ],
+    "task": "qa"
+  },
+  {
+    "task_id": "sharded-pi/255",
+    "label": "B",
+    "sentence1": "Noong 1947, nahati ang West Punjab ng British India ayon sa hangganang pangrelihiyoso sa Punjab Province at East Punjab.",
+    "sentence2": "Noong 1947 nahati ang lalawigan ng Punjab sa British-India ayon sa hangganang pangrelihiyoso sa West Punjab at East Punjab.",
+    "shards": [
+      {
+        "shard_id": 1,
+        "shard": "paraprase ba ang SENTENCE_1 ng SENTENCE_2?"
+      },
+      {
+        "shard_id": 2,
+        "shard": "Ayon sa SENTENCE_1 ang paghati ay nangyari noong 1947."
+      },
+      {
+        "shard_id": 3,
+        "shard": "Sinabi sa SENTENCE_1 na nahati ang West Punjab ng British India."
+      },
+      {
+        "shard_id": 4,
+        "shard": "Ayon sa SENTENCE_1, ang paghati ay ayon sa hangganang pangrelihiyoso."
+      },
+      {
+        "shard_id": 5,
+        "shard": "Sa SENTENCE_1, ang hangganang relihiyoso ay sa pagitan ng Punjab Province at East Punjab."
+      },
+      {
+        "shard_id": 6,
+        "shard": "Ayon sa SENTENCE_2, ang paghati ay nangyari noong 1947."
+      },
+      {
+        "shard_id": 7,
+        "shard": "Batay sa SENTENCE_2, nahati ang lalawigan ng Punjab sa British-India."
+      },
+      {
+        "shard_id": 8,
+        "shard": "Ayon sa SENTENCE_2, ang paghati ay ayon sa hangganang pangrelihiyoso."
+      },
+      {
+        "shard_id": 9,
+        "shard": "Sa SENTENCE_2, ang hangganang relihiyoso ay sa pagitan ng West Punjab at East Punjab."
+      }
+    ],
+    "task": "pi"
+  },
+  {
+    "task_id": "sharded-pi/7250",
+    "label": "A",
+    "sentence1": "Isinilang si Hudson sa Houston, nag-aral sa Worthing High School sa Houston, Texas at naglaro ng high school football para sa Worthing Colts.",
+    "sentence2": "Isinilang siya sa Houston, Texas, pumasok sa Worthing High School sa Houston, at naglaro ng high school football para sa Worthing Colts.",
+    "shards": [
+      {
+        "shard_id": 1,
+        "shard": "Paraprase ba ang SENTENCE_2 ng SENTENCE_1?"
+      },
+      {
+        "shard_id": 2,
+        "shard": "Sa SENTENCE_1, binanggit na isinilang si Hudson sa Houston."
+      },
+      {
+        "shard_id": 3,
+        "shard": "Nag-aral si Hudson sa Worthing High School, ayon sa SENTENCE_1."
+      },
+      {
+        "shard_id": 4,
+        "shard": "Sabi sa SENTENCE_1, ang Worthing High School ay nasa Houston, Texas."
+      },
+      {
+        "shard_id": 5,
+        "shard": "Sinasabi sa SENTENCE_1 na naglaro si Hudson ng high school football."
+      },
+      {
+        "shard_id": 6,
+        "shard": "Sabi sa SENTENCE_1, naglaro si Hudson para sa Worthing Colts."
+      },
+      {
+        "shard_id": 7,
+        "shard": "Ayon sa SENTENCE_2, isinilang siya sa Houston, Texas."
+      },
+      {
+        "shard_id": 8,
+        "shard": "Sabi sa SENTENCE_2, pumasok siya sa Worthing High School."
+      },
+      {
+        "shard_id": 9,
+        "shard": "Ayon sa SENTENCE_2, ang Worthing High School ay nasa Houston."
+      },
+      {
+        "shard_id": 10,
+        "shard": "Sabi sa SENTENCE_2, naglaro siya ng high school football."
+      },
+      {
+        "shard_id": 11,
+        "shard": "Sa SENTENCE_2, naglaro siya para sa Worthing Colts."
+      }
+    ],
+    "task": "pi"
+  },
+  {
+    "task_id": "sharded-pi/2890",
+    "label": "B",
+    "sentence1": "Isinilang si Farrer sa London, na nakababatang kapatid ng artistang si Thomas Charles Farrer.",
+    "sentence2": "Isinilang si Thomas Charles Farrer sa London, na nakababatang kapatid ng artistang si Farrer.",
+    "shards": [
+      {
+        "shard_id": 1,
+        "shard": "paraprase ang SENTENCE_1 ng SENTENCE_2?"
+      },
+      {
+        "shard_id": 2,
+        "shard": "Ayon sa SENTENCE_1, si Farrer ay isinilang sa London."
+      },
+      {
+        "shard_id": 3,
+        "shard": "Sa SENTENCE_1, si Farrer ay isang nakababatang kapatid."
+      },
+      {
+        "shard_id": 4,
+        "shard": "Ang nakatatandang kapatid ni Farrer sa SENTENCE_1 ay ang artistang si Thomas Charles Farrer."
+      },
+      {
+        "shard_id": 5,
+        "shard": "Ayon sa SENTENCE_2, si Thomas Charles Farrer ay isinilang sa London."
+      },
+      {
+        "shard_id": 6,
+        "shard": "Sa SENTENCE_2, si Thomas Charles Farrer ay isang nakababatang kapatid."
+      },
+      {
+        "shard_id": 7,
+        "shard": "Ang nakatatandang kapatid ni Thomas Charles Farrer sa SENTENCE_2 ay ang artistang si Farrer."
+      }
+    ],
+    "task": "pi"
+  },
+  {
+    "task_id": "sharded-pi/5582",
+    "label": "A",
+    "sentence1": "Inaresto si Ataç noong Agosto 1998 sa France na may pulang pasaporteng \"pang-opisyal ng gobyerno\" na inisyu ni Alaattin Çakıcı sa embasada ng Turkey sa Beijing.",
+    "sentence2": "Dinakip si Ataç sa France noong Agosto 1998 na may pulang pasaporteng \"pang-opisyal ng gobyerno\" na inisyu ni Alaattin Çakıcı sa embasada ng Turkey sa Beijing.",
+    "shards": [
+      {
+        "shard_id": 1,
+        "shard": "paraprase ba ang SENTENCE_2 ng SENTENCE_1?"
+      },
+      {
+        "shard_id": 2,
+        "shard": "Sa SENTENCE_1, inaresto si Ataç noong Agosto 1998."
+      },
+      {
+        "shard_id": 3,
+        "shard": "Sa SENTENCE_2, dinakip si Ataç sa France."
+      },
+      {
+        "shard_id": 4,
+        "shard": "Ayon sa SENTENCE_1, nangyari ang pag-aresto sa France."
+      },
+      {
+        "shard_id": 5,
+        "shard": "Ayon sa SENTENCE_2, nangyari ang pagdakip noong Agosto 1998."
+      },
+      {
+        "shard_id": 6,
+        "shard": "Sa SENTENCE_1, may pulang pasaporteng \"pang-opisyal ng gobyerno\" si Ataç."
+      },
+      {
+        "shard_id": 7,
+        "shard": "Sa SENTENCE_2, may pulang pasaporteng \"pang-opisyal ng gobyerno\" si Ataç."
+      },
+      {
+        "shard_id": 8,
+        "shard": "Ayon sa SENTENCE_1, inisyu ni Alaattin Çakıcı ang pasaporte."
+      },
+      {
+        "shard_id": 9,
+        "shard": "Ayon sa SENTENCE_2, inisyu ni Alaattin Çakıcı ang pasaporte."
+      },
+      {
+        "shard_id": 10,
+        "shard": "Ayon sa SENTENCE_1, inisyu ang pasaporte sa embasada ng Turkey sa Beijing."
+      },
+      {
+        "shard_id": 11,
+        "shard": "Ayon sa SENTENCE_2, inisyu ang pasaporte sa embasada ng Turkey sa Beijing."
+      }
+    ],
+    "task": "pi"
+  },
+  {
+    "task_id": "sharded-pi/2206",
+    "label": "A",
+    "sentence1": "Ang Ilog Comanca ay isang tributaryo ng Ilog Redea sa Romania.",
+    "sentence2": "Ang Comanca River ay isang tributaryo ng Redea River sa Romania.",
+    "shards": [
+      {
+        "shard_id": 1,
+        "shard": "paraprase ba ang SENTENCE_2 ng SENTENCE_1?"
+      },
+      {
+        "shard_id": 2,
+        "shard": "Ayon sa SENTENCE_1, ang Ilog Comanca ay isang tributaryo."
+      },
+      {
+        "shard_id": 3,
+        "shard": "Ayon sa SENTENCE_2, ang Comanca River ay isang tributaryo."
+      },
+      {
+        "shard_id": 4,
+        "shard": "Sa SENTENCE_1, ang Ilog Comanca ay tributaryo ng Ilog Redea."
+      },
+      {
+        "shard_id": 5,
+        "shard": "Sa SENTENCE_2, ang Comanca River ay tributaryo ng Redea River."
+      },
+      {
+        "shard_id": 6,
+        "shard": "Ang Ilog Comanca at Ilog Redea ay nasa Romania ayon sa SENTENCE_1."
+      },
+      {
+        "shard_id": 7,
+        "shard": "Ang Comanca River at Redea River ay nasa Romania ayon sa SENTENCE_2."
+      }
+    ],
+    "task": "pi"
+  },
+  {
+    "task_id": "sharded-sa/1",
+    "label": "negatibo",
+    "text": "Yung akala mo imported biscuits na pag open mo may kamatis na puro karayom :(",
+    "shards": [
+      {
+        "shard_id": 1,
+        "shard": "sentimyento sa pangungusap?"
+      },
+      {
+        "shard_id": 2,
+        "shard": "Nilalarawan sa pangungusap, 'Yung akala mo imported biscuits'."
+      },
+      {
+        "shard_id": 3,
+        "shard": "Pag open mo daw ang laman pala ay kamatis."
+      },
+      {
+        "shard_id": 4,
+        "shard": "ang kamatis daw ay 'puro karayom :('"
+      }
+    ],
+    "task": "sa"
+  },
+  {
+    "task_id": "sharded-sa/304",
+    "label": "positibo",
+    "text": "Jollibee, tuwing birthday namin dati, mamimili ka kung maghahanda kayo sa bahay or lalabas para kumain sa jollibee hehe. Ngayon pag nagcrave ka jabee punta ka lang haha.",
+    "shards": [
+      {
+        "shard_id": 1,
+        "shard": "sentimyento sa pahayag?"
+      },
+      {
+        "shard_id": 2,
+        "shard": "Dati, dalawa raw ang pagpipilian nila kapag birthday."
+      },
+      {
+        "shard_id": 3,
+        "shard": "Isa sa pagpipilian ay ang maghanda sa bahay."
+      },
+      {
+        "shard_id": 4,
+        "shard": "Isa pa sa pagpipilian ay ang lumabas 'para kumain sa jollibee hehe'."
+      },
+      {
+        "shard_id": 5,
+        "shard": "Sabi pa, 'Ngayon pag nagcrave ka jabee punta ka lang haha.'"
+      }
+    ],
+    "task": "sa"
+  },
+  {
+    "task_id": "sharded-sa/600",
+    "label": "neutral",
+    "text": "Uwian na ba? Balik na sa Bus ang mga nag pilgrimage sa San Fernando.",
+    "shards": [
+      {
+        "shard_id": 1,
+        "shard": "sentimyento sa pahayag?"
+      },
+      {
+        "shard_id": 2,
+        "shard": "Nagtanong siya, 'Uwian na ba?'"
+      },
+      {
+        "shard_id": 3,
+        "shard": "Sabi din niya, balik na daw sa Bus ang mga nag pilgrimage."
+      },
+      {
+        "shard_id": 4,
+        "shard": "Yung mga pilgrimage sa San Fernando."
+      }
+    ],
+    "task": "sa"
+  },
+  {
+    "task_id": "sharded-sa/4",
+    "label": "negatibo",
+    "text": "Nasstress ako sa internet connection ni VP Leni.",
+    "shards": [
+      {
+        "shard_id": 1,
+        "shard": "sentimyento sa sinabi?"
+      },
+      {
+        "shard_id": 2,
+        "shard": "Sabi niya, 'Nasstress ako'."
+      },
+      {
+        "shard_id": 3,
+        "shard": "Ang pinagmulan ng stress ay sa internet connection."
+      },
+      {
+        "shard_id": 4,
+        "shard": "Sa partikular, internet ni VP Leni."
+      }
+    ],
+    "task": "sa"
+  },
+  {
+    "task_id": "sharded-sa/556",
+    "label": "neutral",
+    "text": "Sino pong pupunta sa Miting de Avance bukas? Saan po kau papasok at anong oras?",
+    "shards": [
+      {
+        "shard_id": 1,
+        "shard": "Ano ang sentimyento sa tanong?"
+      },
+      {
+        "shard_id": 2,
+        "shard": "Tinanong niya kung sino ang pupunta sa Miting de Avance bukas."
+      },
+      {
+        "shard_id": 3,
+        "shard": "Nagtanong siya kung saan papasok ang mga pupunta."
+      },
+      {
+        "shard_id": 4,
+        "shard": "Nagtanong siya kung anong oras papasok ang pupunta."
+      }
+    ],
+    "task": "sa"
+  },
+  {
+    "task_id": "sharded-td/1",
+    "label": "Malinis",
+    "text": "tanggap ko na talo si Mar Roxas pero sana naman si LENI ROBREDO ay manalo. #LabanLeni",
+    "shards": [
+      {
+        "shard_id": 1,
+        "shard": "Malinis o Mapoot ang tweet?"
+      },
+      {
+        "shard_id": 2,
+        "shard": "Sinabi sa tweet na 'tanggap ko na talo si Mar Roxas'."
+      },
+      {
+        "shard_id": 3,
+        "shard": "Kahit daw matalo si Roxas, 'sana naman si LENI ROBREDO ay manalo'."
+      },
+      {
+        "shard_id": 4,
+        "shard": "May hashtag na #LabanLeni."
+      }
+    ],
+    "task": "td"
+  },
+  {
+    "task_id": "sharded-td/134",
+    "label": "Mapoot",
+    "text": "Kausap ang taxi driver kung sino ang iboboto nya, Mar Roxas daw tapos siniraan na si Duterte. Tahimik na lang ako. Hahahahaha! Matanda e.",
+    "shards": [
+      {
+        "shard_id": 1,
+        "shard": "Malinis o Mapoot ang sinabi?"
+      },
+      {
+        "shard_id": 2,
+        "shard": "Sabi niya may kausap siya na taxi driver kung sino ang iboboto niya."
+      },
+      {
+        "shard_id": 3,
+        "shard": "Sinabi ng driver na si Mar Roxas daw ang iboboto niya."
+      },
+      {
+        "shard_id": 4,
+        "shard": "Pagkatapos, siniraan daw ng driver si Duterte."
+      },
+      {
+        "shard_id": 5,
+        "shard": "Sabi niya, nanahimik na lang siya."
+      },
+      {
+        "shard_id": 6,
+        "shard": "May kasamang 'Hahahahaha!' na tawa."
+      },
+      {
+        "shard_id": 7,
+        "shard": "Sabi niya, 'Matanda e'."
+      }
+    ],
+    "task": "td"
+  },
+  {
+    "task_id": "sharded-td/3",
+    "label": "Malinis",
+    "text": "Bombo Radyo Philippines - Palasyo pumalag sa paninisi ni Binay sa Zapanta case https://t.co/HWAUkRXRkx",
+    "shards": [
+      {
+        "shard_id": 1,
+        "shard": "Malinis ba o Mapoot ang post?"
+      },
+      {
+        "shard_id": 2,
+        "shard": "Ang balita ay tungkol sa 'Palasyo pumalag sa paninisi ni Binay sa Zapanta case'."
+      },
+      {
+        "shard_id": 3,
+        "shard": "Ang pinagmulan ng post ay 'Bombo Radyo Philippines'."
+      },
+      {
+        "shard_id": 4,
+        "shard": "May link na 'https://t.co/HWAUkRXRkx' sa dulo ng post."
+      }
+    ],
+    "task": "td"
+  },
+  {
+    "task_id": "sharded-td/4",
+    "label": "Mapoot",
+    "text": "Wag kami Grace Poe nagkabisado ka na naman, mamaya mali mali na naman ang info mo. Don't us\n\n #PiliPinasDebates2016",
+    "shards": [
+      {
+        "shard_id": 1,
+        "shard": "Malinis ba o Mapoot ang tweet?"
+      },
+      {
+        "shard_id": 2,
+        "shard": "Sabi sa tweet, 'Wag kami Grace Poe'."
+      },
+      {
+        "shard_id": 3,
+        "shard": "Ang tweet ay nag-akusa, 'nagkabisado ka na naman'."
+      },
+      {
+        "shard_id": 4,
+        "shard": "Sinabi sa tweet, 'mamaya mali mali na naman ang info mo'."
+      },
+      {
+        "shard_id": 5,
+        "shard": "Sabi sa tweet, 'Don't us'."
+      },
+      {
+        "shard_id": 6,
+        "shard": "Nakalagay sa huli ng tweet ang hashtag na #PiliPinasDebates2016."
+      }
+    ],
+    "task": "td"
+  },
+  {
+    "task_id": "sharded-td/250",
+    "label": "Malinis",
+    "text": "Friends nakakalikutan niyo, ang leading VP nung 2010 surveys ay Roxas by landslide. Nanalo si Binay. Madami pang pwede mangyari",
+    "shards": [
+      {
+        "shard_id": 1,
+        "shard": "Malinis o Mapoot ba ang sinabi?"
+      },
+      {
+        "shard_id": 2,
+        "shard": "Ang mensahe ay paalala para sa kaniyang mga friends."
+      },
+      {
+        "shard_id": 3,
+        "shard": "Sinabi niya, 'ang leading VP nung 2010 surveys ay Roxas by landslide'."
+      },
+      {
+        "shard_id": 4,
+        "shard": "Noon daw, nanalo si Binay."
+      },
+      {
+        "shard_id": 5,
+        "shard": "Sabi niya, 'Madami pang pwede mangyari'."
+      }
+    ],
+    "task": "td"
+  },
+  {
+    "task_id": "sharded-nli/58661n",
+    "label": "C",
+    "sentence1": "May nakita si lolo isang gabi.",
+    "sentence2": "Isang gabi, nakakita si Lolo ng multo.",
+    "shards": [
+      {
+        "shard_id": 1,
+        "shard": "relasyon ng dalawang sentence?"
+      },
+      {
+        "shard_id": 2,
+        "shard": "Ang SENTENCE_1 ay nagsasabing, \"May nakita si lolo.\""
+      },
+      {
+        "shard_id": 3,
+        "shard": "Ang SENTENCE_1 ay nagsasabing may nakita siya isang gabi."
+      },
+      {
+        "shard_id": 4,
+        "shard": "Ang SENTENCE_2 ay nagsasabing, \"nakakita si Lolo ng multo.\""
+      },
+      {
+        "shard_id": 5,
+        "shard": "Sa isang gabi nangyari ang nasa SENTENCE_2."
+      }
+    ],
+    "task": "nli"
+  },
+  {
+    "task_id": "sharded-nli/35053c",
+    "label": "B",
+    "sentence1": "Hindi lamang dapat palitan ang mga capital goods habang nagde-depreciate, kundi gayundin ang bagong mga salinlahi ng mga manggagawa",
+    "sentence2": "Tumatamagal nang walang hanggan ang mga capital goods.",
+    "shards": [
+      {
+        "shard_id": 1,
+        "shard": "relasyon ng dalawang pangungusap?"
+      },
+      {
+        "shard_id": 2,
+        "shard": "Sabi sa SENTENCE_1, hindi lamang dapat palitan ang mga capital goods habang nagde-depriciate."
+      },
+      {
+        "shard_id": 3,
+        "shard": "Sa SENTENCE_1, dapat gayundin ang bagong salinlahi ng mga manggagawa."
+      },
+      {
+        "shard_id": 4,
+        "shard": "Ang SENTENCE_2 ay nagsasabing tumatamagal nang walang hanggan ang mga capital goods."
+      }
+    ],
+    "task": "nli"
+  },
+  {
+    "task_id": "sharded-nli/33555n",
+    "label": "C",
+    "sentence1": "Marami akong nababasang kuwento tungkol sa inyo.",
+    "sentence2": "Madalas ko kayong basahan ng mga kuwento bago matulog.",
+    "shards": [
+      {
+        "shard_id": 1,
+        "shard": "relasyon ng dalawang sentence?"
+      },
+      {
+        "shard_id": 2,
+        "shard": "Ang SENTENCE_1 ay nagsasabing, \"Marami akong nababasang kuwento.\""
+      },
+      {
+        "shard_id": 3,
+        "shard": "Sa SENTENCE_1, ang mga kwento raw ay \"tungkol sa inyo.\""
+      },
+      {
+        "shard_id": 4,
+        "shard": "Ang SENTENCE_2 ay nagsasabing, \"Madalas ko kayong basahan ng mga kuwento.\""
+      },
+      {
+        "shard_id": 5,
+        "shard": "Ang pagbabasa sa SENTENCE_2 ay ginagawa bago sila matulog."
+      }
+    ],
+    "task": "nli"
+  },
+  {
+    "task_id": "sharded-nli/7856n",
+    "label": "A",
+    "sentence1": "ngunit paano mo nalalaman ang mabuti mula sa masama",
+    "sentence2": "Subalit paano mo malalaman kung mabuti o masama ang pagpipilian?",
+    "shards": [
+      {
+        "shard_id": 1,
+        "shard": "relasyon ng SENTENCE_1 at SENTENCE_2?"
+      },
+      {
+        "shard_id": 2,
+        "shard": "Sa SENTENCE_1 tinatanong, 'ngunit paano mo nalalaman?'"
+      },
+      {
+        "shard_id": 3,
+        "shard": "Sa SENTENCE_1, ang tanong ay tungkol sa pag-alam sa mabuti mula sa masama."
+      },
+      {
+        "shard_id": 4,
+        "shard": "Sa SENTENCE_2 nagtatanong, 'Subalit paano mo malalaman?'"
+      },
+      {
+        "shard_id": 5,
+        "shard": "Sa SENTENCE_2, ang tanong ay kung mabuti o masama ang pagpipilian."
+      }
+    ],
+    "task": "nli"
+  },
+  {
+    "task_id": "sharded-nli/29632e",
+    "label": "A",
+    "sentence1": "Sa katunayan, ang mga bansa sa Europa ay kailangan ng matinding fiscal housecleaning.",
+    "sentence2": "Kailangang magkaroon ng malubhang fiscal housecleaning ng mga bansa sa Europa.",
+    "shards": [
+      {
+        "shard_id": 1,
+        "shard": "Ano ang relasyon ng dalawang pangungusap?"
+      },
+      {
+        "shard_id": 2,
+        "shard": "Tungkol sa fiscal housecleaning ang pinag-uusapan ng dalawang pangungusap."
+      },
+      {
+        "shard_id": 3,
+        "shard": "Sabi sa SENTENCE_1, ang mga bansa sa Europa ay kailangan ng matinding ganito."
+      },
+      {
+        "shard_id": 4,
+        "shard": "Ang SENTENCE_2 ay nagsasabi na kailangan magkaroon ng malubhang ganito ng mga bansa sa Europa."
+      }
+    ],
+    "task": "nli"
+  },
+  {
+    "task_id": "sharded-cr/1",
+    "label": "A",
+    "premise": "Pinuno ng bata ng buhangin ang balde.",
+    "question_translated": "sanhi",
+    "choice1": "Nagtatayo siya ng sand castle.",
+    "choice2": "Nangongolekta siya ng mga kabibi sa buhangin.",
+    "shards": [
+      {
+        "shard_id": 1,
+        "shard": "ano ang sanhi ng ginawa ng bata?"
+      },
+      {
+        "shard_id": 2,
+        "shard": "Mayroong pinuno ang bata ng buhangin."
+      },
+      {
+        "shard_id": 3,
+        "shard": "Pinuno ng bata ang balde."
+      },
+      {
+        "shard_id": 4,
+        "shard": "Piliin ang titik A kung ang sanhi ay nagtatayo ang bata ng sand castle."
+      },
+      {
+        "shard_id": 5,
+        "shard": "Piliin ang titik B kung ang sanhi ay nangongolekta ang bata ng mga kabibi."
+      },
+      {
+        "shard_id": 6,
+        "shard": "Sa option B, ang mga kabibi ay nilagay sa buhangin."
+      }
+    ],
+    "task": "cr"
+  },
+  {
+    "task_id": "sharded-cr/2",
+    "label": "B",
+    "premise": "Nais ng batang babae na magsuot ng hikaw.",
+    "question_translated": "bunga",
+    "choice1": "Nagpa-tattoo siya.",
+    "choice2": "Nagpabutas siya ng tainga.",
+    "shards": [
+      {
+        "shard_id": 1,
+        "shard": "Ano ang bunga ng nais ng batang babae?"
+      },
+      {
+        "shard_id": 2,
+        "shard": "May nais na suotin ang batang babae."
+      },
+      {
+        "shard_id": 3,
+        "shard": "Isang hikaw ang gusto niya."
+      },
+      {
+        "shard_id": 4,
+        "shard": "Piliin ang titik A kung nagpa-tattoo ang batang babae."
+      },
+      {
+        "shard_id": 5,
+        "shard": "Piliin ang B kung ang babae ay nagpabutas."
+      },
+      {
+        "shard_id": 6,
+        "shard": "Sa option B, ang tainga ng babae ang binutasan."
+      }
+    ],
+    "task": "cr"
+  },
+  {
+    "task_id": "sharded-cr/3",
+    "label": "A",
+    "premise": "Nagutom ang skunk.",
+    "question_translated": "bunga",
+    "choice1": "Naggala ang skunk sa gubat.",
+    "choice2": "Naglabas ng masamang amoy ang aso.",
+    "shards": [
+      {
+        "shard_id": 1,
+        "shard": "Ano ang bunga ng sitwasyon?"
+      },
+      {
+        "shard_id": 2,
+        "shard": "Ang sitwasyon ay nagutom ang skunk."
+      },
+      {
+        "shard_id": 3,
+        "shard": "Piliin ang titik A kung ang bunga ay naggala ang skunk."
+      },
+      {
+        "shard_id": 4,
+        "shard": "Sa opsyon A, sa gubat ito naggala."
+      },
+      {
+        "shard_id": 5,
+        "shard": "Piliin ang B kung naglabas ito ng masamang amoy."
+      },
+      {
+        "shard_id": 6,
+        "shard": "Sa option B, ang aso ang naglabas ng amoy."
+      }
+    ],
+    "task": "cr"
+  },
+  {
+    "task_id": "sharded-cr/5",
+    "label": "A",
+    "premise": "Bumangga ang trak sa motorsiklo sa tulay.",
+    "question_translated": "bunga",
+    "choice1": "Namatay ang nakamotorsiklo.",
+    "choice2": "Gumuho ang tulay.",
+    "shards": [
+      {
+        "shard_id": 1,
+        "shard": "ano ang bunga ng sitwasyon?"
+      },
+      {
+        "shard_id": 2,
+        "shard": "Ang sitwasyon ay bumangga ang trak."
+      },
+      {
+        "shard_id": 3,
+        "shard": "Ang binangga ng trak ay isang motorsiklo."
+      },
+      {
+        "shard_id": 4,
+        "shard": "Nangyari ang banggaan sa tulay."
+      },
+      {
+        "shard_id": 5,
+        "shard": "Ang posibleng bunga (A) ay namatay ang nakamotorsiklo."
+      },
+      {
+        "shard_id": 6,
+        "shard": "Ang posibleng bunga (B) ay gumuho ang tulay."
+      }
+    ],
+    "task": "cr"
+  },
+  {
+    "task_id": "sharded-cr/343",
+    "label": "A",
+    "premise": "Magkatulad ang paniniwala ng lalaki sa kanyang mga magulang.",
+    "question_translated": "sanhi",
+    "choice1": "Naimpluwensyahan siya ng kanyang mga magulang.",
+    "choice2": "Itinakwil siya ng kanyang mga magulang.",
+    "shards": [
+      {
+        "shard_id": 1,
+        "shard": "ano ang sanhi ng sitwasyon ng lalaki?"
+      },
+      {
+        "shard_id": 2,
+        "shard": "Ang sitwasyon ng lalaki ay katulad ang paniniwala niya sa paniniwala ng mga magulang niya."
+      },
+      {
+        "shard_id": 3,
+        "shard": "Ang nasa dalawang option na A at B ay gawa ng kaniyang mga magulang."
+      },
+      {
+        "shard_id": 4,
+        "shard": "Sa titik A, ang lalaki ay naimpluwensyahan."
+      },
+      {
+        "shard_id": 5,
+        "shard": "Sa titik B, ang lalaki ay itinakwil."
+      }
+    ],
+    "task": "cr"
+  },
+  {
+    "task_id": "sharded-asu/57",
+    "label": "Naaprubahan ang pagtatayo ng mga turbina sa Quixwood Moor.",
+    "text": "Humingi ng pahintulot ang Banks Renewables na itayo ang mga turbina sa Quixwood Moor, isang lugar sa pagitan ng isang nayon at Abbey St Bathans sa Berwickshire. Naaprubahan ang aplikasyon dahil sa casting vote ng tagapangulo ng komite sa pagpaplano na si Konsehal Jim Brown matapos tumabla ang mga boto sa 5-5. Nagrekomenda ang mga opisyal ng pagpaplano na ang mga panukala ay tinanggap “nang balanse\". Ang lokal na Konsehal na si Jim Fullarton ay nagsalita laban sa plano, na nagsasabi na napansin niyang kakaiba na ang Quixwood ay itinuring na katanggap-tanggap kahit na ang komite ay sumang-ayon na kumunsulta sa paglilimita sa mga sukat ng turbina sa mga mas maliliit na komunidad sa lugar.",
+    "shards": [
+      {
+        "shard_id": 1,
+        "shard": "Kailangan ko ng buod ng isang artikulong Filipino. Ibabahagi ko ang mga bahagi ng artikulo ng paunti-unti habang natatanggap ko ang mga ito, ikonsidera ang lahat ng mga bahagi. Unang bahagi: Humingi ng pahintulot ang Banks Renewables na itayo ang mga turbina sa Quixwood Moor, isang lugar sa pagitan ng isang nayon at Abbey St Bathans sa Berwickshire."
+      },
+      {
+        "shard_id": 2,
+        "shard": "Nakatanggap ako ng bago. Paki-sulat muli ng buod at ikonsidera ang lahat ng teksto (mula sa nakaraan, at ang mga bago). Isa pang bahagi: Naaprubahan ang aplikasyon dahil sa casting vote ng tagapangulo ng komite sa pagpaplano na si Konsehal Jim Brown matapos tumabla ang mga boto sa 5-5."
+      },
+      {
+        "shard_id": 3,
+        "shard": "Mayroon na namang bagong ibabahagi. Paki-sulat muli ng buod at ikonsidera ang lahat ng teksto (mula sa nakaraan, at ang mga bago). Isa pang bahagi: Nagrekomenda ang mga opisyal ng pagpaplano na ang mga panukala ay tinanggap “nang balanse\"."
+      },
+      {
+        "shard_id": 4,
+        "shard": "Mayroon pa akong natanggap. Paki-sulat muli ng buod at ikonsidera ang lahat ng teksto (mula sa nakaraan, at ang mga bago). Isa pang bahagi: Ang lokal na Konsehal na si Jim Fullarton ay nagsalita laban sa plano, na nagsasabi na napansin niyang kakaiba na ang Quixwood ay itinuring na katanggap-tanggap kahit na ang komite ay sumang-ayon na kumunsulta sa paglilimita sa mga sukat ng turbina sa mga mas maliliit na komunidad sa lugar."
+      }
+    ],
+    "task": "asu"
+  },
+  {
+    "task_id": "sharded-asu/11",
+    "label": "Winasak ang isang cash machine sa isang gasolinahan sa Bristol, sabi ng pulisya.",
+    "text": "Winasak ang dispenser sa Hartcliffe Way noong mga 03:30 BST na nagbunga ng pagkalat ng mga £10 na salapi sa harapan nito. Sinabi ng isang tagapagsalita ng pulisya ng Avon and Somerset na hindi pa nila matukoy kung may kinuha na pera ang mga salarin. Nagbabantay sa eksena ang mga opisyal at binibilang nila ang pera upang makita kung magkano, kung mayroon man, ang ninakaw. Hiniling ng pulisya ang sinumang may impormasyon na makipag-ugnayan sa kanila. Inatake rin ang cash dispenser sa isang hiwalay na insidente noong isang taon, at isang lalaki ang nahatulan para sa pagkakasala.",
+    "shards": [
+      {
+        "shard_id": 1,
+        "shard": "Kailangan ko ng buod ng isang artikulong Filipino. Ibabahagi ko ang mga bahagi ng artikulo ng paunti-unti habang natatanggap ko ang mga ito, ikonsidera ang lahat ng mga bahagi. Unang bahagi: Winasak ang dispenser sa Hartcliffe Way noong mga 03:30 BST na nagbunga ng pagkalat ng mga £10 na salapi sa harapan nito."
+      },
+      {
+        "shard_id": 2,
+        "shard": "Nakatanggap ako ng bago. Paki-sulat muli ng buod at ikonsidera ang lahat ng teksto (mula sa nakaraan, at ang mga bago). Isa pang bahagi: Sinabi ng isang tagapagsalita ng pulisya ng Avon and Somerset na hindi pa nila matukoy kung may kinuha na pera ang mga salarin."
+      },
+      {
+        "shard_id": 3,
+        "shard": "Mayroon na namang bagong ibabahagi. Paki-sulat muli ng buod at ikonsidera ang lahat ng teksto (mula sa nakaraan, at ang mga bago). Isa pang bahagi: Nagbabantay sa eksena ang mga opisyal at binibilang nila ang pera upang makita kung magkano, kung mayroon man, ang ninakaw."
+      },
+      {
+        "shard_id": 4,
+        "shard": "Mayroon pa akong natanggap. Paki-sulat muli ng buod at ikonsidera ang lahat ng teksto (mula sa nakaraan, at ang mga bago). Isa pang bahagi: Hiniling ng pulisya ang sinumang may impormasyon na makipag-ugnayan sa kanila."
+      },
+      {
+        "shard_id": 5,
+        "shard": "Nakatanggap ako ng bago. Paki-sulat muli ng buod at ikonsidera ang lahat ng teksto (mula sa nakaraan, at ang mga bago). Isa pang bahagi: Inatake rin ang cash dispenser sa isang hiwalay na insidente noong isang taon, at isang lalaki ang nahatulan para sa pagkakasala."
+      }
+    ],
+    "task": "asu"
+  },
+  {
+    "task_id": "sharded-asu/23",
+    "label": "Inililista ng talahanayang ito ang mga pangunahing paaralan na may pinakamataas na pagkamit sa Inglatera noong 2014.",
+    "text": "Sa lahat ng mga paaralang ito, 100% ng mga Antas 6 na bata ang nakamit ng hindi bababa sa Antas 4 sa pagbabasa, pagsusulat, at sipnayan. Kapag niraranggo sa katampatan na puntos – ang average na bilang ng mga puntos na nakuha ng bawat mag-aaral sa pagsusulit – itong mga 213 na paaralan ang nangunguna. Hindi kasama sa listahan ang mga paaralan na may mas kaunti sa sampung mag-aaral sa Antas 6. (Gayunpaman, noong unang nailathala ang talahanayan, hindi sinasadyang ibinukod lamang nito ang mga paaralang may mas kaunti sa sampung mag-aaral sa buong paaralan. Ito ay inapdeyt noong 16 Disyembre)",
+    "shards": [
+      {
+        "shard_id": 1,
+        "shard": "Kailangan ko ng buod ng isang artikulong Filipino. Ibabahagi ko ang mga bahagi ng artikulo ng paunti-unti habang natatanggap ko ang mga ito, ikonsidera ang lahat ng mga bahagi. Unang bahagi: Sa lahat ng mga paaralang ito, 100% ng mga Antas 6 na bata ang nakamit ng hindi bababa sa Antas 4 sa pagbabasa, pagsusulat, at sipnayan."
+      },
+      {
+        "shard_id": 2,
+        "shard": "Nakatanggap ako ng bago. Paki-sulat muli ng buod at ikonsidera ang lahat ng teksto (mula sa nakaraan, at ang mga bago). Isa pang bahagi: Kapag niraranggo sa katampatan na puntos – ang average na bilang ng mga puntos na nakuha ng bawat mag-aaral sa pagsusulit – itong mga 213 na paaralan ang nangunguna."
+      },
+      {
+        "shard_id": 3,
+        "shard": "Mayroon na namang bagong ibabahagi. Paki-sulat muli ng buod at ikonsidera ang lahat ng teksto (mula sa nakaraan, at ang mga bago). Isa pang bahagi: Hindi kasama sa listahan ang mga paaralan na may mas kaunti sa sampung mag-aaral sa Antas 6."
+      },
+      {
+        "shard_id": 4,
+        "shard": "Mayroon pa akong natanggap. Paki-sulat muli ng buod at ikonsidera ang lahat ng teksto (mula sa nakaraan, at ang mga bago). Isa pang bahagi: (Gayunpaman, noong unang nailathala ang talahanayan, hindi sinasadyang ibinukod lamang nito ang mga paaralang may mas kaunti sa sampung mag-aaral sa buong paaralan.)"
+      },
+      {
+        "shard_id": 5,
+        "shard": "Nakatanggap ako ng bago. Paki-sulat muli ng buod at ikonsidera ang lahat ng teksto (mula sa nakaraan, at ang mga bago). Isa pang bahagi: (Ito ay inapdeyt noong 16 Disyembre)"
+      }
+    ],
+    "task": "asu"
+  },
+  {
+    "task_id": "sharded-asu/65",
+    "label": "Inihayag na kakanta ang The Wanted sa US talent show na American Idol sa Abril.",
+    "text": "Ni Chi Chi Izundu taga-ulat para sa Newsbeat entertainment Ang boy band ay naglilibot sa Estados Unidos. Itatanghal ng grupo ang kanilang kanta na Glad You Came na umabot sa panglimang puwesto sa US charts matapos itong itinampok sa palabas na Glee. Naging unang UK boy band ang The Wanted na pumasok sa unang tatlong puwesto ng iTunes chart ng Amerika. Na-download ang track nang 188,000 beses noong nakaraang linggo at nabenta na ngayon ng higit sa 300,000 kopya. Hindi tulad ng mga music chart sa UK, ang mga chart ng US ay bumabatay sa parehong airplay at mga benta nito. Sa pagsisimula ng Marso, sinabi ng The Wanted na mang-aawit na si Jay McGuiness: \"Ipinagmamalaki namin na ang Glad You Came ay gumaganap nang husto.”",
+    "shards": [
+      {
+        "shard_id": 1,
+        "shard": "Kailangan ko ng buod ng isang artikulong Filipino. Ibabahagi ko ang mga bahagi ng artikulo ng paunti-unti habang natatanggap ko ang mga ito, ikonsidera ang lahat ng mga bahagi. Unang bahagi: Ni Chi Chi Izundu taga-ulat para sa Newsbeat entertainment"
+      },
+      {
+        "shard_id": 2,
+        "shard": "Mayroon na namang bagong ibabahagi. Paki-sulat muli ng buod at ikonsidera ang lahat ng teksto (mula sa nakaraan, at ang mga bago). Isa pang bahagi: Itatanghal ng grupo ang kanilang kanta na Glad You Came na umabot sa panglimang puwesto sa US charts matapos itong itinampok sa palabas na Glee."
+      },
+      {
+        "shard_id": 2,
+        "shard": "Nakatanggap ako ng bago. Paki-sulat muli ng buod at ikonsidera ang lahat ng teksto (mula sa nakaraan, at ang mga bago). Isa pang bahagi: Ang boy band ay naglilibot sa Estados Unidos."
+      },
+      {
+        "shard_id": 3,
+        "shard": "Mayroon na namang bagong ibabahagi. Paki-sulat muli ng buod at ikonsidera ang lahat ng teksto (mula sa nakaraan, at ang mga bago). Isa pang bahagi: Naging unang UK boy band ang The Wanted na pumasok sa unang tatlong puwesto ng iTunes chart ng Amerika."
+      },
+      {
+        "shard_id": 4,
+        "shard": "Mayroon pa akong natanggap. Paki-sulat muli ng buod at ikonsidera ang lahat ng teksto (mula sa nakaraan, at ang mga bago). Isa pang bahagi: Na-download ang track nang 188,000 beses noong nakaraang linggo at nabenta na ngayon ng higit sa 300,000 kopya."
+      },
+      {
+        "shard_id": 5,
+        "shard": "Nakatanggap ako ng bago. Paki-sulat muli ng buod at ikonsidera ang lahat ng teksto (mula sa nakaraan, at ang mga bago). Isa pang bahagi: Hindi tulad ng mga music chart sa UK, ang mga chart ng US ay bumabatay sa parehong airplay at mga benta nito."
+      },
+      {
+        "shard_id": 6,
+        "shard": "Mayroon na namang bagong ibabahagi. Paki-sulat muli ng buod at ikonsidera ang lahat ng teksto (mula sa nakaraan, at ang mga bago). Isa pang bahagi: Sa pagsisimula ng Marso, sinabi ng The Wanted na mang-aawit na si Jay McGuiness: \"Ipinagmamalaki namin na ang Glad You Came ay gumaganap nang husto.”"
+      }
+    ],
+    "task": "asu"
+  },
+  {
+    "task_id": "sharded-asu/5",
+    "label": "Gaano ka kahusay na matandaan ang mga kuwento at tao sa likod ng mga balita ngayong taon?",
+    "text": "Subukan ang iyong memorya tungkol sa taong 2020 sa aming apat na bahagi na pagsusulit tungkol sa Pasko - 52 tanong para sa 52 linggo ng taon. Narito ang aming pangatlong pagpipilian, na sumasaklaw sa Hulyo hanggang Setyembre. Kung hindi mo makita ang pagsusulit, mag-click dito. Subukan ang natitirang bahagi ng pagsusulit: Unang bahagi - Enero hanggang Marso. Ikalawang bahagi - Abril hanggang Hunyo. Ikaapat na bahagi - Oktubre hanggang Disyembre Anong impormasyon ang kinokolekta namin mula sa pagsusulit na ito? Paunawa sa privacy.",
+    "shards": [
+      {
+        "shard_id": 1,
+        "shard": "Kailangan ko ng buod ng isang artikulong Filipino. Ibabahagi ko ang mga bahagi ng artikulo ng paunti-unti habang natatanggap ko ang mga ito, ikonsidera ang lahat ng mga bahagi. Unang bahagi: Subukan ang iyong memorya tungkol sa taong 2020 sa aming apat na bahagi na pagsusulit tungkol sa Pasko - 52 tanong para sa 52 linggo ng taon."
+      },
+      {
+        "shard_id": 2,
+        "shard": "Nakatanggap ako ng bago. Paki-sulat muli ng buod at ikonsidera ang lahat ng teksto (mula sa nakaraan, at ang mga bago). Isa pang bahagi: Narito ang aming pangatlong pagpipilian, na sumasaklaw sa Hulyo hanggang Setyembre."
+      },
+      {
+        "shard_id": 3,
+        "shard": "Mayroon na namang bagong ibabahagi. Paki-sulat muli ng buod at ikonsidera ang lahat ng teksto (mula sa nakaraan, at ang mga bago). Isa pang bahagi: Kung hindi mo makita ang pagsusulit, mag-click dito."
+      },
+      {
+        "shard_id": 4,
+        "shard": "Mayroon pa akong natanggap. Paki-sulat muli ng buod at ikonsidera ang lahat ng teksto (mula sa nakaraan, at ang mga bago). Isa pang bahagi: Subukan ang natitirang bahagi ng pagsusulit: Unang bahagi - Enero hanggang Marso."
+      },
+      {
+        "shard_id": 5,
+        "shard": "Nakatanggap ako ng bago. Paki-sulat muli ng buod at ikonsidera ang lahat ng teksto (mula sa nakaraan, at ang mga bago). Isa pang bahagi: Ikalawang bahagi - Abril hanggang Hunyo."
+      },
+      {
+        "shard_id": 6,
+        "shard": "Mayroon na namang bagong ibabahagi. Paki-sulat muli ng buod at ikonsidera ang lahat ng teksto (mula sa nakaraan, at ang mga bago). Isa pang bahagi: Ikaapat na bahagi - Oktubre hanggang Disyembre"
+      },
+      {
+        "shard_id": 7,
+        "shard": "Mayroon pa akong natanggap. Paki-sulat muli ng buod at ikonsidera ang lahat ng teksto (mula sa nakaraan, at ang mga bago). Isa pang bahagi: Anong impormasyon ang kinokolekta namin mula sa pagsusulit na ito?"
+      },
+      {
+        "shard_id": 8,
+        "shard": "Nakatanggap ako ng bago. Paki-sulat muli ng buod at ikonsidera ang lahat ng teksto (mula sa nakaraan, at ang mga bago). Isa pang bahagi: Paunawa sa privacy."
+      }
+    ],
+    "task": "asu"
+  }
+]

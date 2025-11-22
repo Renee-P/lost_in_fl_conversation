@@ -1,0 +1,5 @@
+Isalin ang sumusunod na teksto sa [[language]].
+
+Sumagot gamit ang sumusunod na format:
+Salin: $TRANSLATION
+Palitan ang $TRANSLATION ng isinalin na teksto.[[fewshot_examples]]

@@ -15,7 +15,7 @@ Rules:
 
 ## Input:
 ~~~
-Iuri ang mga sumusunod na pangungusap kung: Malinis (walang toxicity) o Mapoot (may toxicity at direktang pag-atake sa isang tao).
+Iuri ang mga sumusunod na pangungusap kung Malinis o Mapoot.
 
 Pangungusap:
 ```
@@ -25,9 +25,7 @@ Wag kami Grace Poe nagkabisado ka na naman, mamaya mali mali na naman ang info m
 
 ## Output:
 {"segments": [
-  {"segment": "Iuri ang pangungusap"},
-  {"segment": "Malinis (walang toxicity)"},
-  {"segment": "Mapoot (may toxicity at direktang pag-atake sa isang tao)"}
+  {"segment": "Iuri ang pangungusap kung Malinis o Mapoot"},
   {"segment": "Wag kami Grace Poe"},
   {"segment": "nagkabisado ka na naman"},
   {"segment": "mamaya mali mali na naman ang info mo"},
@@ -39,7 +37,7 @@ Wag kami Grace Poe nagkabisado ka na naman, mamaya mali mali na naman ang info m
 
 ## Input:
 ~~~
-Iuri ang mga sumusunod na pangungusap kung: Malinis (walang toxicity) o Mapoot (may toxicity at direktang pag-atake sa isang tao).
+Iuri ang mga sumusunod na pangungusap kung Malinis o Mapoot.
 
 Pangungusap:
 ```
@@ -49,9 +47,7 @@ tanggap ko na talo si Mar Roxas pero sana naman si LENI ROBREDO ay manalo. #Laba
 
 ## Output:
 {"segments": [
-  {"segment": "Iuri ang pangungusap"},
-  {"segment": "Malinis (walang toxicity)"},
-  {"segment": "Mapoot (may toxicity at direktang pag-atake sa isang tao)"}
+  {"segment": "Iuri ang sumusunod na pangungusap kung Malinis o Mapoot"},
   {"segment": "tanggap ko na talo si Mar Roxas"},
   {"segment": "pero sana naman si LENI ROBREDO ay manalo"},
   {"segment": "#LabanLeni"}
@@ -61,7 +57,7 @@ tanggap ko na talo si Mar Roxas pero sana naman si LENI ROBREDO ay manalo. #Laba
 
 ## Input:
 ~~~
-Iuri ang mga sumusunod na pangungusap kung: Malinis (walang toxicity) o Mapoot (may toxicity at direktang pag-atake sa isang tao).
+Iuri ang mga sumusunod na pangungusap kung Malinis o Mapoot.
 
 Pangungusap:
 ```
@@ -71,9 +67,7 @@ Di na nakakatuwa yung mukha ni Mar Roxas sa TV. Nakakatamad manood. ??
 
 ## Output:
 {"segments": [
-  {"segment": "Iuri ang pangungusap"},
-  {"segment": "Malinis (walang toxicity)"},
-  {"segment": "Mapoot (may toxicity at direktang pag-atake sa isang tao)"}
+  {"segment": "Iuri ang sumusunod na pangungusap kung Malinis o Mapoot"},
   {"segment": "Di na nakakatuwa yung mukha ni Mar Roxas sa TV"},
   {"segment": "Nakakatamad manood"},
   {"segment": "??"}
@@ -82,7 +76,7 @@ Di na nakakatuwa yung mukha ni Mar Roxas sa TV. Nakakatamad manood. ??
 Now complete the task for the following fully specified instruction:
 
 ~~~
-Iuri ang mga sumusunod na pangungusap kung: Malinis (walang toxicity) o Mapoot (may toxicity at direktang pag-atake sa isang tao).
+Iuri ang mga sumusunod na pangungusap kung Malinis o Mapoot.
 
 Pangungusap:
 ```

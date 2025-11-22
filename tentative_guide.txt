@@ -4,22 +4,31 @@ lost_in_fl_conversation/
 │
 ├── data/
 │   ├── raw/                  # original datasets from Batayan
-│   │   ├── task1.json
-│   │   ├── task2.json
+│   │   ├── task1/            # contains 2 jsonl files (for examples and actual dataset)
+│   │   ├── task2/
 │   │   └── ...
-│   ├── final/                # final datasets
-│   │   ├── task1.json        #or we could merge all after sharding phase ex. sharded_instructions.json
-│   │   ├── task2.json
-│   │   └── ...
-│
-├── prompts/                  # all LLM prompt templates
+│   ├── sharded_instructions.json   # final sharded instructions dataset
+│   ├── sharded_examples.json       # fewshot examples
+|   ├── sharded_mt.json             # dataset for machine translation task (just in case)
+|   └── sharded_mt_examples.json    # fewshot examples for mt
+|
+├── prompts/                        # all LLM prompt templates
 │   ├── task1/  
 │   │   ├── task1_segment.txt                   # segmentation prompt template
 │   │   ├── task1_conversational.txt            # rephrasing prompt template
-│   │   ├── simulation_full.txt                 #not sure
-│   │   ├── simulation_concat.txt               #not sure
-│   │   └── simulation_shuffle_concat.txt       #not sure
+│   │   ├── task1_full_prompt.txt               # FULL simulation prompt template
+│   │   ├── task1_system_prompt.txt             # system message prompt template (for SHARDED (system) and CONCAT (prepended))
+│   │   └── task1__full_example.txt             # FULL simulation few-shot example template (for base models)
+│   ├── task2/
+│   ├── ...
+│   ├── sharded_example.txt                     # SHARDED and CONCAT simulation few-shot example template
+│   ├── system_answer_extraction_gen            # prompt template for system answer extractor LLM
+│   ├── system_answer_extraction_prefix_suffix  # will delete this later... none of our tasks need this
+│   └── system_turn_categorization.txt          # prompt template for system strategy classifier 
 │
+
+!the rest to be edited!
+
 ├── utils/
 │   ├── io_utils.py           # load/save helpers - not sure
 │   ├── model.py              # wrapper for calling LLMs with prompts

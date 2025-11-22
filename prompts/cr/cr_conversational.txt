@@ -1,0 +1,188 @@
+You are given segments of a fully specified causal reasoning instruction where the task is to determine the relationship between two events. Specifically, which of the statements is the cause (sanhi) or effect (bunga) of the given premise (sitwasyon). Your task is to: (1) choose one that will be the initial shard of a multi-step query, and then (2) rephrase each segment into a conversational version that are provided to the system in a follow-up turn of the conversation.
+
+Your output should be a JSON object in the following format:
+{
+    "initial_segment": "[exact excerpt from the instruction]",
+    "initial_shard": "conversational version of the initial segment",
+    "shards": [
+      {"segment": "[exact excerpt from the instruction]", "shard": "conversational version of the segment taking the rest of the instruction into account"}
+    ]
+}
+
+# Example 1:
+
+## Full Instruction:
+~~~
+Batay sa ibibigay na sitwasyon, alin sa sumusunod na pagpipilian ang mas maaari na sanhi?
+
+Sitwasyon:
+```
+Pinuno ng bata ng buhangin ang balde.
+```
+Piliin ang pinaka-angkop na sagot mula sa sumusunod na pagpipilian:
+A: Nagtatayo siya ng sand castle.
+B: Nangongolekta siya ng mga kabibi sa buhangin.
+~~~
+
+## Segments:
+{"segments": [
+  {"segment": "Batay sa sitwasyon, alin ang mas maari na sanhi?"},
+  {"segment": "Sitwasyon: Pinuno ng bata ng buhangin"},
+  {"segment": "ang balde"},
+  {"segment": "A: Nagtatayo siya ng sand castle"},
+  {"segment": "B: Nangongolekta siya ng mga kabibi"},
+  {"segment": "sa buhangin"}
+]}
+
+## Output:
+{
+  "initial_segment": "Batay sa sitwasyon, alin ang mas maari na sanhi?",
+  "initial_shard": "ano ang sanhi ng ginawa ng bata?",
+  "shards": [
+    {"segment": "Sitwasyon: Pinuno ng bata ng buhangin", "shard": "Mayroong pinuno ang bata ng buhangin."},
+    {"segment": "ang balde", "shard": "Pinuno ng bata ang balde."},
+    {"segment": "A: Nagtatayo siya ng sand castle", "shard": "Piliin ang titik A kung ang sanhi ay nagtatayo ang bata ng sand castle."},
+    {"segment": "B: Nangongolekta siya ng mga kabibi", "shard": "Piliin ang titik B kung ang sanhi ay nangongolekta ang bata ng mga kabibi."},
+    {"segment": "sa buhangin" "shard": "Sa option B, ang mga kabibi ay nilagay sa buhangin."}
+  ]
+}
+
+# Example 2:
+
+## Full Instruction:
+~~~
+Batay sa ibibigay na sitwasyon, alin sa sumusunod na pagpipilian ang mas maaari na bunga?
+
+Sitwasyon:
+```
+Nais ng batang babae na magsuot ng hikaw.
+```
+Piliin ang pinaka-angkop na sagot mula sa sumusunod na pagpipilian:
+A: Nagpa-tattoo siya.
+B: Nagpabutas siya ng tainga.
+~~~
+
+## Segments:
+{"segments": [
+  {"segment": "Batay sa sitwasyon, alin ang mas maari na bunga?"},
+  {"segment": "Sitwasyon: Nais ng batang babae na magsuot"},
+  {"segment": "ng hikaw"},
+  {"segment": "A: Nagpa-tattoo siya"},
+  {"segment": "B: Nagpabutas siya"},
+  {"segment": "ng tainga"}
+]}
+
+## Output:
+{
+  "initial_segment": "Batay sa sitwasyon, alin ang mas maari na bunga?",
+  "initial_shard": "Ano ang bunga ng nais ng batang babae?",
+  "shards": [
+    {"segment": "Sitwasyon: Nais ng batang babae na magsuot", "shard": "May nais na suotin ang batang babae."},
+    {"segment": "ng hikaw", "shard": "Isang hikaw ang gusto niya."},
+    {"segment": "A: Nagpa-tattoo siya", "shard": "Piliin ang titik A kung nagpa-tattoo ang batang babae."},
+    {"segment": "B: Nagpabutas siya", "shard": "Piliin ang B kung ang babae ay nagpabutas."},
+    {"segment": "B: ng tainga", "shard": "Sa option B, ang tainga ng babae ang binutasan."}
+  ]
+}
+
+# Example 3:
+
+## Full Instruction:
+~~~
+Batay sa ibibigay na sitwasyon, alin sa sumusunod na pagpipilian ang mas maaari na bunga?
+
+Sitwasyon:
+```
+Nagutom ang skunk.
+```
+Piliin ang pinaka-angkop na sagot mula sa sumusunod na pagpipilian:
+A: Naggala ang skunk sa gubat.
+B: Naglabas ng masamang amoy ang aso.
+~~~
+
+## Segments:
+{"segments": [
+  {"segment": "Batay sa sitwasyon, alin ang mas maari na bunga?"},
+  {"segment": "Sitwasyon: Nagutom ang skunk"},
+  {"segment": "A: Naggala ang skunk"},
+  {"segment": "sa gubat"},
+  {"segment": "B: Naglabas ng masamang amoy"},
+  {"segment": "ang aso"}
+]}
+
+## Output:
+{
+  "initial_segment": "Batay sa sitwasyon, alin ang mas maari na bunga?",
+  "initial_shard": "Ano ang bunga ng sitwasyon?",
+  "shards": [
+    {"segment": "Sitwasyon: Nagutom ang skunk", "shard": "Ang sitwasyon ay nagutom ang skunk."},
+    {"segment": "A: Naggala ang skunk", "shard": "Piliin ang titik A kung ang bunga ay naggala ang skunk"},
+    {"segment": "sa gubat", "shard": "Sa opsyon A, sa gubat naggala."},
+    {"segment": "B: Naglabas ng masamang amoy", "shard": "Piliin ang B kung naglabas ng masamang amoy."},
+    {"segment": "ang aso", "shard": "Sa option B, ang aso ang naglabas ng amoy."}
+  ]
+}
+
+# Example 4:
+
+## Full Instruction:
+~~~
+Batay sa ibibigay na sitwasyon, alin sa sumusunod na pagpipilian ang mas maaari na sanhi?
+
+Sitwasyon:
+```
+Natumba ng mga bata ang lampara.
+```
+Piliin ang pinaka-angkop na sagot mula sa sumusunod na pagpipilian:
+A: Tumalon sila sa kama.
+B: Nag-pillow fight sila.
+~~~
+
+## Segments:
+{"segments": [
+  {"segment": "Batay sa sitwasyon, alin ang mas maari na sanhi?"},
+  {"segment": "Sitwasyon: Natumba ng mga bata"},
+  {"segment": "ang lampara"},
+  {"segment": "A: Tumalon sila"},
+  {"segment": "sa kama"},
+  {"segment": "B: Nag-pillow fight sila"}
+]}
+
+## Output:
+{
+  "initial_segment": "Batay sa sitwasyon, alin ang mas maari na sanhi?",
+  "initial_shard": "Ano ang sanhi ng ginawa ng mga bata?",
+  "shards": [
+    {"segment": "Sitwasyon: Natumba ng mga bata", "shard": "Nakatumba ang mga bata."},
+    {"segment": "ang lampara", "shard": "Ang natumba ay ang lampara."},
+    {"segment": "A: Tumalon sila", "shard": "Piliin ang opsyon A kung ang sanhi ay ang pagtalon ng mga bata."},
+    {"segment": "sa kama", "shard": "Sa opsyon A, sa kama tumalon."},
+    {"segment": "B: Nag-pillow fight sila", "shard": "Piliin ang B kung ang dahilan ay ang pag-pillow fight ng mga bata."}
+  ]
+}
+
+Rules:
+- [Transform each segment] Make sure each segment is included either as the initial shard or in the rest of the shards. Do not forget any segments.
+- [Short initial shard] Make the initial shard short, not a full sentence, similar to how users use a search engine like Google.
+- [Order of shards] Order the shards in order of importance, from most to least important to the initial shard. You do not need to keep the order the segments that are provided in.
+- [Initial shard selection] Choose the intent segment from the segments to form the initial shard.
+- [Self-contained shards] Do not use pronouns (e.g., ito, siya, niya, sila, nila) to reference information in the other segments in the shards.
+- [Shard paraphrasing] Make sure that the shard conveys the same information as the segment in a casual, colloquial way (i.e., what a human would say).
+
+Now complete the task for the following fully specified instance and segments:
+
+Fully Specified Instruction:
+~~~
+Batay sa ibibigay na sitwasyon, alin sa sumusunod na pagpipilian ang mas maaari na [[question_translated]]?
+
+Sitwasyon:
+```
+[[premise]]
+```
+Piliin ang pinaka-angkop na sagot mula sa sumusunod na pagpipilian:
+A: [[choice1]]
+B: [[choice2]]
+~~~
+
+Segments:
+[[segments]]

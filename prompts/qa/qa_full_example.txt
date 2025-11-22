@@ -1,0 +1,12 @@
+
+
+Talata:
+```
+[[text]]
+```
+Tanong: [[question]]
+A: [[choice1]]
+B: [[choice2]]
+C: [[choice3]]
+D: [[choice4]]
+Sagot: [[label]]

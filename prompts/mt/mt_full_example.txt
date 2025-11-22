@@ -1,0 +1,7 @@
+
+
+Teksto:
+```
+[[text]]
+```
+Salin: [[label]]

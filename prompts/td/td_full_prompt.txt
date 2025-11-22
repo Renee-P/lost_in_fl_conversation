@@ -1,0 +1,14 @@
+Isa kang toxicity detector. Nangangahulugan ang mga sumusunod na label:
+Malinis: Walang toxicity.
+Mapoot: May toxicity at direktang pag-atake sa isang tao.
+
+Batay sa kahulugan ng mga label, iuri ang mga sumusunod na pangungusap gamit lang ng isang salita: Malinis o Mapoot.
+
+Sumagot gamit ang sumusunod na format:
+Sagot: $LABEL
+Palitan ang $LABEL ng napiling label.[[fewshot_examples]]
+
+Pangungusap:
+```
+[[text]]
+```

@@ -1,0 +1,16 @@
+You are reviewing a multi-turn conversation between a user and an assistant, and are given the last turn of the conversation.
+In the final response from the assistant, a final answer has been provided. Your goal is to extract verbatim what the answer is:
+- If the answer is short (less than 10 words), then you should copy verbatim what the answer is in the `answer` field.
+- If the answer is long, then you should produce the answer with an ellipses, to indicate the exact start and end of the answer (e.g, ```def funny_function(n): [...]  return funny_output```). You should include *at least* 4 words or one full line for the start (before the ellipses) and *at least* 4 words or one full line for the end (after the ellipses), such that the answer can be identified exactly.
+
+Rules:
+- [Exact Answer Only] only extract the exact answer, and nothing else (including ``` for code blocks, or intro/outro text).
+- [Verbatim Only] Only extract verbatim text, do not modify the text in any way. If there's a typo, an error, you must absoltutely include it, and not correct it in any way.
+- [Task Specific Answer] [[ANSWER_DESCRIPTION]]
+- [String output] the <answer_str> must be a string, not a number and not a dictionary.
+
+You must output your answer in the following JSON format:
+{"answer": "<answer_str>"}
+
+Conversation's last turn:
+[[ASSISTANT_RESPONSE]]

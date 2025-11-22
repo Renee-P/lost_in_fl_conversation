@@ -15,7 +15,7 @@ Rules:
 
 ## Input:
 ~~~
-Ano ang sentimyento sa sumusunod na pangungusap? Sumagot gamit ng isa sa mga sumusunod na pagpipilian: Positibo, Negatibo, o Neutral.
+Ano ang sentimyento sa sumusunod na pangungusap?
 
 Pangungusap:
 ```
@@ -25,10 +25,7 @@ Teka parang may naalala ako dito sa Election noong 2016.\n\n\"Kung nanalo yung m
 
 ## Output:
 {"segments": [
-  {"segment": "Sentimyento sa pangungusap"},
-  {"segment": "Positibo"},
-  {"segment": "Negatibo"},
-  {"segment": "Neutral"},
+  {"segment": "sentimyento sa sumusunod na pangungusap"},
   {"segment": "Teka parang may naalala ako dito sa Election noong 2016"},
   {"segment": "\"Kung nanalo yung manok niyo si Rodrigo Duterte sa pagkapresidente"},
   {"segment": magpapamigay ako ng cake.\""}
@@ -38,7 +35,7 @@ Teka parang may naalala ako dito sa Election noong 2016.\n\n\"Kung nanalo yung m
 
 ## Input:
 ~~~
-Ano ang sentimyento sa sumusunod na pangungusap? Sumagot gamit ng isa sa mga sumusunod na pagpipilian: Positibo, Negatibo, o Neutral.
+Ano ang sentimyento sa sumusunod na pangungusap?
 
 Pangungusap:
 ```
@@ -48,10 +45,7 @@ Yung akala mo imported biscuits na pag open mo may kamatis na puro karayom :(
 
 ## Output:
 {"segments": [
-  {"segment": "Sentimyento sa pangungusap"},
-  {"segment": "Positibo"},
-  {"segment": "Negatibo"},
-  {"segment": "Neutral"},
+  {"segment": "sentimyento sa sumusunod na pangungusap"},
   {"segment": "Yung akala mo imported biscuits"},
   {"segment": "na pag open mo may kamatis"},
   {"segment": "na puro karayom :("}
@@ -61,7 +55,7 @@ Yung akala mo imported biscuits na pag open mo may kamatis na puro karayom :(
 
 ## Input:
 ~~~
-Ano ang sentimyento sa sumusunod na pangungusap? Sumagot gamit ng isa sa mga sumusunod na pagpipilian: Positibo, Negatibo, o Neutral.
+Ano ang sentimyento sa sumusunod na pangungusap?
 
 Pangungusap:
 ```
@@ -71,12 +65,9 @@ Me to her: \"Makakahanap ka rin ng ka-edad ko na katulad ng papa mo. Pasensya ka
 
 ## Output:
 {"segments": [
-  {"segment": "Sentimyento sa pangungusap"},
-  {"segment": "Positibo"},
-  {"segment": "Negatibo"},
-  {"segment": "Neutral"},
+  {"segment": "sentimyento sa sumusunod na pangungusap"},
   {"segment": "Me to her:"},
-  {"segment": "\"Makakahanp ka rin ng ka-edad ko"},
+  {"segment": "\"Makakahanap ka rin ng ka-edad ko"},
   {"segment": "na tulad ng papa mo"},
   {"segment": "Pasensya ka na ha"},
   {"segment": "Godbless\""},
@@ -85,7 +76,7 @@ Me to her: \"Makakahanap ka rin ng ka-edad ko na katulad ng papa mo. Pasensya ka
 Now complete the task for the following fully specified instruction:
 
 ~~~
-Ano ang sentimyento sa sumusunod na pangungusap? Sumagot gamit ng isa sa mga sumusunod na pagpipilian: Positibo, Negatibo, o Neutral.
+Ano ang sentimyento sa sumusunod na pangungusap?
 
 Pangungusap:
 ```

@@ -1,0 +1,13 @@
+You are reviewing a response from an AI assistant to a user query.
+Your goal is to extract verbatim what the answer is. The answer to the user query is expected to be: [[ANSWER_DESCRIPTION]]
+
+Rules:
+- [Exact Answer Only] only extract the exact answer as explained above, and nothing else (including ``` for blocks, explananations for answers, etc.).
+- [Verbatim Only] Only extract verbatim text, do not modify the text in any way. If there's a typo, an error, you must absoltutely include it, and not correct it in any way. The program will check that the string you extract is exactly present as a substringz in the passage provided.
+- [String output] the <answer_str> must be a string, not a number and not a dictionary.
+
+You must output your answer in the following JSON format:
+{"answer": "<answer_str>"}
+
+Response:
+[[ASSISTANT_RESPONSE]]

@@ -1,2 +1,5 @@
 .vscode/
 __pycache__/
+.env
+test_keys.py
+sharding_archive/

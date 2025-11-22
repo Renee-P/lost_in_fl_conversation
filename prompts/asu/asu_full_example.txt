@@ -1,0 +1,7 @@
+
+
+Artikulo:
+```
+[[text]]
+```
+Buod: [[label]]

@@ -1,0 +1,4 @@
+Sumagot gamit ang sumusunod na format:
+Sagot: $OPTION
+Palitan ang $OPTION ng napiling sagot. Gumamit lang ng titik A or B sa sagot mo.[[fewshot_examples]]
+

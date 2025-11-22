@@ -1,0 +1,470 @@
+[
+    {
+        "task_id": "sharded-mt/305t",
+        "label": "Mga Babae: Inirerekomenda na sabihin ng sinumang mga babaeng bumibiyahe na may asawa na sila, anuman ang kanilang tunay na katayuang matrimonyal.",
+        "text": "Women: It is recommended that any women travellers say that they are married, regardless of actual marital status.",
+        "language": "Filipino",
+        "shards": [
+            {
+                "shard_id": "1",
+                "shard": "Isinasalin mo ang isang tekstong Ingles tungo sa Filipino habang ito ay ini-transcribe nang live. Ibibigay ko sa iyo ang teksto nang paunti-unti. Sa bawat turn, dapat mong ibalik ang salin ng BUONG TEKSTO (hindi lamang ang huling bahagi). Dapat mong isaalang-alang ang lahat ng bahagi kapag nagsasalin, at hindi lamang ang pinakahuli. Maaari mo ring baguhin ang mga naunang salin kung sa tingin mo ay may pagkakamali ka. Unang Bahagi: Women: It is recommended that any women"
+            },
+            {
+                "shard_id": "2",
+                "shard": "Natatanggap ko na ang pinakabagong bahagi ng dokumento. Paki-salin ang buong dokumento hanggang sa puntong ito. Isa pang bahagi: travellers say that they are married, regardless"
+            },
+            {
+                "shard_id": "3",
+                "shard": "Natatanggap ko na ang pinakabagong bahagi ng dokumento. Paki-salin ang buong dokumento hanggang sa puntong ito. Isa pang bahagi: of actual marital status."
+            }
+        ],
+        "task": "mt"
+    },
+    {
+        "task_id": "sharded-mt/281t",
+        "label": "Ang nayon ng Haldarsvík ay naghahandog ng mga tanawin ng kalapit na islang Eysturoy at mayroong di-pangkaraniwang simbahang oktagonal.",
+        "text": "The village of Haldarsvík offer views of the nearby island Eysturoy and has an unusual octagonal church.",
+        "language": "Filipino",
+        "shards": [
+            {
+                "shard_id": "1",
+                "shard": "Isinasalin mo ang isang tekstong Ingles tungo sa Filipino habang ito ay ini-transcribe nang live. Ibibigay ko sa iyo ang teksto nang paunti-unti. Sa bawat turn, dapat mong ibalik ang salin ng BUONG TEKSTO (hindi lamang ang huling bahagi). Dapat mong isaalang-alang ang lahat ng bahagi kapag nagsasalin, at hindi lamang ang pinakahuli. Maaari mo ring baguhin ang mga naunang salin kung sa tingin mo ay may pagkakamali ka. Unang Bahagi: The village of Haldarsvík offer views of"
+            },
+            {
+                "shard_id": "2",
+                "shard": "Natatanggap ko na ang pinakabagong bahagi ng dokumento. Paki-salin ang buong dokumento hanggang sa puntong ito. Isa pang bahagi: the nearby island Eysturoy and has an"
+            },
+            {
+                "shard_id": "3",
+                "shard": "Natatanggap ko na ang pinakabagong bahagi ng dokumento. Paki-salin ang buong dokumento hanggang sa puntong ito. Isa pang bahagi: unusual octagonal church."
+            }
+        ],
+        "task": "mt"
+    },
+    {
+        "task_id": "sharded-mt/180t",
+        "label": "Kasabay nito, ang hukbong-dagat na Aleman, na ang pangunahing ginagamit ay mga U-boat, ay sinusubukan noon na pigilan ang trapikong ito.",
+        "text": "At the same time, the German navy, using mainly U-boats, was trying to stop this traffic.",
+        "language": "Filipino",
+        "shards": [
+            {
+                "shard_id": "1",
+                "shard": "Isinasalin mo ang isang tekstong Ingles tungo sa Filipino habang ito ay ini-transcribe nang live. Ibibigay ko sa iyo ang teksto nang paunti-unti. Sa bawat turn, dapat mong ibalik ang salin ng BUONG TEKSTO (hindi lamang ang huling bahagi). Dapat mong isaalang-alang ang lahat ng bahagi kapag nagsasalin, at hindi lamang ang pinakahuli. Maaari mo ring baguhin ang mga naunang salin kung sa tingin mo ay may pagkakamali ka. Unang Bahagi: At the same time, the German navy,"
+            },
+            {
+                "shard_id": "2",
+                "shard": "Natatanggap ko na ang pinakabagong bahagi ng dokumento. Paki-salin ang buong dokumento hanggang sa puntong ito. Isa pang bahagi: using mainly U-boats, was trying to stop"
+            },
+            {
+                "shard_id": "3",
+                "shard": "Natatanggap ko na ang pinakabagong bahagi ng dokumento. Paki-salin ang buong dokumento hanggang sa puntong ito. Isa pang bahagi: this traffic."
+            }
+        ],
+        "task": "mt"
+    },
+    {
+        "task_id": "sharded-mt/332t",
+        "label": "Si Del Potro ang nagkaroon ng maagang paglamang sa pangalawang set, ngunit kinailangan din ng pagsira ng pagkakatabla dito pagkatapos marating ang 6-6.",
+        "text": "Del Potro had the early advantage in the second set, but this too required a tie break after reaching 6-6.",
+        "language": "Filipino",
+        "shards": [
+            {
+                "shard_id": "1",
+                "shard": "Isinasalin mo ang isang tekstong Ingles tungo sa Filipino habang ito ay ini-transcribe nang live. Ibibigay ko sa iyo ang teksto nang paunti-unti. Sa bawat turn, dapat mong ibalik ang salin ng BUONG TEKSTO (hindi lamang ang huling bahagi). Dapat mong isaalang-alang ang lahat ng bahagi kapag nagsasalin, at hindi lamang ang pinakahuli. Maaari mo ring baguhin ang mga naunang salin kung sa tingin mo ay may pagkakamali ka. Unang Bahagi: Del Potro had the early advantage in"
+            },
+            {
+                "shard_id": "2",
+                "shard": "Natatanggap ko na ang pinakabagong bahagi ng dokumento. Paki-salin ang buong dokumento hanggang sa puntong ito. Isa pang bahagi: the second set, but this too required"
+            },
+            {
+                "shard_id": "3",
+                "shard": "Natatanggap ko na ang pinakabagong bahagi ng dokumento. Paki-salin ang buong dokumento hanggang sa puntong ito. Isa pang bahagi: a tie break after reaching 6-6."
+            }
+        ],
+        "task": "mt"
+    },
+    {
+        "task_id": "sharded-mt/461t",
+        "label": "Ang kanyang una ay ang Slalom, kung saan nakakuha siya ng Hindi Nakatapos sa kanyang unang pagtakbo. 36 sa 116 na mga lumaban ang may katulad na resulta sa karerang iyon.",
+        "text": "Her first was the Slalom, where she earned a Did Not Finish in her first run. 36 of the 116 competitors had the same result in that race.",
+        "language": "Filipino",
+        "shards": [
+            {
+                "shard_id": "1",
+                "shard": "Isinasalin mo ang isang tekstong Ingles tungo sa Filipino habang ito ay ini-transcribe nang live. Ibibigay ko sa iyo ang teksto nang paunti-unti. Sa bawat turn, dapat mong ibalik ang salin ng BUONG TEKSTO (hindi lamang ang huling bahagi). Dapat mong isaalang-alang ang lahat ng bahagi kapag nagsasalin, at hindi lamang ang pinakahuli. Maaari mo ring baguhin ang mga naunang salin kung sa tingin mo ay may pagkakamali ka. Unang Bahagi: Her first was the Slalom, where she"
+            },
+            {
+                "shard_id": "2",
+                "shard": "Natatanggap ko na ang pinakabagong bahagi ng dokumento. Paki-salin ang buong dokumento hanggang sa puntong ito. Isa pang bahagi: earned a Did Not Finish in her"
+            },
+            {
+                "shard_id": "3",
+                "shard": "Natatanggap ko na ang pinakabagong bahagi ng dokumento. Paki-salin ang buong dokumento hanggang sa puntong ito. Isa pang bahagi: first run. 36 of the 116 competitors"
+            },
+            {
+                "shard_id": "4",
+                "shard": "Natatanggap ko na ang pinakabagong bahagi ng dokumento. Paki-salin ang buong dokumento hanggang sa puntong ito. Isa pang bahagi: had the same result in that race."
+            }
+        ],
+        "task": "mt"
+    },
+    {
+        "task_id": "sharded-mt/501t",
+        "label": "Ito ay nagbanta na walang sinuman ang makatitiyak na anumang pagkilos ng Iraq sa yugtong ito ay makapipigil sa kaguluhan ng mga sekta, dumaraming pang-aabuso, o kaguluhan.",
+        "text": "It warns No one can guarantee that any course of action in Iraq at this point will stop sectarian warfare, growing violence, or a slide toward chaos.",
+        "language": "Filipino",
+        "shards": [
+            {
+                "shard_id": "1",
+                "shard": "Isinasalin mo ang isang tekstong Ingles tungo sa Filipino habang ito ay ini-transcribe nang live. Ibibigay ko sa iyo ang teksto nang paunti-unti. Sa bawat turn, dapat mong ibalik ang salin ng BUONG TEKSTO (hindi lamang ang huling bahagi). Dapat mong isaalang-alang ang lahat ng bahagi kapag nagsasalin, at hindi lamang ang pinakahuli. Maaari mo ring baguhin ang mga naunang salin kung sa tingin mo ay may pagkakamali ka. Unang Bahagi: It warns No one can guarantee that"
+            },
+            {
+                "shard_id": "2",
+                "shard": "Natatanggap ko na ang pinakabagong bahagi ng dokumento. Paki-salin ang buong dokumento hanggang sa puntong ito. Isa pang bahagi: any course of action in Iraq at"
+            },
+            {
+                "shard_id": "3",
+                "shard": "Natatanggap ko na ang pinakabagong bahagi ng dokumento. Paki-salin ang buong dokumento hanggang sa puntong ito. Isa pang bahagi: this point will stop sectarian warfare, growing"
+            },
+            {
+                "shard_id": "4",
+                "shard": "Natatanggap ko na ang pinakabagong bahagi ng dokumento. Paki-salin ang buong dokumento hanggang sa puntong ito. Isa pang bahagi: violence, or a slide toward chaos."
+            }
+        ],
+        "task": "mt"
+    },
+    {
+        "task_id": "sharded-mt/330t",
+        "label": "Kahit pa ang pinakamaiinit na mga disyerto ay maaring maging napakalamig sa gabi. Ang hypothermia ay isang tunay na panganib sa walang mainit na pananamit.",
+        "text": "Even the hottest of deserts can become extremely cold at night. Hypothermia is a real risk without warm clothing.",
+        "language": "Filipino",
+        "shards": [
+            {
+                "shard_id": "1",
+                "shard": "Isinasalin mo ang isang tekstong Ingles tungo sa Filipino habang ito ay ini-transcribe nang live. Ibibigay ko sa iyo ang teksto nang paunti-unti. Sa bawat turn, dapat mong ibalik ang salin ng BUONG TEKSTO (hindi lamang ang huling bahagi). Dapat mong isaalang-alang ang lahat ng bahagi kapag nagsasalin, at hindi lamang ang pinakahuli. Maaari mo ring baguhin ang mga naunang salin kung sa tingin mo ay may pagkakamali ka. Unang Bahagi: Even the hottest of deserts can become"
+            },
+            {
+                "shard_id": "2",
+                "shard": "Natatanggap ko na ang pinakabagong bahagi ng dokumento. Paki-salin ang buong dokumento hanggang sa puntong ito. Isa pang bahagi: extremely cold at night. Hypothermia is a"
+            },
+            {
+                "shard_id": "3",
+                "shard": "Natatanggap ko na ang pinakabagong bahagi ng dokumento. Paki-salin ang buong dokumento hanggang sa puntong ito. Isa pang bahagi: real risk without warm clothing."
+            }
+        ],
+        "task": "mt"
+    },
+    {
+        "task_id": "sharded-mt/184t",
+        "label": "Ang sambahan ni Artemis sa Efeso ay nagiba noong Hulyo 21, 356 BCE sa isang akto ng panununog na isinagawa ni Herostratus.",
+        "text": "The temple of Artemis at Ephesus was destroyed on July 21, 356 BCE in an act of arson committed by Herostratus.",
+        "language": "Filipino",
+        "shards": [
+            {
+                "shard_id": "1",
+                "shard": "Isinasalin mo ang isang tekstong Ingles tungo sa Filipino habang ito ay ini-transcribe nang live. Ibibigay ko sa iyo ang teksto nang paunti-unti. Sa bawat turn, dapat mong ibalik ang salin ng BUONG TEKSTO (hindi lamang ang huling bahagi). Dapat mong isaalang-alang ang lahat ng bahagi kapag nagsasalin, at hindi lamang ang pinakahuli. Maaari mo ring baguhin ang mga naunang salin kung sa tingin mo ay may pagkakamali ka. Unang Bahagi: The temple of Artemis at Ephesus was"
+            },
+            {
+                "shard_id": "2",
+                "shard": "Natatanggap ko na ang pinakabagong bahagi ng dokumento. Paki-salin ang buong dokumento hanggang sa puntong ito. Isa pang bahagi: destroyed on July 21, 356 BCE in"
+            },
+            {
+                "shard_id": "3",
+                "shard": "Natatanggap ko na ang pinakabagong bahagi ng dokumento. Paki-salin ang buong dokumento hanggang sa puntong ito. Isa pang bahagi: an act of arson committed by Herostratus."
+            }
+        ],
+        "task": "mt"
+    },
+    {
+        "task_id": "sharded-mt/412t",
+        "label": "Nag-aalok ang CafeNet El Sol ng reservation service para sa kabayarang US$30, o $10 para sa isang araw na passes; nasa kanilang Corcovado page ang mga detalye.",
+        "text": "CafeNet El Sol offers a reservation service for a fee of US$30, or $10 for one-day passes; details on their Corcovado page.",
+        "language": "Filipino",
+        "shards": [
+            {
+                "shard_id": "1",
+                "shard": "Isinasalin mo ang isang tekstong Ingles tungo sa Filipino habang ito ay ini-transcribe nang live. Ibibigay ko sa iyo ang teksto nang paunti-unti. Sa bawat turn, dapat mong ibalik ang salin ng BUONG TEKSTO (hindi lamang ang huling bahagi). Dapat mong isaalang-alang ang lahat ng bahagi kapag nagsasalin, at hindi lamang ang pinakahuli. Maaari mo ring baguhin ang mga naunang salin kung sa tingin mo ay may pagkakamali ka. Unang Bahagi: CafeNet El Sol offers a reservation service"
+            },
+            {
+                "shard_id": "2",
+                "shard": "Natatanggap ko na ang pinakabagong bahagi ng dokumento. Paki-salin ang buong dokumento hanggang sa puntong ito. Isa pang bahagi: for a fee of US$30, or $10"
+            },
+            {
+                "shard_id": "3",
+                "shard": "Natatanggap ko na ang pinakabagong bahagi ng dokumento. Paki-salin ang buong dokumento hanggang sa puntong ito. Isa pang bahagi: for one-day passes; details on their Corcovado"
+            },
+            {
+                "shard_id": "4",
+                "shard": "Natatanggap ko na ang pinakabagong bahagi ng dokumento. Paki-salin ang buong dokumento hanggang sa puntong ito. Isa pang bahagi: page."
+            }
+        ],
+        "task": "mt"
+    },
+    {
+        "task_id": "sharded-mt/389t",
+        "label": "Ang Direktor ng Pampublikong mga Pagsasakdal, si Kier Starmer QC, ay nagbigay ng pahayag ngayong umaga tungkol sa pag-uusig kay Huhne at Pryce.",
+        "text": "The Director of Public Prosecutions, Kier Starmer QC, gave a statement this morning announcing the prosecution of both Huhne and Pryce.",
+        "language": "Filipino",
+        "shards": [
+            {
+                "shard_id": "1",
+                "shard": "Isinasalin mo ang isang tekstong Ingles tungo sa Filipino habang ito ay ini-transcribe nang live. Ibibigay ko sa iyo ang teksto nang paunti-unti. Sa bawat turn, dapat mong ibalik ang salin ng BUONG TEKSTO (hindi lamang ang huling bahagi). Dapat mong isaalang-alang ang lahat ng bahagi kapag nagsasalin, at hindi lamang ang pinakahuli. Maaari mo ring baguhin ang mga naunang salin kung sa tingin mo ay may pagkakamali ka. Unang Bahagi: The Director of Public Prosecutions, Kier Starmer"
+            },
+            {
+                "shard_id": "2",
+                "shard": "Natatanggap ko na ang pinakabagong bahagi ng dokumento. Paki-salin ang buong dokumento hanggang sa puntong ito. Isa pang bahagi: QC, gave a statement this morning announcing"
+            },
+            {
+                "shard_id": "3",
+                "shard": "Natatanggap ko na ang pinakabagong bahagi ng dokumento. Paki-salin ang buong dokumento hanggang sa puntong ito. Isa pang bahagi: the prosecution of both Huhne and Pryce."
+            }
+        ],
+        "task": "mt"
+    },
+    {
+        "task_id": "sharded-mt/248e",
+        "label": "Sharks do exist, however they rarely attack humans. Most sharks are scared of humans and would swim away.",
+        "text": "Mayroon ngang mga pating, subali't bihirang salakayin ng mga ito ang mga tao. Ang karamihan sa mga pating ay takot sa tao at lalangoy na palayo.",
+        "language": "English",
+        "shards": [
+            {
+                "shard_id": "1",
+                "shard": "Isinasalin mo ang isang tekstong Filipino tungo sa Ingles habang ito ay ini-transcribe nang live. Ibibigay ko sa iyo ang teksto nang paunti-unti. Sa bawat turn, dapat mong ibalik ang salin ng BUONG TEKSTO (hindi lamang ang huling bahagi). Dapat mong isaalang-alang ang lahat ng bahagi kapag nagsasalin, at hindi lamang ang pinakahuli. Maaari mo ring baguhin ang mga naunang salin kung sa tingin mo ay may pagkakamali ka. Unang Bahagi: Mayroon ngang mga pating, subali't bihirang salakayin"
+            },
+            {
+                "shard_id": "2",
+                "shard": "Natatanggap ko na ang pinakabagong bahagi ng dokumento. Paki-salin ang buong dokumento hanggang sa puntong ito. Isa pang bahagi: ng mga ito ang mga tao. Ang"
+            },
+            {
+                "shard_id": "3",
+                "shard": "Natatanggap ko na ang pinakabagong bahagi ng dokumento. Paki-salin ang buong dokumento hanggang sa puntong ito. Isa pang bahagi: karamihan sa mga pating ay takot sa"
+            },
+            {
+                "shard_id": "4",
+                "shard": "Natatanggap ko na ang pinakabagong bahagi ng dokumento. Paki-salin ang buong dokumento hanggang sa puntong ito. Isa pang bahagi: tao at lalangoy na palayo."
+            }
+        ],
+        "task": "mt"
+    },
+    {
+        "task_id": "sharded-mt/60e",
+        "label": "In the last years of the 18th century the Vietnamese also invaded Cambodia.",
+        "text": "Noong mga taon sa dulo ng ika-18 na siglo sinakop din ng mga taga-Vietnam ang Cambodia.",
+        "language": "English",
+        "shards": [
+            {
+                "shard_id": "1",
+                "shard": "Isinasalin mo ang isang tekstong Filipino tungo sa Ingles habang ito ay ini-transcribe nang live. Ibibigay ko sa iyo ang teksto nang paunti-unti. Sa bawat turn, dapat mong ibalik ang salin ng BUONG TEKSTO (hindi lamang ang huling bahagi). Dapat mong isaalang-alang ang lahat ng bahagi kapag nagsasalin, at hindi lamang ang pinakahuli. Maaari mo ring baguhin ang mga naunang salin kung sa tingin mo ay may pagkakamali ka. Unang Bahagi: Noong mga taon sa dulo ng ika-18"
+            },
+            {
+                "shard_id": "2",
+                "shard": "Natatanggap ko na ang pinakabagong bahagi ng dokumento. Paki-salin ang buong dokumento hanggang sa puntong ito. Isa pang bahagi: na siglo sinakop din ng mga taga-Vietnam"
+            },
+            {
+                "shard_id": "3",
+                "shard": "Natatanggap ko na ang pinakabagong bahagi ng dokumento. Paki-salin ang buong dokumento hanggang sa puntong ito. Isa pang bahagi: ang Cambodia."
+            }
+        ],
+        "task": "mt"
+    },
+    {
+        "task_id": "sharded-mt/270e",
+        "label": "On September 24, 1759, Arthur Guinness signed a 9,000 year lease for the St James' Gate Brewery in Dublin, Ireland.",
+        "text": "Noong Setyembre 24, 1759, pumirma si Arthur Guinness ng 9,000 taong gulang na upahan para sa St James' Gate Brewery sa Dublin, Ireland.",
+        "language": "English",
+        "shards": [
+            {
+                "shard_id": "1",
+                "shard": "Isinasalin mo ang isang tekstong Filipino tungo sa Ingles habang ito ay ini-transcribe nang live. Ibibigay ko sa iyo ang teksto nang paunti-unti. Sa bawat turn, dapat mong ibalik ang salin ng BUONG TEKSTO (hindi lamang ang huling bahagi). Dapat mong isaalang-alang ang lahat ng bahagi kapag nagsasalin, at hindi lamang ang pinakahuli. Maaari mo ring baguhin ang mga naunang salin kung sa tingin mo ay may pagkakamali ka. Unang Bahagi: Noong Setyembre 24, 1759, pumirma si Arthur"
+            },
+            {
+                "shard_id": "2",
+                "shard": "Natatanggap ko na ang pinakabagong bahagi ng dokumento. Paki-salin ang buong dokumento hanggang sa puntong ito. Isa pang bahagi: Guinness ng 9,000 taong gulang na upahan"
+            },
+            {
+                "shard_id": "3",
+                "shard": "Natatanggap ko na ang pinakabagong bahagi ng dokumento. Paki-salin ang buong dokumento hanggang sa puntong ito. Isa pang bahagi: para sa St James' Gate Brewery sa"
+            },
+            {
+                "shard_id": "4",
+                "shard": "Natatanggap ko na ang pinakabagong bahagi ng dokumento. Paki-salin ang buong dokumento hanggang sa puntong ito. Isa pang bahagi: Dublin, Ireland."
+            }
+        ],
+        "task": "mt"
+    },
+    {
+        "task_id": "sharded-mt/553e",
+        "label": "Rare fauna such as the European brown bear, wolf, eagle, owl, lynx, wild cat and capercaillie can be found there, along with many more common species",
+        "text": "Ang bihirang mga hayop tulad ng kayumangging oso ng Europa, lobo, agila, kuwago, lynx, mailap na pusa at capercaillie ay maaaring matagpuan doon, kasama ng mas marami pang karaniwang mga uri",
+        "language": "English",
+        "shards": [
+            {
+                "shard_id": "1",
+                "shard": "Isinasalin mo ang isang tekstong Filipino tungo sa Ingles habang ito ay ini-transcribe nang live. Ibibigay ko sa iyo ang teksto nang paunti-unti. Sa bawat turn, dapat mong ibalik ang salin ng BUONG TEKSTO (hindi lamang ang huling bahagi). Dapat mong isaalang-alang ang lahat ng bahagi kapag nagsasalin, at hindi lamang ang pinakahuli. Maaari mo ring baguhin ang mga naunang salin kung sa tingin mo ay may pagkakamali ka. Unang Bahagi: Ang bihirang mga hayop tulad ng kayumangging"
+            },
+            {
+                "shard_id": "2",
+                "shard": "Natatanggap ko na ang pinakabagong bahagi ng dokumento. Paki-salin ang buong dokumento hanggang sa puntong ito. Isa pang bahagi: oso ng Europa, lobo, agila, kuwago, lynx,"
+            },
+            {
+                "shard_id": "3",
+                "shard": "Natatanggap ko na ang pinakabagong bahagi ng dokumento. Paki-salin ang buong dokumento hanggang sa puntong ito. Isa pang bahagi: mailap na pusa at capercaillie ay maaaring"
+            },
+            {
+                "shard_id": "4",
+                "shard": "Natatanggap ko na ang pinakabagong bahagi ng dokumento. Paki-salin ang buong dokumento hanggang sa puntong ito. Isa pang bahagi: matagpuan doon, kasama ng mas marami pang"
+            },
+            {
+                "shard_id": "5",
+                "shard": "Natatanggap ko na ang pinakabagong bahagi ng dokumento. Paki-salin ang buong dokumento hanggang sa puntong ito. Isa pang bahagi: karaniwang mga uri"
+            }
+        ],
+        "task": "mt"
+    },
+    {
+        "task_id": "sharded-mt/151e",
+        "label": "If you want to be close to the action you're going to have to get in early to get a camping site close to the music.",
+        "text": "Kung gusto mong malapit sa aksyon, gawing maaga ang pagpunta upang makakuha ng matutuluyan malapit sa musika.",
+        "language": "English",
+        "shards": [
+            {
+                "shard_id": "1",
+                "shard": "Isinasalin mo ang isang tekstong Filipino tungo sa Ingles habang ito ay ini-transcribe nang live. Ibibigay ko sa iyo ang teksto nang paunti-unti. Sa bawat turn, dapat mong ibalik ang salin ng BUONG TEKSTO (hindi lamang ang huling bahagi). Dapat mong isaalang-alang ang lahat ng bahagi kapag nagsasalin, at hindi lamang ang pinakahuli. Maaari mo ring baguhin ang mga naunang salin kung sa tingin mo ay may pagkakamali ka. Unang Bahagi: Kung gusto mong malapit sa aksyon, gawing"
+            },
+            {
+                "shard_id": "2",
+                "shard": "Natatanggap ko na ang pinakabagong bahagi ng dokumento. Paki-salin ang buong dokumento hanggang sa puntong ito. Isa pang bahagi: maaga ang pagpunta upang makakuha ng matutuluyan"
+            },
+            {
+                "shard_id": "3",
+                "shard": "Natatanggap ko na ang pinakabagong bahagi ng dokumento. Paki-salin ang buong dokumento hanggang sa puntong ito. Isa pang bahagi: malapit sa musika."
+            }
+        ],
+        "task": "mt"
+    },
+    {
+        "task_id": "sharded-mt/355e",
+        "label": "It was followed by the Istanbul State Symphony Orchestra, a Janissary band, and the singers Fatih Erkoç and Müslüm Gürses.",
+        "text": "Sinundan ito ng Istanbul State Symphony Orchestra, isang banda ng Janissary, at ng mga mang-aawit na sina Fatih Erkoç at Müslüm Gürses.",
+        "language": "English",
+        "shards": [
+            {
+                "shard_id": "1",
+                "shard": "Isinasalin mo ang isang tekstong Filipino tungo sa Ingles habang ito ay ini-transcribe nang live. Ibibigay ko sa iyo ang teksto nang paunti-unti. Sa bawat turn, dapat mong ibalik ang salin ng BUONG TEKSTO (hindi lamang ang huling bahagi). Dapat mong isaalang-alang ang lahat ng bahagi kapag nagsasalin, at hindi lamang ang pinakahuli. Maaari mo ring baguhin ang mga naunang salin kung sa tingin mo ay may pagkakamali ka. Unang Bahagi: Sinundan ito ng Istanbul State Symphony Orchestra,"
+            },
+            {
+                "shard_id": "2",
+                "shard": "Natatanggap ko na ang pinakabagong bahagi ng dokumento. Paki-salin ang buong dokumento hanggang sa puntong ito. Isa pang bahagi: isang banda ng Janissary, at ng mga"
+            },
+            {
+                "shard_id": "3",
+                "shard": "Natatanggap ko na ang pinakabagong bahagi ng dokumento. Paki-salin ang buong dokumento hanggang sa puntong ito. Isa pang bahagi: mang-aawit na sina Fatih Erkoç at Müslüm"
+            },
+            {
+                "shard_id": "4",
+                "shard": "Natatanggap ko na ang pinakabagong bahagi ng dokumento. Paki-salin ang buong dokumento hanggang sa puntong ito. Isa pang bahagi: Gürses."
+            }
+        ],
+        "task": "mt"
+    },
+    {
+        "task_id": "sharded-mt/162e",
+        "label": "There are no particular \"rainy\" and \"dry\" seasons: the amount of rain stays roughly the same throughout the year.",
+        "text": "Walang partikular na \"tag-ulan\" at \"tagtuyot\" na mga panahon: ang dami ng ulan ay nananatiling halos pareho sa buong taon.",
+        "language": "English",
+        "shards": [
+            {
+                "shard_id": "1",
+                "shard": "Isinasalin mo ang isang tekstong Filipino tungo sa Ingles habang ito ay ini-transcribe nang live. Ibibigay ko sa iyo ang teksto nang paunti-unti. Sa bawat turn, dapat mong ibalik ang salin ng BUONG TEKSTO (hindi lamang ang huling bahagi). Dapat mong isaalang-alang ang lahat ng bahagi kapag nagsasalin, at hindi lamang ang pinakahuli. Maaari mo ring baguhin ang mga naunang salin kung sa tingin mo ay may pagkakamali ka. Unang Bahagi: Walang partikular na \"tag-ulan\" at \"tagtuyot\" na"
+            },
+            {
+                "shard_id": "2",
+                "shard": "Natatanggap ko na ang pinakabagong bahagi ng dokumento. Paki-salin ang buong dokumento hanggang sa puntong ito. Isa pang bahagi: mga panahon: ang dami ng ulan ay"
+            },
+            {
+                "shard_id": "3",
+                "shard": "Natatanggap ko na ang pinakabagong bahagi ng dokumento. Paki-salin ang buong dokumento hanggang sa puntong ito. Isa pang bahagi: nananatiling halos pareho sa buong taon."
+            }
+        ],
+        "task": "mt"
+    },
+    {
+        "task_id": "sharded-mt/465e",
+        "label": "People with this type of thinking have logical thinking, are able to memorize patterns, solve problems and work on scientific tests.",
+        "text": "Ang mga taong may ganitong uri ng pag-iisip ay may pag-iisip na lohikal, may kakayahang magsaulo ng mga padron, lumutas ng mga problema at gumawa ng mga siyentipikong pagsubok.",
+        "language": "English",
+        "shards": [
+            {
+                "shard_id": "1",
+                "shard": "Isinasalin mo ang isang tekstong Filipino tungo sa Ingles habang ito ay ini-transcribe nang live. Ibibigay ko sa iyo ang teksto nang paunti-unti. Sa bawat turn, dapat mong ibalik ang salin ng BUONG TEKSTO (hindi lamang ang huling bahagi). Dapat mong isaalang-alang ang lahat ng bahagi kapag nagsasalin, at hindi lamang ang pinakahuli. Maaari mo ring baguhin ang mga naunang salin kung sa tingin mo ay may pagkakamali ka. Unang Bahagi: Ang mga taong may ganitong uri ng"
+            },
+            {
+                "shard_id": "2",
+                "shard": "Natatanggap ko na ang pinakabagong bahagi ng dokumento. Paki-salin ang buong dokumento hanggang sa puntong ito. Isa pang bahagi: pag-iisip ay may pag-iisip na lohikal, may"
+            },
+            {
+                "shard_id": "3",
+                "shard": "Natatanggap ko na ang pinakabagong bahagi ng dokumento. Paki-salin ang buong dokumento hanggang sa puntong ito. Isa pang bahagi: kakayahang magsaulo ng mga padron, lumutas ng"
+            },
+            {
+                "shard_id": "4",
+                "shard": "Natatanggap ko na ang pinakabagong bahagi ng dokumento. Paki-salin ang buong dokumento hanggang sa puntong ito. Isa pang bahagi: mga problema at gumawa ng mga siyentipikong"
+            },
+            {
+                "shard_id": "5",
+                "shard": "Natatanggap ko na ang pinakabagong bahagi ng dokumento. Paki-salin ang buong dokumento hanggang sa puntong ito. Isa pang bahagi: pagsubok."
+            }
+        ],
+        "task": "mt"
+    },
+    {
+        "task_id": "sharded-mt/421e",
+        "label": "These hotels were where the rich and the famous of the day would stay, and often had fine dining and nightlife.",
+        "text": "Ang mga hotel na ito ay tinutuluyan ng mga mayayaman at tanyag sa lipunan noong panahong iyon, at kadalasan sa mga ito ay may mamahaling restawran at panggabing buhay.",
+        "language": "English",
+        "shards": [
+            {
+                "shard_id": "1",
+                "shard": "Isinasalin mo ang isang tekstong Filipino tungo sa Ingles habang ito ay ini-transcribe nang live. Ibibigay ko sa iyo ang teksto nang paunti-unti. Sa bawat turn, dapat mong ibalik ang salin ng BUONG TEKSTO (hindi lamang ang huling bahagi). Dapat mong isaalang-alang ang lahat ng bahagi kapag nagsasalin, at hindi lamang ang pinakahuli. Maaari mo ring baguhin ang mga naunang salin kung sa tingin mo ay may pagkakamali ka. Unang Bahagi: Ang mga hotel na ito ay tinutuluyan"
+            },
+            {
+                "shard_id": "2",
+                "shard": "Natatanggap ko na ang pinakabagong bahagi ng dokumento. Paki-salin ang buong dokumento hanggang sa puntong ito. Isa pang bahagi: ng mga mayayaman at tanyag sa lipunan"
+            },
+            {
+                "shard_id": "3",
+                "shard": "Natatanggap ko na ang pinakabagong bahagi ng dokumento. Paki-salin ang buong dokumento hanggang sa puntong ito. Isa pang bahagi: noong panahong iyon, at kadalasan sa mga"
+            },
+            {
+                "shard_id": "4",
+                "shard": "Natatanggap ko na ang pinakabagong bahagi ng dokumento. Paki-salin ang buong dokumento hanggang sa puntong ito. Isa pang bahagi: ito ay may mamahaling restawran at panggabing"
+            },
+            {
+                "shard_id": "5",
+                "shard": "Natatanggap ko na ang pinakabagong bahagi ng dokumento. Paki-salin ang buong dokumento hanggang sa puntong ito. Isa pang bahagi: buhay."
+            }
+        ],
+        "task": "mt"
+    },
+    {
+        "task_id": "sharded-mt/181e",
+        "label": "Since Montevideo is south of the Equator, it is summer there when it's winter in the Northern Hemisphere and vice versa.",
+        "text": "Dahil nasa timog ng Ekwador ang Montevideo, tag-init doon pagka taglamig sa Hilagang Hemispero at bise bersa.",
+        "language": "English",
+        "shards": [
+            {
+                "shard_id": "1",
+                "shard": "Isinasalin mo ang isang tekstong Filipino tungo sa Ingles habang ito ay ini-transcribe nang live. Ibibigay ko sa iyo ang teksto nang paunti-unti. Sa bawat turn, dapat mong ibalik ang salin ng BUONG TEKSTO (hindi lamang ang huling bahagi). Dapat mong isaalang-alang ang lahat ng bahagi kapag nagsasalin, at hindi lamang ang pinakahuli. Maaari mo ring baguhin ang mga naunang salin kung sa tingin mo ay may pagkakamali ka. Unang Bahagi: Dahil nasa timog ng Ekwador ang Montevideo,"
+            },
+            {
+                "shard_id": "2",
+                "shard": "Natatanggap ko na ang pinakabagong bahagi ng dokumento. Paki-salin ang buong dokumento hanggang sa puntong ito. Isa pang bahagi: tag-init doon pagka taglamig sa Hilagang Hemispero"
+            },
+            {
+                "shard_id": "3",
+                "shard": "Natatanggap ko na ang pinakabagong bahagi ng dokumento. Paki-salin ang buong dokumento hanggang sa puntong ito. Isa pang bahagi: at bise bersa."
+            }
+        ],
+        "task": "mt"
+    }
+]

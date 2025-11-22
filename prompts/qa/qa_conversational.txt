@@ -48,7 +48,7 @@ D: Sa loob ng simbahan
     {"segment": "Katumbas ng kalahating oras ang pamamasyal sa makakatawag ng pansin na lugar", "shard": "Ang pamamasyal sa pook na ito ay aabutin ng mga kalahating oras."},
     {"segment": "A: Kalahating oras mula sa nayon", "shard": "Piliin ang A kung ang lugar na kalahating oras ang layo mula sa nayon."},
     {"segment": "B: Sa bakuran ng simbahan", "shard": "Isa sa pagpipilian ay ang B kung ang bakuran mismo ng simbahan."},
-    {"segment": "C: Sa isla ng Eysturoy", "shard": "Piliin ang opsyon C kung matatagpuan ang mga eskultura sa isla ng Eysturoy."},
+    {"segment": "C: Sa isla ng Eysturoy", "shard": "Piliin ang titik C kung matatagpuan ang mga eskultura sa isla ng Eysturoy."},
     {"segment": "D: Sa loob ng simbahan", "shard": "Piliin ang D kung nasa loob ng simbahan ang mga eskulturang ito."}
   ]
 }
@@ -104,10 +104,10 @@ D: Manindigan kung kinakailangan
     {"segment": "may mga pagkakaiba man sa kultura o wala, hindi pa rin ito katanggap-tanggap!", "shard": "Kahit sabihin pang may pagkakaiba sa kultura, hindi pa rin dapat tanggapin ang panghaharass."},
     {"segment": "Sahel ang nasa hangganan ng rehiyon sa hilaga", "shard": "Ang Sahel ay nasa hangganan ng rehiyon sa hilaga"},
     {"segment": "sa timog at kanluran ay ang Karagatang Atlantiko", "shard": "Sa timog at kanluran, makikita ang Karagatang Atlantiko."},
-    {"segment": "A: Tumanggi sa pagtalakay sa katayuang matrimonyal", "shard": "Piliin ang opsyon A kung hindi inirerekomenda na tumanggi kapag tinanong kung ano ang katayuang matrimonyal."},
+    {"segment": "A: Tumanggi sa pagtalakay sa katayuang matrimonyal", "shard": "Piliin ang titik A kung hindi inirerekomenda na tumanggi kapag tinanong kung ano ang katayuang matrimonyal."},
     {"segment": "B: Magkaroon ng kamalayan na ang mga pagkakaiba sa kultura ay maaaring mag-udyok ng mapamilit na pag-uugali mula sa mga lokal", "shard": "Piliin ang B kung hindi inirerekomenda na maging maingat dahil maaaring mag-iba ang kilos ng mga lokal dahil sa pagkakaiba ng kultura."},
-    {"segment": "C: Iwasang magsuot ng kapansin-pansing alahas", "shard": "Piliin ang opsyon C kung ang hindi inirerekomenda ay ang pag-iwas sa pagsusuot ng alahas na kapansin-pansin."},
-    {"segment": "D: Manindigan kung kinakailangan", "shard": "Piliin ang opsyon D kung hindi inirerekomenda na manindigan at ipaglaban ang sarili kung kinakailangan."}
+    {"segment": "C: Iwasang magsuot ng kapansin-pansing alahas", "shard": "Piliin ang titik C kung ang hindi inirerekomenda ay ang pag-iwas sa pagsusuot ng alahas na kapansin-pansin."},
+    {"segment": "D: Manindigan kung kinakailangan", "shard": "Piliin ang titik D kung hindi inirerekomenda na manindigan at ipaglaban ang sarili kung kinakailangan."}
   ]
 }
 
@@ -160,24 +160,23 @@ D: Parehong Primera at Ikatlong Klase na karwahe
     {"segment": "bagaman mas mura pa rin kaysa sa normal na mga tiket ng metro sa Europa", "shard": "Mas mura pa rin ang mga tiket ng MetroPlus kumpara sa mga normal na metro sa Europa."},
     {"segment": "ang mga MetroPlus na tagapangasiwa ay palaging nasa huling bahagi ng tren", "shard": "Ang mga MetroPlus na tagapangasiwa ay laging nasa hulihang bahagi ng tren."},
     {"segment": "malapit sa Bayan ng Cape", "shard": "Matatagpuan ang mga MetroPlus na tagapangasiwa malapit sa Bayan ng Cape."},
-    {"segment": "A: Isang hindi gaanong masikip na karwahe ng Metro", "shard": "Piliin ang opsyon A kung ito ay tumutukoy sa hindi gaanong masikip na karwahe ng Metro."},
-    {"segment": "B: Ang parehong presyo ng tiket para sa parehong klase", "shard": "Piliin ang opsyon B kung pareho ang presyo ng tiket para sa dalawang klase ng tren."},
-    {"segment": "C: Tatlong magkakaibang klase", "shard": "Piliin ang opsyon C kung tatlong klase ng tren ang tinutukoy."},
-    {"segment": "D: Parehong Primera at Ikatlong Klase na karwahe", "shard": "Piliin ang opsyon D kung parehong Primera at Ikatlong Klase na karwahe ang mayroon sa bawat tren."}
+    {"segment": "A: Isang hindi gaanong masikip na karwahe ng Metro", "shard": "Piliin ang titik A kung ito ay tumutukoy sa hindi gaanong masikip na karwahe ng Metro."},
+    {"segment": "B: Ang parehong presyo ng tiket para sa parehong klase", "shard": "Piliin ang titik B kung pareho ang presyo ng tiket para sa dalawang klase ng tren."},
+    {"segment": "C: Tatlong magkakaibang klase", "shard": "Piliin ang titik C kung tatlong klase ng tren ang tinutukoy."},
+    {"segment": "D: Parehong Primera at Ikatlong Klase na karwahe", "shard": "Piliin ang titik D kung parehong Primera at Ikatlong Klase na karwahe ang mayroon sa bawat tren."}
   ]
 }
 
 Rules:
 - [Transform each segment] Make sure each segment is included either as the initial shard or in the rest of the shards. Do not forget any segments.
 - [Short initial shard] Make the initial shard short, not a full sentence, similar to how users use a search engine like Google.
-- [Order of shards] Order the shards in order of importance, from most to least important to the initial shard. You do not need to keep the order the segments that are provided in.
 - [Initial shard selection] Choose the intent segment from the segments to form the initial shard.
-- [Self-contained hints] Do not use pronouns (e.g., ito, siya, niya, sila, nila) to reference information in the other segments in the shards.
+- [Self-contained shards] Do not use pronouns (e.g., ito, siya, niya, sila, nila) to reference information in the other segments in the shards.
 - [Shard paraphrasing] Make sure that the shard conveys the same information as the segment in a casual, colloquial way (i.e., what a human would say).
 
 Now complete the task for the following fully specified instance and segments:
 
-Question-Answering Instance:
+Fully Specified Instance:
 ~~~
 Talata:
 ``` 

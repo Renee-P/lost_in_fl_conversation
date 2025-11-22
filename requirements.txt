@@ -1,0 +1,10 @@
+rouge-score # as evaluation
+bert-score  # as evaluation
+sacrebleu   # as and mt eval (ChRF++)
+GitPython
+pymongo # bson ObjectId
+tqdm
+torch>=2.0.0
+
+
+# add gen-ai thing
